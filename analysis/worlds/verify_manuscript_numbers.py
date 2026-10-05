@@ -522,8 +522,8 @@ lin_rows = re.findall(r"\n([^\n&]*\\rightarrow[^\n&]*) & [^\n]* & [0-9][^\n]*\\\
 check("Lineage table: one row per lineage in the manifest", len(lin_rows) == OL.lineage_id.nunique())
 
 # ---------- abstract and other restatements ----------
-in_tex("Abstract: pick shares", f"On average, {D['nerf_share_mean_pct']:.0f}\\% of a team's prior picks were on champions with net nerfs from the patch after "
-       f"its last officially played one through the Worlds patch, and {D['buff_share_mean_pct']:.0f}\\% were on champions with net buffs. Within a year, "
+in_tex("Abstract: pick shares", f"On average, {D['nerf_share_mean_pct']:.0f}\\% of a team's prior picks were on champions with net nerfs in the patches "
+       f"it had not played before Worlds, and {D['buff_share_mean_pct']:.0f}\\% were on champions with net buffs. Within a year, "
        f"the median gap between the most and least affected teams was {D['nerf_share_median_range_pp']:.0f} percentage points for nerfed picks "
        f"and {D['buff_share_median_range_pp']:.0f} for buffed picks")
 in_tex("Abstract: outcome", f"at {sgn(net.winprob_pp_per_sd)} percentage points per standard deviation with a 95\\% interval from "
