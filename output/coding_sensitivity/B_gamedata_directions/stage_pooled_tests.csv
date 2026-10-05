@@ -1,0 +1,7 @@
+test,stat,value,p,n,lo,hi,winprob_pp
+S2 buff exposure -> pick advantage,corr (team level),0.059182173662420706,0.4039192161567686,215,,,
+S2 nerf exposure -> pick advantage,corr (team level),-0.25732964570284794,0.0001999600079984003,215,,,
+S2 buff exposure -> share denied by opponent bans,corr (team level),0.2737408924541295,0.0001999600079984003,207,,,
+S3 pick advantage -> win (controls pre-Worlds strength),logit per 1 SD of pick_adv,-0.017639970013178217,0.775,1097,-0.16007842359909003,0.10820460718778947,-0.4409992503294554
+S4 indirect meta (early) -> win,logit per SD,-0.012644566817215154,0.8121878121878122,1097,,,-0.31611417043037887
+S4 indirect meta (full) -> win,logit per SD,0.008160889093888691,0.8631368631368631,1097,,,0.20402222734721728

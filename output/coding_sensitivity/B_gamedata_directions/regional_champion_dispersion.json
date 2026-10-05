@@ -1,0 +1,180 @@
+{
+  "median_range_net_z": 1.9913917863078132,
+  "range_net_z_by_year": {
+    "2016": 2.064,
+    "2017": 2.302,
+    "2018": 1.924,
+    "2019": 2.059,
+    "2020": 2.945,
+    "2021": 1.141,
+    "2022": 1.763,
+    "2023": 1.736,
+    "2024": 1.219,
+    "2025": 2.485
+  },
+  "random4_median_range_mean": 2.054063195268495,
+  "random4_median_range_90": [
+    1.5645349626600062,
+    2.6047416744890572
+  ],
+  "p_random_le_observed": 0.4391,
+  "nerf_share_range_pp_by_year": {
+    "2016": 8.2,
+    "2017": 12.8,
+    "2018": 8.8,
+    "2019": 11.9,
+    "2020": 15.9,
+    "2021": 7.3,
+    "2022": 8.0,
+    "2023": 21.8,
+    "2024": 6.9,
+    "2025": 13.4
+  },
+  "extremes": [
+    {
+      "year": 2016,
+      "region": "LEC",
+      "team": "G2 Esports",
+      "intended_z": -0.35,
+      "nerf_share": 0.456
+    },
+    {
+      "year": 2016,
+      "region": "LPL",
+      "team": "EDward Gaming",
+      "intended_z": 1.714,
+      "nerf_share": 0.374
+    },
+    {
+      "year": 2017,
+      "region": "LCK",
+      "team": "Longzhu Gaming",
+      "intended_z": -1.115,
+      "nerf_share": 0.297
+    },
+    {
+      "year": 2017,
+      "region": "LPL",
+      "team": "EDward Gaming",
+      "intended_z": 1.187,
+      "nerf_share": 0.169
+    },
+    {
+      "year": 2018,
+      "region": "LCK",
+      "team": "KT Rolster",
+      "intended_z": -1.66,
+      "nerf_share": 0.223
+    },
+    {
+      "year": 2018,
+      "region": "LPL",
+      "team": "Royal Never Give Up",
+      "intended_z": 0.264,
+      "nerf_share": 0.136
+    },
+    {
+      "year": 2019,
+      "region": "LCS",
+      "team": "Team Liquid",
+      "intended_z": -0.554,
+      "nerf_share": 0.292
+    },
+    {
+      "year": 2019,
+      "region": "LPL",
+      "team": "FunPlus Phoenix",
+      "intended_z": 1.505,
+      "nerf_share": 0.281
+    },
+    {
+      "year": 2020,
+      "region": "LCS",
+      "team": "TSM",
+      "intended_z": -1.77,
+      "nerf_share": 0.322
+    },
+    {
+      "year": 2020,
+      "region": "LPL",
+      "team": "Top Esports",
+      "intended_z": 1.176,
+      "nerf_share": 0.163
+    },
+    {
+      "year": 2021,
+      "region": "LCS",
+      "team": "100 Thieves",
+      "intended_z": -0.813,
+      "nerf_share": 0.479
+    },
+    {
+      "year": 2021,
+      "region": "LCK",
+      "team": "Dplus Kia",
+      "intended_z": 0.328,
+      "nerf_share": 0.406
+    },
+    {
+      "year": 2022,
+      "region": "LEC",
+      "team": "Rogue",
+      "intended_z": -1.187,
+      "nerf_share": 0.393
+    },
+    {
+      "year": 2022,
+      "region": "LPL",
+      "team": "JD Gaming",
+      "intended_z": 0.575,
+      "nerf_share": 0.314
+    },
+    {
+      "year": 2023,
+      "region": "LEC",
+      "team": "G2 Esports",
+      "intended_z": 0.653,
+      "nerf_share": 0.162
+    },
+    {
+      "year": 2023,
+      "region": "LCS",
+      "team": "NRG",
+      "intended_z": -1.083,
+      "nerf_share": 0.379
+    },
+    {
+      "year": 2024,
+      "region": "LCK",
+      "team": "Hanwha Life Esports",
+      "intended_z": 0.83,
+      "nerf_share": 0.443
+    },
+    {
+      "year": 2024,
+      "region": "LCS",
+      "team": "FlyQuest",
+      "intended_z": -0.389,
+      "nerf_share": 0.437
+    },
+    {
+      "year": 2025,
+      "region": "LCK",
+      "team": "Gen.G",
+      "intended_z": -0.831,
+      "nerf_share": 0.17
+    },
+    {
+      "year": 2025,
+      "region": "LCS",
+      "team": "FlyQuest",
+      "intended_z": 1.654,
+      "nerf_share": 0.035
+    }
+  ],
+  "meta_z_min": -2.3595822057907276,
+  "meta_z_max": 1.6880733268923251,
+  "corr_meta_net_regional": -0.4083599523839856,
+  "n_regional": 40,
+  "corr_meta_net_all": -0.31439393622171236
+}

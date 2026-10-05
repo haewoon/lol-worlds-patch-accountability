@@ -1,0 +1,57 @@
+{
+  "n_team_years": 215,
+  "n_zero_exposure": 1,
+  "n_tied_largest": 9,
+  "n_sole_largest": 205,
+  "sole_largest_counts": {
+    "top": 4,
+    "jng": 66,
+    "mid": 60,
+    "bot": 68,
+    "sup": 7
+  },
+  "jng_or_bot_among_tied": 9,
+  "n_share": 214,
+  "top_role_share_of_abs_net_median": 0.42105263157894735,
+  "top_role_share_iqr": [
+    0.3660939623374102,
+    0.4894419306184012
+  ],
+  "role_net_corr": {
+    "top": {
+      "top": 1.0,
+      "jng": 0.509,
+      "mid": -0.068,
+      "bot": 0.579,
+      "sup": -0.209
+    },
+    "jng": {
+      "top": 0.509,
+      "jng": 1.0,
+      "mid": -0.087,
+      "bot": 0.445,
+      "sup": -0.012
+    },
+    "mid": {
+      "top": -0.068,
+      "jng": -0.087,
+      "mid": 1.0,
+      "bot": 0.135,
+      "sup": 0.178
+    },
+    "bot": {
+      "top": 0.579,
+      "jng": 0.445,
+      "mid": 0.135,
+      "bot": 1.0,
+      "sup": -0.06
+    },
+    "sup": {
+      "top": -0.209,
+      "jng": -0.012,
+      "mid": 0.178,
+      "bot": -0.06,
+      "sup": 1.0
+    }
+  }
+}

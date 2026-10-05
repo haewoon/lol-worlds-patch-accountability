@@ -1,0 +1,267 @@
+year_group,patch_oe,riot_patch_title,release_date,champion,direction,magnitude,pro_targeted,hotfix,summary,source_url
+2022,12.15,Patch 12.15 Notes,2022-08-10,Akali,buff,1,0,0,"W energy restore and max energy bonus increased 80 to 100.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Bel'Veth,bugfix,0,0,0,"E no longer fails to cancel when R cast on out-of-range Void Coral.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Evelynn,bugfix,0,0,0,"Stealth no longer breaks when killed target enters zombie form and dies again.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Gwen,nerf,2,1,0,"Q center true damage conversion 75% to 50%; trims late damage at highest levels of play.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Kalista,nerf,1,1,0,"Base AD 69 to 66 to curb early bot lane dominance in pro play.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Kennen,buff,2,0,0,"W cooldown down and base damage up; R AP ratio per bolt 20% to 22.5%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,LeBlanc,bugfix,0,0,0,"W Distortion rank 3 damage corrected up to intended value.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Lee Sin,buff,2,0,0,"Q2, W2 and E2 recast energy costs reduced 30 to 25.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Leona,buff,2,0,0,"Q mana cost reduced by 10; R stun/slow duration 1.5 to 1.75s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Lillia,buff,1,0,0,"Passive monster damage cap 40-100 to 50-150 to help jungle clear.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Master Yi,nerf,2,0,0,"E Wuju Style cooldown now 18s at all ranks (was 18-14s).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Nilah,bugfix,0,0,0,"Passive no longer audible from fog or triggered by Ocean Drake buff.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Qiyana,nerf,2,0,0,"Passive ratio 45% to 30% bonus AD; removed First Strike double-proc bug.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Rakan,bugfix,0,0,0,"E no longer auto-recasts to an ally after Flash.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Rammus,buff,2,0,0,"R cooldown 90s flat, cast range 600 to 800, faster dash speed and range growth.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Shen,buff,1,0,0,"E energy refund 30/35/40 to 30/40/50.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Singed,buff,2,0,0,"Passive MS 20 to 25% and cooldown 10 to 8s; R bonus stats higher early.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Sivir,nerf,2,0,0,"AD growth 3.3 to 3; E and R cooldowns increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Swain,bugfix,0,0,0,"E recast can no longer pull targets in stasis.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Taliyah,nerf,2,0,0,"E cooldown +2s all ranks; R wall duration 5 to 4s; Q mana bug fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Thresh,buff,2,0,0,"Q cooldown -1s and base damage +20 at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Viego,bugfix,0,0,0,"No longer looks polymorphed after possessing a polymorphed champion.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Yone,bugfix,0,0,0,"Cannot cast abilities in spirit form while locked in Blast Cone knockback.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Yuumi,bugfix,0,0,0,"Unsealed Spellbook swapped summoners usable again after Teleport.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Zed,buff,2,0,0,"E energy cost 50 to 40; shadow ability mimic range now unlimited.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.15,Patch 12.15 Notes,2022-08-10,Taliyah,bugfix,0,0,1,"Hotfix: W and E no longer grant Tear stacks without hitting an enemy.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Aphelios,bugfix,0,0,0,"Gravitum root now properly blocked by spell shields.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Caitlyn,buff,2,0,0,"Passive AD ratio up to 60/90/120%; R gains 0-25% damage from crit chance.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Diana,adjust,0,0,0,"Passive cleave base damage cut; E AP ratio 45 to 50%; shifts power from tank to AP builds.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Draven,nerf,1,1,0,"Q base damage -5 at all ranks after elite-bracket dominance.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Gangplank,bugfix,0,0,0,"Powder Keg expiration timers now display correctly.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Irelia,buff,1,0,0,"Base MR 28 to 30; armor growth 4.2 to 4.7.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Jayce,buff,2,0,0,"Hammer Q damage and hammer E max-health damage increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Kai'Sa,buff,2,0,0,"Passive plasma damage, Q AP ratio and R shield AP ratio increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Malphite,buff,2,0,0,"Passive cooldown lower early; W cooldown now scales 12 to 10s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Ornn,bugfix,0,0,0,"Masterwork upgrades forged in shop can no longer be undone by allies.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Poppy,nerf,1,1,0,"Q minion/monster damage cap -20 at all ranks to slow pro jungle clear.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Rell,bugfix,0,0,0,"W buff icons fixed; E tether swapping no longer stacks Tear.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Sion,bugfix,0,0,0,"Fixed exploit allowing controlled turning/movement during R.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Teemo,bugfix,0,0,0,"Tooltip now reflects 12.15 R mana cost change.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Tristana,buff,2,0,0,"Q bonus attack speed +15% at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Trundle,bugfix,0,0,0,"E pillar visuals now match hitbox duration.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Udyr,rework,0,0,0,"Full visual and gameplay update (VGU) released.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Yorick,bugfix,0,0,0,"Mist Walker leaps no longer shift minion aggro to Yorick.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Yuumi,nerf,2,1,0,"E MS AP ratio 6% to 2% per 100 AP; cooldown higher late; pro-play target.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Zac,bugfix,0,0,0,"Can no longer revive with Mountain Soul after all bloblets die.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Zeri,nerf,2,1,0,"Q AD ratio -5%; W AD ratio 130 to 100% and AP ratio 60 to 40%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Zoe,buff,2,0,0,"E damage and AP ratio up; ally-killed minions drop spell shards; shard drop rate up.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Zyra,buff,1,0,0,"E post-cast lockout fixed at 0.15s (was up to 0.4s).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-24,Yuumi,buff,2,0,1,"Hotfix: Q base and empowered damage increased; R cooldown 130/110/90 to 110/100/90.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-26,Udyr,buff,2,0,1,"Hotfix: Q damage and on-hit up, E MS up and lockout lower; W shield/heal reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.16,Patch 12.16 Notes,2022-08-30,Zeri,bugfix,0,0,1,"Hotfix: R no longer grants MS stacks after ultimate ends.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Ahri,nerf,1,1,0,"E charm duration reduced at early ranks (1.4 to 1.2s at rank 1).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Azir,nerf,2,1,0,"W AP ratio 60 to 55% and early cooldown up; E cooldown increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Camille,buff,2,0,0,"Passive shield 17 to 20% max HP; E damage and bonus AD ratio increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Draven,bugfix,0,0,0,"R execute now properly blocked by spell shields.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Ezreal,buff,1,1,0,"E cooldown reduced 2s at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Fizz,bugfix,0,0,0,"Passive/E range indicator restored after VFX update.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Graves,buff,2,0,0,"Q cooldown lower at higher ranks; R base damage +25.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Hecarim,rework,0,1,0,"Bruiser-focused mini-rework: Q stacking buffed, W grants resists; base stats, E and R fear cut.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Kassadin,buff,2,0,0,"Q cooldown -1s and mana cost -10 at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Maokai,buff,3,0,0,"Larger update: passive, Q, E, R reworked to boost top/jungle; E scales with bonus HP.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Miss Fortune,adjust,0,0,0,"Q and W buffed for crit builds; E cooldown up, base damage down, AP scaling up.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Nami,nerf,1,0,0,"E hits no longer count separately toward Electrocute/Phase Rush.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Nocturne,buff,2,0,0,"Base attack speed ratio 0.668 to 0.721; passive cooldown 14 to 13s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Ornn,bugfix,0,0,0,"Masterwork upgrade no longer lost if ally dies during channel.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Pyke,bugfix,0,0,0,"R no longer goes on cooldown when an ally kills the marked enemy.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Rell,buff,1,0,0,"W dismounted MS 250 to 280; E cooldown now flat 13s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Renekton,nerf,2,0,0,"Q base damage reduced, bonus AD ratio increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Sejuani,bugfix,0,0,0,"Permafrost applied to allies no longer stacks Tear of the Goddess.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Sett,buff,2,0,0,"W bonus AD ratio up; E slow 50 to 70%; R Flash-disable bug fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Sivir,nerf,2,0,0,"AD growth 3 to 2.8; W bounce AD ratio -5% at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Sylas,nerf,2,1,0,"Base health 595 to 575; Q cooldown +1s at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Taric,nerf,2,0,0,"Base MR 32 to 28; E cooldown +1s at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Trundle,nerf,2,0,0,"W cooldown +3s at all ranks to slow jungle clear.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Twisted Fate,buff,2,0,0,"Q AP ratio 70 to 80%; W mana cost reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Wukong,nerf,2,1,0,"Base attack speed 0.711 to 0.68; base MS 345 to 340.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Zeri,bugfix,0,0,0,"Q no longer leaves vision too long after killing minions.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-08,Miss Fortune,nerf,1,0,1,"Hotfix: W bonus attack speed -10% at all ranks; W mana cost 35 to 45.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.17,Patch 12.17 notes,2022-09-12,Gragas,bugfix,0,0,1,"Hotfix: E and R no longer keep targets airborne longer than intended.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Akali,buff,1,0,0,"E now applies True Sight to enemies hit (listed as post-patch notes correction).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Akshan,bugfix,0,0,0,"E no longer deals damage while channeling R.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Ashe,buff,2,0,0,"Q bonus attack speed 20-40% to 25-55%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Hecarim,nerf,2,0,0,"Base HP 650 to 625; Q bonus AD ratios reduced; W healing reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Jinx,buff,1,0,0,"Undocumented: W winddown time reduced from 1s to 0.",https://wiki.leagueoflegends.com/en-us/V12.18
+2022,12.18,Patch 12.18 notes,2022-09-21,Kalista,nerf,1,1,0,"Base health 604 to 574 to punish early overcommits in pro play.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Kayn,nerf,1,0,0,"Rhaast Q max-health ratio per 100% bonus AD 5% to 3.5%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Kennen,bugfix,0,0,0,"E VFX no longer overrides Exhaust VFX.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Lee Sin,buff,2,1,0,"Health growth 99 to 105; W lifesteal/spell vamp increased; high-skill skewed buffs.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Lulu,nerf,2,1,0,"W MS 30 to 25%, polymorph duration down, cooldown up; Pix reveal bug fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Maokai,adjust,0,0,0,"Passive heal down, Q monster damage up, E AP ratios down; Q pull and R width bugs fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Miss Fortune,nerf,2,0,0,"AD growth 2.7 to 2.4; health growth 107 to 103.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Nocturne,nerf,2,0,0,"AD growth 3.1 to 2.6.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Tahm Kench,bugfix,0,0,0,"W knock-up can no longer be removed by Cleanse.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Taliyah,bugfix,0,0,0,"Q empowered boulder works after flashing onto Worked Ground.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Thresh,buff,2,0,0,"Health growth 115 to 120; E base damage increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Udyr,nerf,2,0,0,"HP and armor growth cut; Q buffed; W heal/shield and R damage reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Xerath,bugfix,0,0,0,"R cursor range indicator restored.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2022,12.18,Patch 12.18 notes,2022-09-21,Zeri,bugfix,0,0,0,"W no longer fails to fire through terrain and towers.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Aatrox,buff,2,1,0,"Q first-cast AD ratios up at higher ranks; minion damage modifier scales with level.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Aphelios,bugfix,0,0,0,"Gravitum slow VFX rotation fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Bard,bugfix,0,0,0,"Chimes now properly visible to enemies.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Diana,buff,2,0,0,"W shield and orb AP ratios up; E AP ratio 50 to 60%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Hecarim,nerf,2,0,0,"W bonus armor/MR 15-35 to 5-25.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Ivern,bugfix,0,0,0,"W on-hit no longer procs on structures; VFX fixes.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Jax,nerf,2,1,0,"E cooldown +1s at all ranks; R mana cost 50 to 100.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Jhin,bugfix,0,0,0,"W root VFX fixed when target is displaced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Karthus,nerf,1,0,0,"Q base damage slightly lower, monster modifier 95 to 100%; E mana restore -5.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Kindred,nerf,2,1,0,"Base HP/armor up but Q damage -10 and cooldown 8 to 9s; re-mark bug fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Lissandra,buff,2,0,0,"Q slows all enemies hit; R heal and AP ratio up; thrall and R QoL.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Milio,nerf,2,1,0,"Passive burn damage and E bonus MS reduced; W Guardian range bug fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Ornn,bugfix,0,0,0,"Brittle attacks no longer interrupt Irelia W.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Rek'Sai,nerf,2,0,0,"W unburrow and E base damage reduced; R Sheen bug fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Rell,nerf,2,1,0,"Base armor 39 to 36; passive armor/MR steal reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Rengar,nerf,2,1,0,"HP regen 7 to 6; Q crit damage conversion 95 to 75%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Samira,bugfix,0,0,0,"Q recast-on-cooldown bug and taunt style stack fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Shaco,buff,2,0,0,"Q bonus AD ratio 50 to 60%, backstab crit bonus 40 to 55%; clone/box bugs fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Shyvana,buff,2,0,0,"Q AD ratio up with added attack speed but longer cooldown; E scales with bonus AD.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Sona,bugfix,0,0,0,"W no longer grants Accelerando stack with Moonstone Renewer.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Sylas,bugfix,0,0,0,"E2 no longer launches in unintended direction.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Teemo,bugfix,0,0,0,"Passive stealth activation VFX fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Udyr,bugfix,0,0,0,"First empowered E attack now triggers Hail of Blades.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Volibear,buff,2,0,0,"Passive AP ratio 40 to 50%; W missing-health heal up; Q attack hitch fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Xerath,adjust,0,0,0,"Base mana down, passive cooldown up but refunds on kills and procs on turrets; R more, weaker casts.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Yasuo,bugfix,0,0,0,"Rageknife no longer disables passive crit conversion.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Yone,bugfix,0,0,0,"Rageknife no longer disables passive crit conversion.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Yorick,bugfix,0,0,0,"Ghoul leap attacks and Maiden attacks no longer apply lifesteal.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Zeri,bugfix,0,0,0,"Q now deals correct damage to Shaco boxes.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-19,Zyra,buff,1,0,0,"QoL: plant damage rules, jungle plant damage, 2 seeds at W rank 1, E-Flash and R fixes.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.14,Patch 13.14 notes,2023-07-21,Naafiri,nerf,3,0,1,"Hotfix: MS 340 to 335; Q bleed, E damage and R bonus AD reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Aatrox,nerf,1,0,0,"Q AD ratio trimmed at higher ranks (100% to 90% at rank 5).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Akshan,bugfix,0,0,0,"Passive second shot now triggers against Voidlings and Mist Walkers.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Annie,adjust,0,0,0,"Tibbers durability rescaled by level (~5-10% lower) as Smite no longer shreds pets.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Aurelion Sol,bugfix,0,0,0,"R cooldown indicator updates after upgraded cast.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Caitlyn,buff,2,0,0,"Passive crit coefficient 1.2 to 1.3; R bonus damage per crit chance increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Camille,buff,2,1,0,"AD growth 3.5 to 3.8; R on-hit magic damage 5/10/15 to 20/30/40.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Evelynn,bugfix,0,0,0,"VFX issue after exiting stealth fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Gwen,buff,2,0,0,"Health regen 8.5 to 9; W bonus armor/MR +5 at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Heimerdinger,adjust,0,0,0,"R turret durability rescaled with less AP scaling, alongside Smite pet change.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Ivern,nerf,2,0,0,"MR cut; Daisy duration, durability and AP ratio down; W ally on-hit and E base shield up.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Kai'Sa,nerf,2,0,0,"Base HP 670 to 640; Q AP ratio 30 to 20%; evolved W refund 77 to 75%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Kassadin,buff,2,0,0,"Undocumented: R AP ratio 40% to 60% (acknowledged as accidental in 13.18 notes).",https://wiki.leagueoflegends.com/en-us/V13.15
+2023,13.15,Patch 13.15 notes,2023-08-02,Katarina,bugfix,0,0,0,"E now properly breaks Duskblade stealth.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Maokai,nerf,1,1,0,"Q bonus monster damage -20 at all ranks to slow pro jungle clear.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Naafiri,bugfix,0,0,0,"Several W, packmate and animation bugs fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Nami,buff,2,0,0,"Passive MS 90 to 100 (+25% AP); Q base damage +15.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Nocturne,bugfix,0,0,0,"R nearsight no longer applies to Neeko disguised as a minion.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Rell,buff,1,0,0,"QoL: consistent passive order, Q-Flash direction, faster W2; W2 epic monster damage fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Rengar,bugfix,0,0,0,"R on-screen warning effects for enemies restored.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Ryze,bugfix,0,0,0,"E and R VFX overlays display correctly.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Sejuani,nerf,2,1,0,"W first and second hit base damage -10 at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Shaco,bugfix,0,0,0,"R clone no longer copies Q walking animation.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Shyvana,nerf,2,0,0,"AD growth 3.4 to 3; health growth 109 to 104.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Singed,bugfix,0,0,0,"Q poison trail now damages Baron.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Taliyah,buff,2,0,0,"Q base damage +5; E cooldown lower early; E monster damage 150 to 175%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Vayne,bugfix,0,0,0,"Q during R grants invisibility immediately.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Xerath,bugfix,0,0,0,"R stacking damage buff applies correctly to final recast.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Yasuo,buff,2,0,0,"Passive shield now scales like base stats: 30-50% larger mid-game.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Yone,buff,1,0,0,"W shield base 45-65 to 60-80.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Yorick,adjust,0,0,0,"Maiden durability rescaled by level; gains armor/MR and regen; health ratio down.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-02,Bard,bugfix,0,0,1,"Hotfix: W shrine now heals allies (Arena-only changes excluded).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-03,Bard,bugfix,0,0,1,"Hotfix: W shrine no longer heals only the minimum or maximum amount.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.15,Patch 13.15 notes,2023-08-03,Bel'Veth,bugfix,0,0,1,"Hotfix: Q directional indicators restored.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Akali,buff,2,0,0,"Q energy cost reduced early; Q base damage +5.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Brand,buff,2,0,0,"Passive mana restore up; Q and E AP ratios +10%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Caitlyn,buff,2,0,0,"Attacks per Headshot 7 to 6.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Dr. Mundo,bugfix,0,0,0,"Q missile visuals now match hitbox.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Ekko,buff,2,0,0,"Q damage and early slow up; W base shield +30.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Karma,buff,2,0,0,"Q and Mantra Q AP ratios +10%; R cooldown lower at higher ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Kindred,bugfix,0,0,0,"E VFX renders above impassable terrain.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Lucian,buff,1,0,0,"Passive on-hit magic damage base 10 to 15.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Lulu,buff,2,0,0,"Health growth 88 to 92; Q and E AP ratios 40 to 50%; aimed at solo queue.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Malzahar,adjust,0,0,0,"E tick rate 0.5 to 0.25s; minion execute threshold lowered (last-hit QoL).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Milio,buff,2,0,0,"Q damage and AP ratio up; E shield up; less pro-skewed buffs.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Naafiri,nerf,2,0,0,"Base armor, AD and attack speed reduced; packmate bugs fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Nidalee,buff,1,0,0,"Cougar E gains 40% bonus AD ratio.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Nunu & Willump,bugfix,0,0,0,"R snowball no longer checks collision at a stale location.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Rek'Sai,nerf,2,1,0,"Q bonus damage converted to 34-50% total AD: nerf until level 13.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Ryze,bugfix,0,0,0,"R now teleports minions to correct positions.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Shaco,nerf,2,0,0,"Base mana regen 7.15 to 6; W mana cost 70 at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Shyvana,nerf,2,0,0,"W damage per second and on-hit damage and AD ratios reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Sylas,buff,1,0,0,"Base mana 310 to 400.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Syndra,bugfix,0,0,0,"Orb VFX visible regardless of graphics settings.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Taliyah,bugfix,0,0,0,"Q Worked Ground VFX indicator restored.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Tristana,adjust,0,1,0,"Base armor/growth up; base HP and MR down to weaken mid lane vs mages.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.16,Patch 13.16 notes,2023-08-16,Wukong,buff,2,0,0,"Mana regen growth up; Q and W mana costs reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-16-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Aatrox,adjust,0,0,0,"Passive and W now deal magic damage to push durable builds.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Akshan,adjust,0,0,0,"Health and armor growth up; AD growth 3.5 to 3.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Blitzcrank,adjust,0,0,0,"Jungle changes reverted: more HP/MR and E damage; AS, W AS and non-champion E bonus cut.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Camille,bugfix,0,0,0,"Passive shield color no longer reveals disguised Neeko.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Draven,bugfix,0,0,0,"R sound effects corrected.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Elise,buff,2,0,0,"Passive damage and healing up; E stun duration longer at higher ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Gnar,buff,2,1,0,"Mega Q and Mega W base damage +20.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Hecarim,adjust,0,0,0,"Mana stats and Q/W costs improved; W omnivamp 25%+AD scaling to 20% flat.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Kayn,nerf,2,1,0,"W damage and bonus AD ratio 130 to 110%; full heal on transform.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Kha'Zix,nerf,1,0,0,"Q bonus AD ratio 115 to 110%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Kindred,nerf,2,1,0,"E slow 50 to 30%; missing-health damage 8 to 5%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Lissandra,bugfix,0,0,0,"Q cast no longer cancelled by crowd control.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Lucian,bugfix,0,0,0,"Font of Life now triggers passive.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Lux,buff,1,0,0,"Passive damage up, Q cooldown scales with rank; mana regen and E base damage down.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Naafiri,nerf,3,0,0,"Base HP down, passive cooldown up, packmates take bonus melee damage; Q2 and E damage down.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Orianna,buff,2,0,0,"Health growth 105 to 110; W base damage +10 to +30.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Quinn,adjust,0,0,0,"Health growth 99 to 107; Q and E base damage reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Samira,buff,1,0,0,"Base health 600 to 630.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Sett,bugfix,0,0,0,"R suppression removed if knock-up is blocked by spell shield.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Sylas,bugfix,0,0,0,"E Abduct crowd control duration corrected.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Taliyah,bugfix,0,0,0,"R animation no longer plays slower than intended.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Tryndamere,buff,2,0,0,"Attack range 125 to 175; base AD 72 to 68.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Twisted Fate,buff,1,1,0,"Q AP ratio 80 to 90%; R eye VFX duration fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Vex,buff,2,0,0,"Q base damage +10; W cooldown lower at early ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Vi,adjust,0,1,0,"Passive shield, W CDR and E cooldown buffed; R damage cut, aimed at pro play.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Xerath,nerf,1,0,0,"Base mana regen 8 to 6.85; W mana cost +10; passive refund 2 to 2.5s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Xin Zhao,adjust,0,0,0,"Passive heal now scales with max health instead of AD.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.17,Patch 13.17 notes,2023-08-30,Zoe,buff,1,0,0,"Base health regen 6.5 to 7.5; E MR shred 30% at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-17-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Bard,buff,2,0,0,"Passive chime stacks/duration up; W stores 2 charges, faster full heal, MS scales with AP.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Ezreal,bugfix,0,0,0,"W mark now triggers correctly against dodging targets.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Gwen,buff,2,0,0,"Health growth 109 to 115; passive monster damage 6(+10% AP) to 10(+15% AP).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Irelia,buff,1,1,0,"R cooldown -15s at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Ivern,bugfix,0,0,0,"Dragons no longer ignore Ivern damage (wiki: hotfixed during 13.17).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Jarvan IV,nerf,2,0,0,"Passive 8% to 6% current health; R terrain respects displacement immunity.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,K'Sante,bugfix,0,0,0,"R now correctly converts percent bonus resists into AD.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Kassadin,adjust,0,0,0,"Notes formally confirm accidental 13.15 R AP ratio 40 to 60%; no new in-game change.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Kayn,nerf,2,0,0,"Darkin passive heal flattened to 25%; Darkin R bonus AD ratio 13 to 10%.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Kennen,buff,2,0,0,"E energy cost 80 at all ranks; R cooldown 120/100/80s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Kog'Maw,bugfix,0,0,0,"Passive corpse no longer shows max attack speed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Lucian,bugfix,0,0,0,"R now triggers W movement speed bonus.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Neeko,bugfix,0,0,0,"KDA no longer changes based on disguise.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Orianna,bugfix,0,0,0,"Basic attacks no longer cancel when ball returns.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Rell,nerf,2,1,0,"E bonus MS 15-25% to 12-20% (doubled toward enemies).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Senna,buff,2,0,0,"Passive crit damage penalty removed; W AoE snare applies Mist.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Thresh,buff,1,0,0,"W shield per soul 1.5 to 2.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Tryndamere,nerf,2,0,0,"Health growth 115 to 108; base AD 68 to 66.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Udyr,bugfix,0,0,0,"E on-target cooldown now applies when attack is spell-shielded.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Xayah,nerf,2,1,0,"Base HP 660 to 630 (growth up); E cooldown higher early.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-13,Zoe,bugfix,0,0,0,"Goredrinker/Stridebreaker actives now drop spell shards.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-14,Bard,bugfix,0,0,1,"Hotfix: W no longer consumes a charge when cancelled out of range.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.18,Patch 13.18 notes,2023-09-14,Briar,buff,2,0,1,"Hotfix: base HP 590 to 610; E damage reduction 35 to 40%, cooldown 18 to 16s.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Ahri,bugfix,0,0,0,"Q return missile tracks correctly in fog of war.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Azir,nerf,1,1,0,"Q cooldown higher at early ranks (12 to 14s at rank 1).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Bard,bugfix,0,0,0,"R stasis now stops dragons moving.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Briar,nerf,2,0,0,"AS growth down; W healing and monster damage reduced; QoL and bug fixes.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Evelynn,bugfix,0,0,0,"Q SFX now plays when hitting at max range.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Galio,buff,1,0,0,"R cooldown -20s at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Gangplank,buff,2,0,0,"R cooldown -10s; Death's Daughter slow and Raise Morale MS increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Ivern,bugfix,0,0,0,"E second shield works with Moonstone Renewer.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Jax,bugfix,0,0,0,"E and R VFX no longer visible from fog of war.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Jhin,buff,2,1,0,"R minimum damage 50/125/200 to 64/154/244.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,K'Sante,bugfix,0,0,0,"R no longer locks camera when target becomes invalid.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Karthus,bugfix,0,0,0,"Passive no longer damages allies when killed by berserk Briar.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,LeBlanc,adjust,0,0,0,"AD, mana growth and AS ratio cut vs AD builds; W and E AP ratios up.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Lee Sin,buff,2,1,0,"Base armor 34 to 36; W lifesteal higher early; E damage reduced.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Lissandra,buff,1,1,0,"W root duration +0.15s at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Malzahar,bugfix,0,0,0,"E now spreads when cast on a dying minion.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Naafiri,bugfix,0,0,0,"Packmates respect crowd control; self-cast shield targeting fixed.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Neeko,bugfix,0,0,0,"R VFX no longer visible from fog of war.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Nunu & Willump,buff,1,0,0,"E AP ratio per snowball 10 to 15% (AP build).",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Orianna,bugfix,0,0,0,"R no longer castable beyond intended range.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Ornn,bugfix,0,0,0,"Bonus stats granted correctly for extra Masterwork upgrades.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Pyke,buff,2,0,0,"Health growth 104 to 110; W cooldown lower at higher ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Rek'Sai,nerf,2,1,0,"Passive heal, Q ratio and burrow MS reduced; unburrow damage increased.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Renekton,nerf,1,1,0,"Base MR 32 to 28.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Syndra,buff,1,0,0,"Q base damage +5 at all ranks.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Twitch,buff,1,0,0,"R missile speed 4000 to 5000.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Viego,bugfix,0,0,0,"Possession now works while berserked.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Yone,bugfix,0,0,0,"R displacement immunity now resists Bard R stasis.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/
+2023,13.19,Patch 13.19 Notes,2023-09-27,Zeri,nerf,1,1,0,"Base MS 335 to 330.",https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/

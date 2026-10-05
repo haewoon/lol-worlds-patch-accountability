@@ -1,0 +1,24 @@
+# Oracle's Elixir files are downloaded, not redistributed (analysis/download_oracles_elixir.py)
+data/*_LoL_esports_match_data_from_OraclesElixir.csv
+# raw pages and tables fetched by the optional preparation scripts
+data/leaguepedia_cache/
+data/liquipedia_cache/
+data/gamedata_cache/
+# run artifacts
+output/**/logs/
+output/**/matplotlib_cache/
+__pycache__/
+.venv/
+# LaTeX
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.synctex.gz
+# macOS
+.DS_Store
+._*
+# marker left by the export script in the private repository
+.public-export

@@ -1,0 +1,9 @@
+{
+  "seed": 16,
+  "n_perm": 1000,
+  "n_sim": 2000,
+  "statistic": "Wald z using inverse observed logit information; refitted for each permutation",
+  "max_beta_error_vs_statsmodels": 1.196959198423997e-16,
+  "max_z_error_vs_statsmodels": 2.55351295663786e-15,
+  "assumptions": "fixed observed schedule and covariates; independent Bernoulli outcomes from strength-only model"
+}

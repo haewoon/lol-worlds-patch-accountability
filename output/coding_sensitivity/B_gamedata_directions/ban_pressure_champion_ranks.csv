@@ -1,0 +1,10 @@
+measure,champ_mean_rank,null_mean,p_favoured,p_two_sided
+ban pull on buffed core (more = more ban pressure),4.6,4.498962,0.5816,0.8682
+"denied excess (buff exposure, targeted part)",4.15,4.505008999999999,0.32964,0.6277
+other core banned beyond expected (less = relief),2.6,4.493658,0.00484,0.00896
+"  same, breadth-residualised",2.9,4.5024,0.0147,0.02532
+comfort of own picks,6.1,4.501246,0.98974,0.03014
+"  same, breadth-residualised",4.8,4.499802000000001,0.68368,0.68602
+comfort of non-buffed picks,6.2,4.5033780000000005,0.99262,0.02072
+familiar picks (played >= 2x in role),4.65,4.504554000000001,0.58556,0.85304
+pool breadth,3.4,4.497586,0.0731,0.14798

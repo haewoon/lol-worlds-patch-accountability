@@ -1,0 +1,11 @@
+{
+  "statistic": "absolute exposure coefficient / model-based standard error from refitted unpenalized logit",
+  "n_simulations_per_effect": 500,
+  "permutations": 1000,
+  "alpha": 0.05,
+  "games": 1097,
+  "seed": 16,
+  "statsmodels_max_coefficient_error_26_fits": 1.1102230246251565e-16,
+  "statsmodels_max_z_error_26_fits": 2.55351295663786e-15,
+  "assumptions": "independent Bernoulli outcomes; fixed schedule, ratings, exposure; no rating/coding uncertainty"
+}

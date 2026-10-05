@@ -1,0 +1,407 @@
+order,timestamp,tool,target
+1,2026-09-23T13:15:08.646Z,Read,~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/champion_names.txt
+2,2026-09-23T13:15:09.353Z,ToolSearch,"{""query"": ""select:WebFetch,WebSearch"", ""max_results"": 2}"
+3,2026-09-23T13:15:14.152Z,Bash,"curl -sL ""https://leagueoflegends.fandom.com/wiki/V8.16?action=raw"" | head -c 3000"
+4,2026-09-23T13:15:18.334Z,Bash,"curl -sL -A ""Mozilla/5.0"" ""https://wiki.leagueoflegends.com/en-us/V8.16?action=raw"" | head -c 3000; echo; echo ----; curl -sL -A ""Mozilla/5.0"" ""https://leagueoflegends.fandom.com/api.php?action=parse&page=V8.16&prop=wikitext&format=json"" | head -c 500"
+5,2026-09-23T13:15:23.914Z,Bash,"S=""<scratch>""; mkdir -p ""$S""; for v in 8.16 8.17 8.18 8.19 9.16 9.17 9.18 9.19; do curl -sL -A ""Mozilla/5.0"" ""https://wiki.leagueoflegends.com/en-us/V$v?action=raw"" -o ""$S/V$v.txt""; wc -c ""$S/V$v.txt""; done"
+6,2026-09-23T13:15:30.155Z,Bash,"S=""<scratch>""; sed -n '/== General ==/,$p' ""$S/V8.16.txt"""
+7,2026-09-23T13:15:37.846Z,Bash,"S=""<scratch>""; curl -sL -A ""Mozilla/5.0"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-8-16-notes/"" -o ""$S/off8.16.html""; wc -c ""$S/off8.16.html""; python3 - ""$S/off8.16.html"" <<'EOF'
+import sys,re,html
+t=open(sys.argv[1],encoding='utf-8',errors='ignore').read()
+print(t[:300])
+i=t.find('Aatrox'); print(i)
+EOF"
+8,2026-09-23T13:15:42.462Z,Bash,"S=""<scratch>""; cat ""$S/off8.16.html"""
+9,2026-09-23T13:15:44.366Z,WebSearch,"leagueoflegends.com ""Patch 8.16 notes"""
+10,2026-09-23T13:15:56.201Z,Bash,"S=""<scratch>""; for v in 8.16 8.17 8.18 8.19 9.16 9.17 9.18 9.19; do grep -o 'Related = .*' ""$S/V$v.txt""; grep -o 'Release = .*' ""$S/V$v.txt""; done; for u in ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-16-notes/"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-8-16-notes/""; do curl -sL -o /dev/null -w ""%{http_code} $u\n"" -A ""Mozilla/5.0"" ""$u""; done"
+11,2026-09-23T13:16:04.607Z,Bash,"S=""<scratch>""; grep -n -i -E ""hotfix|mid-patch|^=="" ""$S""/V*.txt"
+12,2026-09-23T13:16:10.809Z,Bash,"cd /tmp 2>/dev/null; for q in ""na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes"" ""na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes"" ""na.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/""; do curl -s ""https://web.archive.org/cdx/search/cdx?url=$q&output=txt&filter=statuscode:200&limit=40"" ; echo ===; done"
+13,2026-09-23T13:16:28.677Z,Bash,"for u in ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-19-notes/"" ""https://www.leagueoflegends.com/en-gb/news/game-updates/patch-9-18-notes/"" ""https://web.archive.org/web/2019/https://na.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/""; do curl -sL -o /dev/null -w ""%{http_code} $u\n"" -A ""Mozilla/5.0"" ""$u""; done"
+14,2026-09-23T13:16:43.827Z,Bash,"S=""<scratch>""; for v in 9-18 9-19; do curl -sL -A ""Mozilla/5.0"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-$v-notes/"" -o ""$S/off$v.html""; done; cat > ""$S/h2t.py"" <<'EOF'
+import sys,re,html,json
+t=open(sys.argv[1],encoding='utf-8',errors='ignore').read()
+m=re.search(r'<script id=""__NEXT_DATA__""[^>]*>(.*?)</script>',t,re.S)
+if m:
+    d=json.loads(m.group(1))
+    # find any long html strings
+    out=[]
+    def walk(x):
+        if isinstance(x,dict):
+            for v in x.values(): walk(v)
+        elif isinstance(x,list):
+            for v in x: walk(v)
+        elif isinstance(x,str) and len(x)>2000 and '<' in x:
+            out.append(x)
+    walk(d)
+    if out: t='\n'.join(out)
+t=re.sub(r'<(script|style)[^>]*>.*?</\1>','',t,flags=re.S)
+t=re.sub(r'<br\s*/?>','\n',t)
+t=re.sub(r'</(p|div|h\d|li|ul|blockquote|tr)>','\n',t)
+t=re.sub(r'<h(\d)[^>]*>',lambda m:'\n'+'#'*int(m.group(1))+' ',t)
+t=re.sub(r'<li[^>]*>','\n* ',t)
+t=re.sub(r'<[^>]+>','',t)
+t=html.unescape(t)
+t=re.sub(r'[ \t]+',' ',t)
+t=re.sub(r'\n\s*\n+','\n',t)
+print(t)
+EOF
+python3 ""$S/h2t.py"" ""$S/off9-18.html"" > ""$S/off9.18.txt""; python3 ""$S/h2t.py"" ""$S/off9-19.html"" > ""$S/off9.19.txt""; wc -c ""$S""/off9.1*.txt; head -c 2000 ""$S/off9.18.txt"""
+15,2026-09-23T13:16:53.039Z,Bash,"S=""<scratch>""; 
+fetch(){ curl -sL -A ""Mozilla/5.0"" ""https://web.archive.org/web/${2}id_/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-${1}-notes"" -o ""$S/arch$1.html""; wc -c ""$S/arch$1.html""; }
+fetch 816 20180828; fetch 817 20180911; fetch 818 20180925; fetch 819 20180930; fetch 916 20190827; fetch 917 20190910"
+16,2026-09-23T13:17:10.610Z,Bash,"S=""<scratch>""; for v in 816 817 818 819 916 917; do python3 ""$S/h2t.py"" ""$S/arch$v.html"" > ""$S/arch$v.txt""; wc -c ""$S/arch$v.txt""; done; grep -n -i ""Patch 8.16\|Aatrox"" ""$S/arch816.txt"" | head"
+17,2026-09-23T13:17:16.324Z,Read,<scratch>/arch816.txt
+18,2026-09-23T13:17:24.514Z,Bash,"S=""<scratch>""; sed -n '1,/Upcoming Skins/p' ""$S/arch817.txt"""
+19,2026-09-23T13:17:30.777Z,Bash,"S=""<scratch>""; sed -n '/== General ==/,$p' ""$S/V8.17.txt"""
+20,2026-09-23T13:17:39.917Z,Bash,"S=""<scratch>""; grep -n -i ""hotfix\|mid-patch\|midpatch\|ago$\|update"" ""$S""/arch*.txt ""$S""/off9.1*.txt | grep -v ""Game Updates"" | head -50"
+21,2026-09-23T13:17:46.699Z,Bash,"S=""<scratch>""; sed -n '1,/Upcoming Skins/p' ""$S/arch818.txt""; echo =========; sed -n '/== General ==/,$p' ""$S/V8.18.txt"""
+22,2026-09-23T13:17:52.817Z,Bash,"S=""<scratch>""; sed -n '/== General ==/,$p' ""$S/V8.18.txt"""
+23,2026-09-23T13:18:05.661Z,Bash,"S=""<scratch>""; sed -n '1,/Upcoming Skins/p' ""$S/arch819.txt"""
+24,2026-09-23T13:18:12.737Z,Bash,"S=""<scratch>""; sed -n '/== Client ==/,$p' ""$S/V8.19.txt"""
+25,2026-09-23T13:18:22.476Z,Bash,"for p in 816 817 818; do echo ""== $p""; curl -s ""https://web.archive.org/cdx/search/cdx?url=na.leagueoflegends.com/en/news/game-updates/patch/patch-$p-notes&output=txt&filter=statuscode:200&fl=timestamp"" | tr '\n' ' '; echo; done"
+26,2026-09-23T13:18:39.303Z,Bash,"S=""<scratch>""; 
+for spec in ""816 20181015"" ""817 20181015"" ""818 20181015"" ""916 20191015"" ""917 20191015""; do set -- $spec; curl -sL -A ""Mozilla/5.0"" -D ""$S/hdr$1.txt"" ""https://web.archive.org/web/${2}id_/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-${1}-notes"" -o ""$S/late$1.html""; grep -i ""^location\|memento-datetime"" ""$S/hdr$1.txt"" | tail -2; python3 ""$S/h2t.py"" ""$S/late$1.html"" > ""$S/late$1.txt""; echo ""$1: $(wc -c < ""$S/late$1.txt"") bytes; midpatch: $(grep -c -i 'mid-patch\|hotfix' ""$S/late$1.txt"")""; done"
+27,2026-09-23T13:18:47.079Z,Bash,"S=""<scratch>""; ls -la ""$S""; head -20 ""$S/h2t.py"""
+28,2026-09-23T13:18:58.695Z,Bash,"S=""<scratch>/coderB""; mkdir -p ""$S""; cat > ""$S/h2t.py"" <<'EOF'
+import sys,re,html,json
+t=open(sys.argv[1],encoding='utf-8',errors='ignore').read()
+m=re.search(r'<script id=""__NEXT_DATA__""[^>]*>(.*?)</script>',t,re.S)
+if m:
+    d=json.loads(m.group(1))
+    out=[]
+    def walk(x):
+        if isinstance(x,dict):
+            for v in x.values(): walk(v)
+        elif isinstance(x,list):
+            for v in x: walk(v)
+        elif isinstance(x,str) and len(x)>2000 and '<' in x:
+            out.append(x)
+    walk(d)
+    if out: t='\n'.join(out)
+t=re.sub(r'<(script|style)[^>]*>.*?</\1>','',t,flags=re.S)
+t=re.sub(r'<br\s*/?>','\n',t)
+t=re.sub(r'</(p|div|h\d|li|ul|blockquote|tr)>','\n',t)
+t=re.sub(r'<h(\d)[^>]*>',lambda m:'\n'+'#'*int(m.group(1))+' ',t)
+t=re.sub(r'<li[^>]*>','\n* ',t)
+t=re.sub(r'<[^>]+>','',t)
+t=html.unescape(t)
+t=re.sub(r'[ \t]+',' ',t)
+t=re.sub(r'\n\s*\n+','\n',t)
+print(t)
+EOF
+for v in 8.16 8.17 8.18 8.19 9.16 9.17 9.18 9.19; do curl -sL -A ""Mozilla/5.0"" ""https://wiki.leagueoflegends.com/en-us/V$v?action=raw"" -o ""$S/wiki$v.txt""; done
+for v in 9-18 9-19; do curl -sL -A ""Mozilla/5.0"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-$v-notes/"" -o ""$S/off$v.html""; python3 ""$S/h2t.py"" ""$S/off$v.html"" > ""$S/off$v.txt""; done
+for p in 816:20180828 817:20180911 818:20180925 819:20180930 916:20190827 917:20190910; do n=${p%%:*}; ts=${p##*:}; curl -sL -A ""Mozilla/5.0"" ""https://web.archive.org/web/${ts}id_/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-${n}-notes"" -o ""$S/arch$n.html""; python3 ""$S/h2t.py"" ""$S/arch$n.html"" > ""$S/arch$n.txt""; done
+wc -c ""$S""/*.txt"
+29,2026-09-23T13:19:14.999Z,Bash,"S=""<scratch>/coderB""; for p in 819:20180930 916:20190827 917:20190910; do n=${p%%:*}; ts=${p##*:}; for try in 1 2 3 4; do curl -sL --max-time 60 -A ""Mozilla/5.0"" ""https://web.archive.org/web/${ts}id_/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-${n}-notes"" -o ""$S/arch$n.html""; if [ -s ""$S/arch$n.html"" ] && grep -q ""Patch"" ""$S/arch$n.html"" && ! grep -q ""Temporarily Offline"" ""$S/arch$n.html""; then break; fi; echo ""retry $n""; done; python3 ""$S/h2t.py"" ""$S/arch$n.html"" > ""$S/arch$n.txt""; wc -c ""$S/arch$n.txt""; done"
+30,2026-09-23T13:19:48.441Z,Bash,"S=""<scratch>/coderB""; for p in 816:20181201 817:20181201 818:20181201 916:20191201 917:20191201; do n=${p%%:*}; ts=${p##*:}; for try in 1 2 3; do curl -sL --max-time 60 -A ""Mozilla/5.0"" -D ""$S/hdr$n.txt"" ""https://web.archive.org/web/${ts}id_/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-${n}-notes"" -o ""$S/late$n.html""; if [ -s ""$S/late$n.html"" ] && ! grep -q ""Temporarily Offline"" ""$S/late$n.html""; then break; fi; done; python3 ""$S/h2t.py"" ""$S/late$n.html"" > ""$S/late$n.txt""; echo ""$n $(grep -i -m3 'memento-datetime\|x-archive-src' ""$S/hdr$n.txt"" | tr '\r\n' '  ') size=$(wc -c < ""$S/late$n.txt"") mid=$(grep -c -i 'mid-patch\|hotfix' ""$S/late$n.txt"")""; done"
+31,2026-09-23T13:21:18.114Z,WebSearch,League of Legends patch 8.17 hotfix Nunu Willump September 2018 mid-patch
+32,2026-09-23T13:21:27.538Z,Bash,"curl -sL -A ""Mozilla/5.0"" ""https://wiki.leagueoflegends.com/en-us/Nunu/Patch_history?action=raw"" | grep -n -A12 ""V8.1[789]"" | head -60"
+33,2026-09-23T13:21:34.793Z,Bash,"S=""<scratch>/coderB""; sed -n '1,/Upcoming Skins/p' ""$S/late916.txt"""
+34,2026-09-23T13:21:41.365Z,Bash,"S=""<scratch>/coderB""; sed -n '/== League of Legends V9.16/,$p' ""$S/wiki9.16.txt"" | grep -v ""^\*\* \*\*\*"" | cut -c1-400"
+35,2026-09-23T13:21:50.989Z,Bash,"S=""<scratch>/coderB""; sed -n '/Patch 9.17/,/Upcoming Skins/p' ""$S/late917.txt"" | sed -n '1,400p'"
+36,2026-09-23T13:22:01.669Z,Bash,"S=""<scratch>/coderB""; sed -n '/== League of Legends V9.17/,$p' ""$S/wiki9.17.txt"" | cut -c1-300"
+37,2026-09-23T13:22:08.481Z,Bash,"S=""<scratch>/coderB""; cat ""$S/off9-18.txt"""
+38,2026-09-23T13:22:13.643Z,Bash,"S=""<scratch>/coderB""; sed -n '/== League of Legends V9.18/,$p' ""$S/wiki9.18.txt"" | cut -c1-300"
+39,2026-09-23T13:22:22.834Z,Bash,"S=""<scratch>/coderB""; cat ""$S/off9-19.txt"""
+40,2026-09-23T13:22:29.612Z,Bash,"S=""<scratch>/coderB""; sed -n '/== League of Legends V9.19/,$p' ""$S/wiki9.19.txt"" | cut -c1-300"
+41,2026-09-23T13:26:01.481Z,Bash,"S=""<scratch>/coderB""; grep -H ""Release = "" ""$S""/wiki*.txt; grep -o ""<title>[^<]*"" ""$S""/arch8*.html ""$S""/arch9*.html ""$S""/off9-1*.html | head"
+42,2026-09-23T13:27:24.654Z,Bash,"S=""<scratch>/coderB""; cat > ""$S/build.py"" <<'EOF'
+import csv
+OUT=""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/""
+names=set(l.strip() for l in open(OUT+""champion_names.txt"",encoding=""utf-8"") if l.strip())
+AR=""https://web.archive.org/web/{ts}/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-{n}-notes""
+P={
+ ""8.16"":(""2018"",""Patch 8.16 Notes"",""2018-08-15"",AR.format(ts=""20180828"",n=""816"")),
+ ""8.17"":(""2018"",""Patch 8.17 Notes"",""2018-08-29"",AR.format(ts=""20180911"",n=""817"")),
+ ""8.18"":(""2018"",""Patch 8.18 Notes"",""2018-09-12"",AR.format(ts=""20180925"",n=""818"")),
+ ""8.19"":(""2018"",""Patch 8.19 notes"",""2018-09-26"",AR.format(ts=""20180930"",n=""819"")),
+ ""9.16"":(""2019"",""Patch 9.16 notes"",""2019-08-14"",AR.format(ts=""20190827"",n=""916"")),
+ ""9.17"":(""2019"",""Patch 9.17 notes"",""2019-08-28"",AR.format(ts=""20190910"",n=""917"")),
+ ""9.18"":(""2019"",""Patch 9.18 notes"",""2019-09-11"",""https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/""),
+ ""9.19"":(""2019"",""Patch 9.19 notes"",""2019-09-25"",""https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-19-notes/""),
+}
+W=""https://wiki.leagueoflegends.com/en-us/V{p}""
+# (patch, champion, direction, magnitude, pro, hotfix, summary, date_override, source_override)
+R=[]
+def r(p,c,d,m,pro,s,hf=0,date=None,src=None): R.append((p,c,d,m,pro,hf,s,date,src))
+# ---------------- 8.16
+r(""8.16"",""Aatrox"",""nerf"",2,0,""E healing vs non-champions 33%->15%, charges on learning 2->1, R cooldown up at ranks 1-2."")
+r(""8.16"",""Fizz"",""nerf"",2,0,""W active/on-hit AP ratios and all R shark AP ratios reduced (overshot 8.15 buffs)."")
+r(""8.16"",""Hecarim"",""buff"",2,0,""Q base damage up at later ranks; bonus AD ratio 0.6->0.7."")
+r(""8.16"",""Orianna"",""nerf"",1,0,""Base magic resist 30->26."")
+r(""8.16"",""Quinn"",""nerf"",1,0,""Attack damage growth 3->2.4."")
+r(""8.16"",""Rakan"",""nerf"",2,0,""Base health 510->480 and base armor 36->33 to cut early durability."")
+r(""8.16"",""Taliyah"",""nerf"",2,0,""Movement speed 340->335, W cooldown up early, R wall no longer grants vision."")
+r(""8.16"",""Trundle"",""nerf"",2,0,""Q base damage down late (ratio up), Q stolen AD duration 8->5s; less dueling."")
+r(""8.16"",""Tryndamere"",""nerf"",2,0,""E cooldown reverted up at later ranks (7->9s at rank 5)."")
+r(""8.16"",""Wukong"",""nerf"",2,0,""Q base damage -20 at all ranks and AD ratio -0.1."")
+r(""8.16"",""Zoe"",""nerf"",2,0,""Passive base damage and AP ratio (0.325->0.2) cut; W AP ratio 0.55->0.4."")
+r(""8.16"",""Amumu"",""buff"",1,0,""Tank buff: E damage reduction now also scales with 3% bonus armor and MR."")
+r(""8.16"",""Leona"",""buff"",2,0,""Tank buff: W cooldown 14s -> 14-10s by rank."")
+r(""8.16"",""Nautilus"",""buff"",2,0,""Tank buff: W shield duration 10->6s, cooldown 18->12s; late health scaling reduced."")
+r(""8.16"",""Rammus"",""buff"",2,0,""Tank buff: W bonus armor and magic resist ratios increased."")
+r(""8.16"",""Sion"",""buff"",2,0,""Tank buff: W permanent health per kill 3->4 and per large kill 10->15."")
+r(""8.16"",""Tahm Kench"",""adjust"",0,0,""Q slow shorter/cooldown lower; W cooldown doubled, cheaper, halved on enemy devour; ally-save nerfed."")
+# ---------------- 8.17
+r(""8.17"",""Nunu & Willump"",""rework"",0,0,""Full relaunch (VGU): new kit, stats, visuals and voice."")
+r(""8.17"",""Akali"",""bugfix"",0,0,""R damage now calculated per target instead of from last enemy struck's health."")
+r(""8.17"",""Annie"",""buff"",1,0,""Attack range 575->625 to enable auto-attack harass."")
+r(""8.17"",""Bard"",""buff"",1,0,""R cooldown 130/110/90 -> 110/95/80s."")
+r(""8.17"",""Fiora"",""buff"",1,0,""E second-attack crit damage increased at early ranks."")
+r(""8.17"",""Garen"",""nerf"",1,0,""Q base damage reduced at later ranks (170->150 at rank 5)."")
+r(""8.17"",""Irelia"",""buff"",1,0,""Q bonus damage to minions 70%->100% for laning."")
+r(""8.17"",""Kassadin"",""buff"",1,0,""R cooldown 6/4/2 -> 5/3.5/2s."")
+r(""8.17"",""Kayn"",""buff"",2,0,""E duration longer at early ranks; Shadow Assassin E movement speed 70%->80%."")
+r(""8.17"",""Master Yi"",""buff"",2,0,""W cooldown 35->28s; damage reduction increased at early ranks."")
+r(""8.17"",""Rengar"",""buff"",1,0,""R cooldown 130/100/70 -> 110/90/70s."")
+r(""8.17"",""Varus"",""nerf"",1,0,""Base health 549->499; health growth 86->89."")
+r(""8.17"",""Wukong"",""buff"",1,0,""Gains 8% bonus attack speed at level 1 for early clears."")
+r(""8.17"",""Yorick"",""nerf"",2,0,""Mist Walker attack damage sharply lowered at levels 2-7, slightly higher late."")
+r(""8.17"",""Taric"",""adjust"",0,0,""Adaptive damage now defaults to physical when no bonus AD/AP."")
+# ---------------- 8.18
+r(""8.18"",""Aatrox"",""buff"",2,0,""E healing vs champions and R bonus attack damage increased at later ranks."")
+r(""8.18"",""Akali"",""nerf"",2,0,""R base damage on both casts 120/180/240 -> 100/150/200."")
+r(""8.18"",""Braum"",""nerf"",1,0,""Base health 576->540."")
+r(""8.18"",""Kai'Sa"",""nerf"",1,0,""Passive missing-health proc flattened to 15% (was 15-20% by level)."")
+r(""8.18"",""Lucian"",""buff"",1,0,""Q bonus AD ratio increased at later ranks (1.0->1.2 at rank 5)."")
+r(""8.18"",""Renekton"",""buff"",2,0,""Empowered E damage +10 and armor reduction increased at early ranks."")
+r(""8.18"",""Ryze"",""nerf"",2,1,""Empowered W root 2->1.5s; notes cite pro-vs-normal discrepancy and competitive presence."")
+r(""8.18"",""Sejuani"",""nerf"",2,1,""E base damage -10; R storm slow 3->1s, targeting pro zoning utility."")
+r(""8.18"",""Trundle"",""nerf"",2,1,""E cooldown +2s, early slow reduced; aimed at gank setup particularly in competitive play."")
+r(""8.18"",""Vayne"",""buff"",2,0,""Q cooldown 6/5/4/3/2 -> 4/3.5/3/2.5/2s."")
+r(""8.18"",""Viktor"",""buff"",1,0,""Hex Core first upgrade 1250->1150 gold; Perfect Hex Core combine cost 750->850."")
+r(""8.18"",""Nunu & Willump"",""bugfix"",0,0,""Fixed W snowball sometimes invisible to enemies when rolled out of fog."")
+r(""8.18"",""Yasuo"",""bugfix"",0,0,""Hotfix (date unknown): passive Flow no longer generated at half rate; Q tornado-state bug fixed."",hf=1,src=W.format(p=""8.18""))
+# ---------------- 8.19
+r(""8.19"",""Darius"",""buff"",2,0,""W AD ratio +10% all ranks; E passive armor penetration +5%."")
+r(""8.19"",""Elise"",""buff"",2,0,""Spider W cooldown 12->10s; Spider E cooldown reduced at early ranks."")
+r(""8.19"",""Fiora"",""buff"",1,0,""Passive vital healing 25-110 -> 35-110; Q target-priority bugfix."")
+r(""8.19"",""Fiora"",""buff"",1,0,""Mid-patch 9/26: passive vital healing 35-110 -> 40-115 to offset 8.18 bug."",hf=1,date=""2018-09-26"")
+r(""8.19"",""Jarvan IV"",""buff"",2,0,""Passive per-target cooldown 10/8/6 -> 6s; Tiamat bugfix; VFX/SFX update."")
+r(""8.19"",""Janna"",""buff"",1,0,""Passive movement-speed-to-damage conversion 15/25/35% -> 25/35%."")
+r(""8.19"",""Kha'Zix"",""buff"",2,0,""Passive bonus AD ratio 0.2->0.4; evolved W slows 40->60% and 80->90%."")
+r(""8.19"",""Kog'Maw"",""buff"",2,0,""Base movement speed 325->330; R range increased at ranks 1-2."")
+r(""8.19"",""Nunu & Willump"",""buff"",2,0,""Q heal AP ratio and E snowball/root AP ratios increased (AP build support)."")
+r(""8.19"",""Pyke"",""buff"",2,1,""R base damage increased levels 6-10; cites weak performance vs higher-tier opponents."")
+r(""8.19"",""Tahm Kench"",""nerf"",2,0,""Base health 610->540, health growth 95->102; W targetability bugfix."")
+r(""8.19"",""Thresh"",""buff"",2,0,""Q mana cost 80->60; Q cooldown reduced at early ranks."")
+r(""8.19"",""Draven"",""bugfix"",0,0,""Q Spinning Axe no longer lost on cancelled attack (wiki; announced later in 8.21)."",src=W.format(p=""8.19""))
+# ---------------- 9.16
+r(""9.16"",""Pantheon"",""rework"",0,0,""Full relaunch (VGU): new kit, stats, visuals and voice."")
+r(""9.16"",""Pantheon"",""buff"",2,0,""Hotfix 8/15: Q monster damage penalty removed, E non-epic monster penalty 33%->15%."",hf=1,date=""2019-08-15"")
+r(""9.16"",""Pantheon"",""buff"",2,0,""Hotfix 8/16: W stun made reliable again, matching legacy stun range."",hf=1,date=""2019-08-16"")
+r(""9.16"",""Kha'Zix"",""bugfix"",0,0,""Hotfix 8/14: evolved Q, W and E now properly break stealth."",hf=1,date=""2019-08-14"")
+r(""9.16"",""Azir"",""nerf"",2,0,""Q cooldown increased at later ranks (5->7s at rank 5)."")
+r(""9.16"",""Corki"",""nerf"",2,1,""Base AD 60->55 and AD growth 3->2.5; notes cite excessive pro presence."")
+r(""9.16"",""Dr. Mundo"",""buff"",2,0,""W tenacity flat 30% at all ranks; E cooldown 6 -> 6-4s."")
+r(""9.16"",""Ekko"",""buff"",2,0,""E bonus damage +10; R cooldown 110/90/70 -> 110/80/50s."")
+r(""9.16"",""Ezreal"",""nerf"",2,0,""Q AP ratio 0.3->0.15; E cooldown increased at early ranks."")
+r(""9.16"",""Fiora"",""buff"",2,0,""E cooldown lower at early ranks; E bonus attack speed 50% -> 50-90%."")
+r(""9.16"",""Jax"",""buff"",1,0,""Q cooldown 10-6 -> 8-6s."")
+r(""9.16"",""Kassadin"",""buff"",2,0,""W empowered attack base damage +30 at all ranks."")
+r(""9.16"",""LeBlanc"",""buff"",2,0,""Q AP ratio 0.3->0.4 (reverting earlier nerf)."")
+r(""9.16"",""Lux"",""buff"",2,0,""W shield and max shield increased at later ranks (support Lux)."")
+r(""9.16"",""Nocturne"",""buff"",2,1,""Base armor 36->38, stat roundings, W attack speed +10%; cites competitive viability."")
+r(""9.16"",""Riven"",""nerf"",2,1,""Q cooldown reverted to flat 12s; cites strength in higher levels of solo queue."")
+r(""9.16"",""Sejuani"",""nerf"",3,1,""Passive Frost Armor base halved (ratio up), Q cooldown up; 'substantial swing' at pro dominance."")
+r(""9.16"",""Shen"",""buff"",2,0,""Empowered Q max-health ratio +1%; E base damage +10."")
+r(""9.16"",""Singed"",""buff"",2,0,""Base mana up, stat roundings; R bonus stats 30/55/80 -> 30/60/90."")
+r(""9.16"",""Sion"",""buff"",2,0,""Q min/max base damage increased, monster damage penalty removed; stat roundings."")
+r(""9.16"",""Sivir"",""nerf"",2,0,""W AD ratio reduced at early ranks (50->30% at rank 1)."")
+r(""9.16"",""Sylas"",""nerf"",1,0,""Q detonation now deals 45% reduced damage to monsters; Hijack Karma heal bugfix."")
+r(""9.16"",""Syndra"",""buff"",2,0,""Transcendent Q bonus champion damage 15->25%; E base damage +15."")
+r(""9.16"",""Tahm Kench"",""nerf"",2,0,""Base movement speed 345->335; E shield duration 3->2s."")
+r(""9.16"",""Yuumi"",""nerf"",2,0,""Q empowered damage down late, slow weaker early, cooldown up early."")
+r(""9.16"",""Ziggs"",""buff"",2,0,""W AP ratio 0.35->0.5 and cooldown lower early; R cooldown lower late."")
+r(""9.16"",""Darius"",""bugfix"",0,0,""Passive no longer displays an incorrect ranged indicator."")
+r(""9.16"",""Gnar"",""bugfix"",0,0,""Can no longer redirect E Hop after transforming before bouncing on a minion."")
+r(""9.16"",""Karma"",""bugfix"",0,0,""W now properly lowers R Mantra cooldown when damaging champions."")
+r(""9.16"",""Katarina"",""bugfix"",0,0,""E Shunpo reset now works when blinking over a wall to a dagger."")
+r(""9.16"",""Lee Sin"",""bugfix"",0,0,""Hitbox no longer warps across the map when casting Q2 Resonating Strike."")
+r(""9.16"",""Malzahar"",""bugfix"",0,0,""R Nether Grasp now applies Revealed marker, including on stealthed targets."")
+r(""9.16"",""Master Yi"",""bugfix"",0,0,""Attack after Q now properly grants extra Conqueror/Electrocute stack."")
+r(""9.16"",""Nautilus"",""bugfix"",0,0,""W now properly procs Electrocute; Q visual effect and indicator length improved."")
+r(""9.16"",""Orianna"",""bugfix"",0,0,""Allies shielded by E now see an indicator centered on her."")
+r(""9.16"",""Poppy"",""bugfix"",0,0,""Phase Rush and Electrocute now proc properly with E Heroic Charge combos."")
+r(""9.16"",""Twitch"",""bugfix"",0,0,""Q Ambush can no longer be cast without mana after passive-kill reset."")
+r(""9.16"",""Xayah"",""bugfix"",0,0,""Passive attacks now spawn feathers behind the target, not around her."")
+# ---------------- 9.17
+r(""9.17"",""Aurelion Sol"",""rework"",0,0,""Mini-rework: early passive/E nerfs, W becomes decaying burst active, Q/E scaling buffs."")
+r(""9.17"",""Kayle"",""rework"",0,0,""Mini-rework: form order swapped (ranged at 6), Q/E/R retuned; early power up, late down."")
+r(""9.17"",""Galio"",""buff"",2,0,""Q cooldown lower early; W min/max damage increased; mana regen rounded up."")
+r(""9.17"",""Kalista"",""buff"",2,0,""Base AD 67->69, base mana 231.8->250, mana growth 35->45."")
+r(""9.17"",""Leona"",""buff"",1,0,""Q cooldown 6->5s."")
+r(""9.17"",""Lucian"",""buff"",1,0,""Base attack damage 61->64."")
+r(""9.17"",""Neeko"",""buff"",1,0,""QoL: can voluntarily drop passive disguise (2s cooldown)."")
+r(""9.17"",""Pantheon"",""buff"",2,0,""Q thrust gains low-health execute damage; E monster damage penalty removed."")
+r(""9.17"",""Qiyana"",""nerf"",2,0,""E base damage -10; R cooldown flattened to 120s."")
+r(""9.17"",""Ryze"",""buff"",1,1,""Base magic resist 30->34; justified by his competitive-play usefulness."")
+r(""9.17"",""Zyra"",""buff"",2,0,""R mana cost flat 100; R cooldown 130/120/110 -> 110/100/90s."")
+r(""9.17"",""Soraka"",""bugfix"",0,0,""R Wish now properly heals herself more when below 40% health."")
+r(""9.17"",""Camille"",""bugfix"",0,0,""E Hookshot now properly disabled by Grounded."")
+r(""9.17"",""Fiddlesticks"",""bugfix"",0,0,""R Crowstorm now properly disabled by Grounded."")
+r(""9.17"",""Graves"",""bugfix"",0,0,""R Collateral Damage dash now properly disabled by Grounded."")
+r(""9.17"",""Malphite"",""bugfix"",0,0,""R Unstoppable Force now properly disabled by Grounded."")
+r(""9.17"",""Thresh"",""bugfix"",0,0,""W Dark Passage now properly disabled by Grounded."")
+r(""9.17"",""Zac"",""bugfix"",0,0,""E Elastic Slingshot now properly disabled by Grounded."")
+r(""9.17"",""Rek'Sai"",""bugfix"",0,0,""No longer gains brief displacement immunity if R target dies at cast start."")
+r(""9.17"",""Viktor"",""bugfix"",0,0,""Cleanse now properly removes Augmented W Implosion stun."")
+r(""9.17"",""Lee Sin"",""bugfix"",0,0,""Q2 Resonating Strike dash speed restored after 9.16 slowdown."")
+r(""9.17"",""Sylas"",""bugfix"",0,0,""No item/ability lockout if he dies right after hijacked Pantheon R."")
+r(""9.17"",""Sivir"",""bugfix"",0,0,""W Ricochet recast now bounces properly at 45% CDR."")
+r(""9.17"",""Mordekaiser"",""bugfix"",0,0,""Statikk Shiv no longer hits targets outside his R Realm of Death."")
+r(""9.17"",""Tahm Kench"",""bugfix"",0,0,""Devoured unit's health can properly drop below 1 if he dies during W."")
+# ---------------- 9.18
+r(""9.18"",""Aatrox"",""nerf"",2,1,""Passive heal vs minions cut to 25%, Q minion damage 40% flat; targets pro presence/flex."")
+r(""9.18"",""Akali"",""nerf"",3,1,""R1 stun removed, R cooldown up early, R2 damage down early; targets pro presence."")
+r(""9.18"",""Annie"",""adjust"",0,0,""E adds decaying movement speed but damage reduction and cooldown worsened; undocumented Tibbers ratio up."")
+r(""9.18"",""Aurelion Sol"",""buff"",1,0,""Base health 510->575 as minor follow-up to 9.17."")
+r(""9.18"",""Caitlyn"",""buff"",1,0,""Base attack damage 60->62."")
+r(""9.18"",""Ekko"",""buff"",2,0,""W mana cost -20; W stun 1.75->2.25s."")
+r(""9.18"",""Evelynn"",""buff"",2,0,""R empowered damage amplifier vs low-health targets 100%->140%."")
+r(""9.18"",""Jhin"",""buff"",1,0,""Base attack damage 57->59."")
+r(""9.18"",""Kai'Sa"",""nerf"",2,0,""E bonus attack speed 40-80% -> 40-60% at later ranks."")
+r(""9.18"",""Kayle"",""buff"",1,0,""E passive (and Aflame wave) base damage +5 at all ranks."")
+r(""9.18"",""Lee Sin"",""buff"",2,0,""Base health/AD rounded up; R base damage +25 all ranks."")
+r(""9.18"",""Miss Fortune"",""buff"",1,0,""E slow increased at early ranks (28->40% at rank 1)."")
+r(""9.18"",""Nunu & Willump"",""nerf"",2,0,""Health/armor growth and mana reduced; E slow 50% -> 30-50% by rank."")
+r(""9.18"",""Teemo"",""buff"",2,0,""R mushrooms 3->3/4/5 charges, infinite bounce, better triggering; Q/W QoL."")
+r(""9.18"",""Warwick"",""buff"",2,0,""Bugfix: W bonus attack speed now works vs all Blood Hunted enemies; notes call it major buff."")
+r(""9.18"",""Xayah"",""nerf"",2,1,""Base armor 28->25; R cooldown +20s; cites safety at highest levels of play."")
+r(""9.18"",""Zoe"",""buff"",2,0,""Passive base damage increased at all levels, mostly early."")
+r(""9.18"",""Jayce"",""bugfix"",0,0,""E Acceleration Gate now works when cast on top of himself."")
+r(""9.18"",""Pantheon"",""bugfix"",0,0,""Pinging R now tells allies which enemies are in range."")
+r(""9.18"",""Kindred"",""bugfix"",0,0,""Wolf no longer grants extra non-functional vision while circling her."")
+r(""9.18"",""Tahm Kench"",""bugfix"",0,0,""Allies entering R Abyssal Voyage no longer get stuck when he is hit."")
+r(""9.18"",""Shaco"",""bugfix"",0,0,""W box fears now properly grant assists on kills shortly after."")
+r(""9.18"",""Diana"",""bugfix"",0,0,""Passive tooltip now updates when ranking up E (tooltip only)."")
+r(""9.18"",""Jinx"",""bugfix"",0,0,""E Flame Chompers now properly stop Akali moving through them with R."")
+r(""9.18"",""Taliyah"",""bugfix"",0,0,""Q now consumes full mana after leaving Worked Ground; position update fixed."")
+r(""9.18"",""Illaoi"",""bugfix"",0,0,""Can no longer dash a short distance with W while snared or rooted."")
+r(""9.18"",""Bard"",""bugfix"",0,0,""Meep cone attacks now properly break spell shields."")
+r(""9.18"",""Karthus"",""bugfix"",0,0,""W Wall of Pain now grants vision while in passive Death Defied."")
+# ---------------- 9.19
+r(""9.19"",""Aatrox"",""buff"",1,0,""Q minion damage reduction 60%->45% (partial revert of 9.18 overnerf)."")
+r(""9.19"",""Akali"",""buff"",1,0,""R2 maximum damage at ranks 1-2 raised (partial revert of 9.18)."")
+r(""9.19"",""Annie"",""buff"",2,0,""E movement speed 25-50.5% -> 30-60%; cooldown 15 -> 14-10s; Tibbers aggro bugfix."")
+r(""9.19"",""Ashe"",""buff"",2,0,""Passive slow increased early; Q restored as full auto-attack reset."")
+r(""9.19"",""Blitzcrank"",""buff"",2,0,""Q range 1050->1150; R passive max marks 2->3."")
+r(""9.19"",""Blitzcrank"",""bugfix"",0,0,""Mid-patch 9/26: fixed Q hook range being longer than intended vs bigger targets."",hf=1,date=""2019-09-26"")
+r(""9.19"",""Fiora"",""buff"",2,0,""Q can hit turrets/wards; E second attack crits turrets (split-push power)."")
+r(""9.19"",""Gragas"",""nerf"",2,1,""W cooldown 5->6s, max-health damage 8%->7%; cites pro meta dominance."")
+r(""9.19"",""Graves"",""buff"",1,0,""Base attack damage 66->68; other base stats rounded up."")
+r(""9.19"",""Heimerdinger"",""buff"",2,0,""Q/R turret AP ratio 30%->35%; E stun 1.25->1.5s."")
+r(""9.19"",""Karma"",""nerf"",2,1,""Q1 AP ratio 0.6->0.4 to curb blind-pick generalist use by teams."")
+r(""9.19"",""Mordekaiser"",""buff"",1,1,""W shield from damage dealt 30%->35%; spectator R visibility; buff felt most in pro games."")
+r(""9.19"",""Orianna"",""buff"",2,0,""R base damage +50 and AP ratio 0.7->0.8."")
+r(""9.19"",""Ornn"",""buff"",1,0,""Free Masterwork upgrades at level 12 instead of 13."")
+r(""9.19"",""Pantheon"",""nerf"",1,0,""Base MR 32.1->28; empowered W 150% -> 135-165% AD by level; E recast bugfix."")
+r(""9.19"",""Rek'Sai"",""buff"",2,0,""Base armor 33->36; unburrowed Q now works on turrets."")
+r(""9.19"",""Riven"",""adjust"",0,0,""Q cooldown 12->13s; E cooldown 14-10 -> 12-8s; redistributes toward pre-9.10 state."")
+r(""9.19"",""Sejuani"",""nerf"",2,1,""Passive Icebreaker ratio flattened to 10% max health; cites pro play damage."")
+r(""9.19"",""Sion"",""buff"",2,1,""W base shield +20 all ranks; aimed at skilled/higher-level play."")
+r(""9.19"",""Sylas"",""nerf"",3,1,""Base armor/growth down, passive base damage removed and AoE ratio cut; avoid Worlds pick-ban."")
+r(""9.19"",""Sylas"",""buff"",2,0,""Mid-patch 9/26: reverted armor nerf (28->32, growth 2.5->3)."",hf=1,date=""2019-09-26"")
+r(""9.19"",""Tahm Kench"",""nerf"",2,0,""E grey-health heal 75% -> 30-100% by level (weaker early/mid)."")
+r(""9.19"",""Twisted Fate"",""buff"",2,0,""E bonus attack speed +10% and base damage +10."")
+r(""9.19"",""Vayne"",""buff"",2,0,""R bonus attack damage 20/30/40 -> 25/40/55."")
+r(""9.19"",""Veigar"",""buff"",1,0,""E cooldown reduced at later ranks (14->12s at rank 5)."")
+r(""9.19"",""Xin Zhao"",""buff"",2,0,""Passive base heal 8-59 -> 10-78; Q base damage up at later ranks."")
+r(""9.19"",""Yuumi"",""nerf"",2,1,""Q slow flattened to 20%, duration 1.5->1s, no decay; targets pro impact."")
+r(""9.19"",""Zac"",""buff"",1,0,""Bloblets restore additional 1/2/3% max health by R rank."")
+r(""9.19"",""Kayle"",""bugfix"",0,0,""Ultimate Hunter now reduces R Divine Judgment cooldown."")
+r(""9.19"",""Rakan"",""bugfix"",0,0,""Self-only R marker no longer shown in Spectator Mode."")
+r(""9.19"",""Illaoi"",""bugfix"",0,0,""W Harsh Lesson can now be cast while Grounded."")
+r(""9.19"",""Shyvana"",""bugfix"",0,0,""W speed kept on R transform; Q empowered hit works when taunted/silenced."")
+r(""9.19"",""Yasuo"",""bugfix"",0,0,""R can no longer target non-knocked-up enemy just hit by Ornn R."")
+r(""9.19"",""Gangplank"",""bugfix"",0,0,""Mid-patch 10/1: fixed plundering gold/Serpents on basic-attack kills."",hf=1,date=""2019-10-01"")
+
+bad=[c for (_,c,*_) in R if c not in names]
+assert not bad, bad
+long=[(p,c,len(s.split())) for (p,c,d,m,pro,hf,s,dt,src) in R if len(s.split())>20]
+assert not long, long
+for (p,c,d,m,pro,hf,s,dt,src) in R:
+    assert d in (""buff"",""nerf"",""adjust"",""rework"",""bugfix"")
+    assert (d in(""buff"",""nerf"") and m in(1,2,3)) or (d not in(""buff"",""nerf"") and m==0),(p,c)
+# duplicate check (same patch, champ, hotfix flag, date)
+seen=set()
+for (p,c,d,m,pro,hf,s,dt,src) in R:
+    k=(p,c,hf,dt)
+    assert k not in seen,k; seen.add(k)
+with open(OUT+""coded_B.csv"",""w"",newline="""",encoding=""utf-8"") as f:
+    w=csv.writer(f,quoting=csv.QUOTE_MINIMAL)
+    w.writerow(""year_group,patch_oe,riot_patch_title,release_date,champion,direction,magnitude,pro_targeted,hotfix,summary,source_url"".split("",""))
+    for (p,c,d,m,pro,hf,s,dt,src) in R:
+        yg,title,rd,url=P[p]
+        w.writerow([yg,p,title,dt or rd,c,d,m,pro,hf,s,src or url])
+# quote summary always: rewrite with summary quoted
+import io
+rows=list(csv.reader(open(OUT+""coded_B.csv"",encoding=""utf-8"")))
+with open(OUT+""coded_B.csv"",""w"",encoding=""utf-8"",newline="""") as f:
+    def q(x): return '""'+x.replace('""','""""')+'""'
+    def plain(x): return q(x) if any(ch in x for ch in ',""\n') else x
+    f.write("","".join(rows[0])+""\n"")
+    for row in rows[1:]:
+        f.write("","".join([plain(v) if i!=9 else q(v) for i,v in enumerate(row)])+""\n"")
+from collections import Counter
+print(Counter(p for (p,*_) in R))
+print(""hotfix rows"", sum(1 for x in R if x[5]==1), ""total"", len(R))
+EOF
+python3 ""$S/build.py"""
+43,2026-09-23T13:28:12.154Z,Bash,"S=""<scratch>/coderB""; cat > ""$S/build_sys.py"" <<'EOF'
+OUT=""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/systems_B.csv""
+Y={""8"":""2018"",""9"":""2019""}
+R=[
+(""8.16"",""rune"",""Electrocute"",""Base damage 50-220 -> 30-180, bonus AD ratio 0.5->0.4, AP ratio 0.3->0.25; cooldown 50-25s -> 25-20s (burst rune nerf)."",""burst assassins and mages (AD and AP), early-skirmish junglers""),
+(""8.16"",""rune"",""Summon Aery"",""Base damage 15-40 -> 10-40 (early nerf); base shield 30-80 -> 35-80 (early buff)."",""poke mages and enchanter supports""),
+(""8.16"",""rune"",""Celerity"",""Bonus movement speed converted to adaptive stat cut: AD 9.6%->6%, AP 16%->10%."",""high-movement-speed champions and Sorcery-secondary builds""),
+(""8.16"",""rune"",""Cheap Shot"",""True damage 15-40 -> 8-40 (early levels reduced)."",""CC-heavy assassins and early skirmishers""),
+(""8.16"",""rune"",""Sudden Impact"",""Lethality 10->7 and magic penetration 8->6 after dash/stealth."",""dash/stealth assassins""),
+(""8.16"",""rune"",""Scorch"",""Damage 20-60 -> 10-30; cooldown 20s -> 10s (lower burst, more frequent)."",""poke mages and ranged supports in lane""),
+(""8.16"",""summoner_spell"",""Heal"",""Cooldown 270s -> 240s (revert of 8.6 nerf) to pull marksmen/mids off Teleport."",""marksmen, mid laners, bot lanes""),
+(""8.16"",""mode"",""Nexus Blitz (alpha)"",""New experimental mode with its own map and items opens for alpha playtest."",""none on Summoner's Rift (separate mode)""),
+(""8.17"",""item"",""Stormrazor"",""Guaranteed-crit modifier 160-200% -> 140-200% (below 30% crit); attack speed 25%->35%; AD 65->60."",""crit marksmen with early Stormrazor rush""),
+(""8.17"",""item"",""Duskblade of Draktharr"",""Nightstalker proc 30-200 -> 30-150; lethality 18->21 (less burst, more stat value)."",""AD assassins and lethality junglers""),
+(""8.17"",""item"",""Phantom Dancer"",""Bugfix: Spectral Waltz passive no longer sometimes fails to trigger."",""crit marksmen""),
+(""8.17"",""system"",""Projectile visuals"",""Bugfix: ranged attacks/targeted projectiles from unseen champions no longer appear from last-seen location."",""ranged champions""),
+(""8.17"",""system"",""Champion select summoner spells"",""Service change may reset unused queues' summoner spells to Heal/Ghost."",""none (client convenience)""),
+(""8.18"",""system"",""Smite auto-select"",""Players assigned Jungle in draft queues load into champion select with Smite pre-selected."",""junglers (convenience only)""),
+(""8.18"",""system"",""Minimap icons"",""Minimap icons now scale with minimap size on all maps."",""none (UI)""),
+(""8.18"",""rune"",""Ravenous Hunter"",""Bugfix: tooltip no longer counts healing done at full health."",""none (tooltip only)""),
+(""8.18"",""mode"",""Odyssey: Extraction / Nexus Blitz"",""PvE event mode Odyssey: Extraction added; Nexus Blitz alpha ends."",""none on Summoner's Rift (separate modes)""),
+(""8.19"",""item"",""Liandry's Torment"",""AP 80->75; burn 1%->1.5% max health per second (2%->2.5% vs movement-impaired)."",""DoT/CC mages vs tank-heavy teams; tanks""),
+(""8.19"",""objective"",""Objective steal announcements"",""Baron, Rift Herald and Dragon steals now get chat call-outs and banners."",""none (presentation only)""),
+(""8.19"",""system"",""Slow VFX"",""Default visual effect for movement speed slows updated."",""none (clarity)""),
+(""8.19"",""system"",""Normal Draft positional matchmaking"",""Normal Draft now previews position-based matchmaking ratings and position detection."",""none in ranked/pro (normals only)""),
+(""8.19"",""rune"",""Dark Harvest"",""Bugfix: dropped Soul Essence particle brighter/clearer for colorblind players."",""none (clarity)""),
+(""9.16"",""rune"",""Biscuit Delivery"",""3 biscuits at 2/4/6 min (was 4 at 3/6/9/12); permanent mana per biscuit 40->50."",""sustain-reliant laners using Inspiration""),
+(""9.16"",""item"",""Total Biscuit of Everlasting Will"",""Restore 15%->10% missing health/mana (manaless 20%->12%); duration 15s->5s (also Kleptomancy biscuits)."",""sustain-reliant laners, Kleptomancy users""),
+(""9.16"",""system"",""Ranked demotion rule"",""Losing at 0 LP in Grandmaster/Challenger now demotes to Diamond 1 (75/50/0 LP by MMR)."",""high-elo solo queue players""),
+(""9.16"",""system"",""High-MMR matchmaking"",""Matchmaking tightened for high MMR (closer team skill) at cost of longer queues (dev tweets, via wiki)."",""high-elo solo queue players""),
+(""9.16"",""system"",""Consumable selling"",""Bugfix: selling a stacking consumable no longer sells two at once."",""none (minor)""),
+(""9.16"",""mode"",""ARAM balance"",""Howling Abyss modifiers: Swain nerfed; Morgana, Volibear, Yorick buffed."",""none on Summoner's Rift (ARAM only)""),
+(""9.17"",""item"",""Statikk Shiv"",""Bugfix: no longer hits targets outside Mordekaiser's Realm of Death when attacking inside it."",""Statikk Shiv users vs Mordekaiser""),
+(""9.17"",""summoner_spell"",""Cleanse"",""Bugfix: now properly removes Viktor's Augment: Implosion stun."",""Cleanse users vs Viktor""),
+(""9.17"",""system"",""Grounded"",""Bugfix: several movement abilities (Zac E, Malphite R, Camille E, Graves R, Thresh W, Fiddlesticks R) now blocked by Grounded."",""champions with Grounded effects and the listed champions""),
+(""9.18"",""system"",""Stasis"",""Bugfix: champions in Stasis no longer move during the effect."",""Zhonya's Hourglass / Stopwatch users""),
+(""9.18"",""system"",""Video accessibility options"",""New settings to disable screen shake and adjust color level, gamma, brightness, contrast."",""none (settings)""),
+(""9.19"",""system"",""Ping keybindings"",""Default keybinds changed ('This is warded' to H, 'Hold position' to J)."",""none (UI)""),
+(""9.19"",""system"",""Allied chat (mid-patch 9/26)"",""Bugfix: [Allied] chat no longer disables itself after patching to 9.19."",""none (communication)""),
+(""9.19"",""item"",""Item renames"",""'The' removed from Black Cleaver, Bloodthirster, Dark Seal, Lightbringer, Hex Core and others; no stat changes."",""none (cosmetic)""),
+(""9.19"",""item"",""Ohmwrecker"",""Undocumented visual effects update (per wiki)."",""none (visual)""),
+]
+def q(x): return '""'+x.replace('""','""""')+'""'
+def plain(x): return q(x) if any(c in x for c in ',""\n') else x
+with open(OUT,""w"",encoding=""utf-8"",newline="""") as f:
+    f.write(""year_group,patch_oe,category,name,change_summary,likely_affected\n"")
+    for p,c,n,s,la in R:
+        f.write("","".join([Y[p[0]],p,c,plain(n),q(s),q(la)])+""\n"")
+print(len(R))
+EOF
+python3 ""$S/build_sys.py""; D=""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes""; python3 -c ""
+import csv,sys
+for fn in ['coded_B.csv','systems_B.csv']:
+    rows=list(csv.reader(open('$D/'+fn,encoding='utf-8')))
+    print(fn,len(rows)-1,'rows; col counts',set(len(r) for r in rows))
+""; head -5 ""$D/coded_B.csv""; head -3 ""$D/systems_B.csv"""

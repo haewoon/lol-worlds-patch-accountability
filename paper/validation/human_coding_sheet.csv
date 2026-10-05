@@ -1,0 +1,121 @@
+id,year_group,patch_oe,riot_patch_title,champion,source_url,human_direction,human_magnitude,notes,release_date,hotfix
+1,2023,13.15,Patch 13.15 notes,Rengar,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/,bugfix,0,,2023-08-02,0
+2,2024,14.18,Patch 14.18 Notes,Hwei,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,nerf,2,,2024-09-11,0
+3,2018,8.16,Patch 8.16 Notes,Trundle,https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes,adjust,0,,2018-08-15,0
+4,2016,6.17,Patch 6.17 notes,Tahm Kench,https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes,bugfix,0,,2016-08-24,0
+5,2021,11.16,Patch 11.16 notes,Sivir,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-16-notes/,buff,2,,2021-08-11,0
+6,2022,12.17,Patch 12.17 notes,Rell,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/,buff,2,E의 쿨다운이 최고 레벨에서 약간 늘어났지만 w까지 함께 봤을 때 이 정도면 버프라고 봐야하지 않나,2022-09-08,0
+7,2025,15.19,Patch 25.19 Notes,Kai'Sa,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,bugfix,0,,2025-09-24,0
+8,2025,15.19,Patch 25.19 Notes,Corki,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,nerf,1,,2025-09-24,0
+9,2017,7.18,Patch 7.18 notes,Fiora,https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes,buff,1,,2017-09-13,0
+10,2018,8.16,Patch 8.16 Notes,Rammus,https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes,buff,2,,2018-08-15,0
+11,2024,14.18,Patch 14.18 Notes,Zeri,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,nerf,2,Passive - Living Battery Damage: 90-200 (based on level) (+1-15% target’s maximum health) (progression followed stat growth) ⇒ 75-160 (based on level) (+1-11% target’s maximum health) (progression is now linear),2024-09-11,0
+12,2024,14.18,Patch 14.18 Notes,Shen,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,buff,1,,2024-09-11,0
+13,2021,11.16,Patch 11.16 notes,Jarvan IV,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-16-notes/,buff,2,,2021-08-11,0
+14,2016,6.13,Patch 6.13 notes,Twitch,https://web.archive.org/web/20160712/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-613-notes,bugfix,0,Fixed a bug where Ambush's stealth delay would instantly complete if Twitch killed an enemy champion,2016-06-29,0
+15,2019,9.17,Patch 9.17 notes,Viktor,https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes,bugfix,0,,2019-08-28,0
+16,2017,7.16,Patch 7.16 notes,Orianna,https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes,nerf,2,,2017-08-11,1
+17,2022,12.16,Patch 12.16 Notes,Aphelios,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/,bugfix,0,,2022-08-24,0
+18,2017,7.18,Patch 7.18 notes,Elise,https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes,nerf,2,nerf + berf 섞여 있지만 약간 nerf 쪽이 더 우세함,2017-09-13,0
+19,2021,11.17,Patch 11.17 notes,Leona,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-17-notes/,nerf,1,,2021-08-25,0
+20,2019,9.16,Patch 9.16 notes,Orianna,https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes,bugfix,0,,2019-08-14,0
+21,2019,9.16,Patch 9.16 notes,Karma,https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes,bugfix,0,,2019-08-14,0
+22,2025,15.19,Patch 25.19 Notes,Zoe,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,bugfix,0,,2025-09-24,0
+23,2023,13.15,Patch 13.15 notes,Yorick,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/,buff,2,,2023-08-02,0
+24,2023,13.18,Patch 13.18 notes,Rell,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/,nerf,2,,2023-09-13,0
+25,2025,15.19,Patch 25.19 Notes,Lillia,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,buff,2,,2025-09-24,0
+26,2024,14.18,Patch 14.18 Notes,Aurora,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,nerf,2,,2024-09-11,0
+27,2017,7.16,Patch 7.16 notes,Riven,https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes,rework,0,Removed: On-hit effect procing against wards. ,2017-08-09,0
+28,2025,15.19,Patch 25.19 Notes,Brand,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,buff,2,,2025-09-24,0
+29,2018,8.19,Patch 8.19 notes,Draven,https://wiki.leagueoflegends.com/en-us/V8.19,bugfix,0,Bug Fix: Fixed a bug where he would lose his Spinning Axe if his basic attack switched to a Q-empowered attack during wind-up and was then cancelled due to Draven's target dying the instant the attack would have fired.,2018-09-26,0
+30,2017,7.18,Patch 7.18 notes,Kalista,https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes,nerf,2,,2017-09-13,0
+31,2021,11.17,Patch 11.17 notes,Mordekaiser,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-17-notes/,bugfix,0,,2021-08-25,0
+32,2022,12.15,Patch 12.15 Notes,Taliyah,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/,nerf,2,,2022-08-10,0
+33,2019,9.16,Patch 9.16 notes,Jax,https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes,buff,1,,2019-08-14,0
+34,2025,15.18,Patch 25.18 Notes,Zac,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-18-notes/,bugfix,0," Zac can rarely get stuck on units in his ultimate. The original Zac ultimate allowed him to pass through units to prevent this, so we're bringing that functionality back! ",2025-09-10,0
+35,2023,13.19,Patch 13.19 Notes,Pyke,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/,buff,2,,2023-09-27,0
+36,2020,10.18,Patch 10.18 notes,Zac,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,bugfix,0,W - UNSTABLE BUGFIX Fixed a bug where Zac would not get cooldown reduction from picking up his Cell Division chunks,2020-09-02,1
+37,2018,8.16,Patch 8.16 Notes,Rakan,https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes,nerf,2,,2018-08-15,0
+38,2022,12.16,Patch 12.16 Notes,Yorick,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/,bugfix,0,,2022-08-24,0
+39,2016,6.15,Patch 6.15 notes,Evelynn,https://web.archive.org/web/20160809/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-615-notes,bugfix,0,,2016-07-26,0
+40,2023,13.14,Patch 13.14 notes,Rengar,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/,nerf,2,,2023-07-19,0
+41,2025,15.18,Patch 25.18 Notes,Galio,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-18-notes/,nerf,2,,2025-09-10,0
+42,2018,8.17,Patch 8.17 Notes,Kassadin,https://web.archive.org/web/20180911/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-817-notes,buff,1,,2018-08-29,0
+43,2019,9.16,Patch 9.16 notes,Nocturne,https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes,buff,2,,2019-08-14,0
+44,2024,14.17,Patch 14.17 Notes,Seraphine,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-17-notes/,nerf,2,,2024-08-28,0
+45,2020,10.19,Patch 10.19 notes,Udyr,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/,buff,2,,2020-09-16,0
+46,2019,9.19,Patch 9.19 notes,Vayne,https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-19-notes/,buff,1,,2019-09-25,0
+47,2024,14.18,Patch 14.18 Notes,Ivern,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,nerf,2,,2024-09-11,0
+48,2025,15.19,Patch 25.19 Notes,Nasus,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,bugfix,0,,2025-09-24,0
+49,2016,6.17,Patch 6.17 notes,Kha'Zix,https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes,bugfix,0,,2016-08-24,0
+50,2022,12.17,Patch 12.17 notes,Sett,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/,buff,2,,2022-09-08,0
+51,2016,6.15,Patch 6.15 notes,Darius,https://web.archive.org/web/20160809/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-615-notes,bugfix,0,,2016-07-26,0
+52,2020,10.18,Patch 10.18 notes,Graves,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,bugfix,0,,2020-09-02,0
+53,2018,8.16,Patch 8.16 Notes,Tahm Kench,https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes,buff,3,,2018-08-15,0
+54,2019,9.17,Patch 9.17 notes,Galio,https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes,buff,3,,2019-08-28,0
+55,2021,11.18,Patch 11.18 notes,Fizz,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/,buff,3,,2021-09-09,0
+56,2023,13.15,Patch 13.15 notes,Aurelion Sol,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/,bugfix,0,,2023-08-02,0
+57,2016,6.17,Patch 6.17 notes,Nasus,https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes,bugfix,0,,2016-08-24,0
+58,2017,7.18,Patch 7.18 notes,Kha'Zix,https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes,bugfix,0,,2017-09-13,0
+59,2018,8.18,Patch 8.18 Notes,Viktor,https://web.archive.org/web/20180925/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-818-notes,adjust,0,,2018-09-12,0
+60,2019,9.18,Patch 9.18 notes,Miss Fortune,https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/,buff,1,,2019-09-11,0
+61,2019,9.17,Patch 9.17 notes,Aurelion Sol,https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes,adjust,0,,2019-08-28,0
+62,2017,7.17,Patch 7.17 notes,Cassiopeia,https://web.archive.org/web/20170912/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-717-notes,bugfix,0,,2017-08-23,0
+63,2024,14.17,Patch 14.17 Notes,Kindred,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-17-notes/,buff,2,,2024-08-28,0
+64,2022,12.18,Patch 12.18 notes,Kalista,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/,nerf,1,,2022-09-21,0
+65,2025,15.20,Patch 25.20 Notes,Anivia,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-20-notes/,buff,2,,2025-10-08,0
+66,2021,11.19,Patch 11.19 notes,Sona,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-19-notes/,nerf,2,,2021-09-22,0
+67,2023,13.14,Patch 13.14 notes,Ornn,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/,bugfix,0,,2023-07-19,0
+68,2016,6.17,Patch 6.17 notes,Gangplank,https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes,nerf,3,,2016-08-24,0
+69,2023,13.19,Patch 13.19 Notes,Naafiri,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/,bugfix,0,,2023-09-27,0
+70,2021,11.18,Patch 11.18 notes,Singed,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/,buff,1," As a damage-over-time champion in the top lane, Singed can struggle to make his damage stick against enemy healing. We're juicing up the mad chemist's signature concoction so he can counteract this when going for that kill with his ultimate... Slowly, but surely. ",2021-09-09,0
+71,2016,6.16,Patch 6.16 notes,Shyvana,https://web.archive.org/web/20160823/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-616-notes,bugfix,0,,2016-08-10,0
+72,2024,14.16,Patch 14.16 Notes,Syndra,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-16-notes/,buff,1,,2024-08-14,0
+73,2024,14.18,Patch 14.18 Notes,Lillia,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,nerf,2,,2024-09-11,0
+74,2020,10.19,Patch 10.19 notes,Nautilus,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/,bugfix,0,,2020-09-16,0
+75,2018,8.16,Patch 8.16 Notes,Taliyah,https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes,nerf,2,,2018-08-15,0
+76,2023,13.15,Patch 13.15 notes,Maokai,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/,nerf,1,,2023-08-02,0
+77,2017,7.18,Patch 7.18 notes,Rumble,https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes,rework,0,,2017-09-13,0
+78,2019,9.19,Patch 9.19 notes,Sejuani,https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-19-notes/,nerf,1,,2019-09-25,0
+79,2022,12.17,Patch 12.17 notes,Graves,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/,adjust,0,,2022-09-08,0
+80,2017,7.16,Patch 7.16 notes,Heimerdinger,https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes,bugfix,0,,2017-08-09,0
+81,2020,10.17,Patch 10.17 notes,Caitlyn,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-16b-notes/,nerf,1,,2020-08-19,0
+82,2021,11.17,Patch 11.17 notes,Ekko,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-17-notes/,buff,2,,2021-08-25,0
+83,2020,10.18,Patch 10.18 notes,Tryndamere,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,bugfix,0,,2020-09-02,0
+84,2018,8.19,Patch 8.19 notes,Janna,https://web.archive.org/web/20180930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-819-notes,buff,1,,2018-09-26,0
+85,2021,11.18,Patch 11.18 notes,Zed,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/,buff,2,newCTRL-ZED Now deals 100% bonus damage against monsters (still capped at 300 against epic monsters),2021-09-09,0
+86,2021,11.16,Patch 11.16 notes,Karma,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-16-notes/,adjust,0,,2021-08-11,0
+87,2020,10.18,Patch 10.18 notes,Lux,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,bugfix,0,,2020-09-02,0
+88,2020,10.19,Patch 10.19 notes,Samira,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/,nerf,2,,2020-09-22,1
+89,2018,8.17,Patch 8.17 Notes,Nunu & Willump,https://web.archive.org/web/20180911/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-817-notes,rework,0,,2018-08-29,0
+90,2020,10.18,Patch 10.18 notes,Anivia,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,bugfix,0,,2020-09-02,0
+91,2025,15.20,Patch 25.20 Notes,Fizz,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-20-notes/,adjust,0,,2025-10-08,0
+92,2022,12.16,Patch 12.16 Notes,Malphite,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/,buff,2,,2022-08-24,0
+93,2023,13.14,Patch 13.14 notes,Zyra,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/,buff,2,,2023-07-19,0
+94,2016,6.16,Patch 6.16 notes,Viktor,https://web.archive.org/web/20160823/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-616-notes,nerf,2,,2016-08-10,0
+95,2022,12.18,Patch 12.18 notes,Lulu,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/,nerf,2,,2022-09-21,0
+96,2022,12.15,Patch 12.15 Notes,Kalista,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/,nerf,1,,2022-08-10,0
+97,2016,6.17,Patch 6.17 notes,Riven,https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes,buff,2,,2016-08-24,0
+98,2021,11.18,Patch 11.18 notes,Ashe,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/,nerf,1,,2021-09-09,0
+99,2024,14.18,Patch 14.18 Notes,Swain,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,bugfix,0,,2024-09-11,0
+100,2022,12.17,Patch 12.17 notes,Nocturne,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/,buff,1,,2022-09-08,0
+101,2017,7.17,Patch 7.17 notes,Cho'Gath,https://web.archive.org/web/20170912/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-717-notes,bugfix,0,,2017-08-23,0
+102,2019,9.17,Patch 9.17 notes,Zac,https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes,bugfix,0,,2019-08-28,0
+103,2020,10.19,Patch 10.19 notes,Vayne,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/,buff,2,,2020-09-16,0
+104,2023,13.19,Patch 13.19 Notes,Twitch,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/,buff,2,,2023-09-27,0
+105,2016,6.18,Patch 6.18 notes,Miss Fortune,https://web.archive.org/web/20161005/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-618-notes,buff,2,,2016-09-08,0
+106,2024,14.18,Patch 14.18 Notes,Rell,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/,nerf,1,,2024-09-11,0
+107,2016,6.15,Patch 6.15 notes,Graves,https://web.archive.org/web/20160809/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-615-notes,bugfix,0,,2016-07-26,0
+108,2018,8.18,Patch 8.18 Notes,Sejuani,https://web.archive.org/web/20180925/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-818-notes,nerf,2,,2018-09-12,0
+109,2017,7.16,Patch 7.16 notes,Vi,https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes,buff,1,,2017-08-09,0
+110,2020,10.18,Patch 10.18 notes,Xin Zhao,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,buff,1,,2020-09-02,0
+111,2021,11.19,Patch 11.19 notes,Fizz,https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-19-notes/,adjust,0,,2021-09-22,0
+112,2018,8.18,Patch 8.18 Notes,Kai'Sa,https://web.archive.org/web/20180925/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-818-notes,nerf,1,,2018-09-12,0
+113,2022,12.15,Patch 12.15 Notes,Sivir,https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/,nerf,2,,2022-08-10,0
+114,2020,10.18,Patch 10.18 notes,Garen,https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/,bugfix,0,,2020-09-02,0
+115,2017,7.16,Patch 7.16 notes,Cassiopeia,https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes,adjust,0,,2017-08-09,0
+116,2019,9.18,Patch 9.18 notes,Xayah,https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/,nerf,2,,2019-09-11,0
+117,2024,14.16,Patch 14.16 Notes,Qiyana,https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-16-notes/,adjust,0,,2024-08-14,0
+118,2025,15.19,Patch 25.19 Notes,Soraka,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/,bugfix,0,,2025-09-24,0
+119,2025,15.18,Patch 25.18 Notes,Syndra,https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-18-notes/,bugfix,0,,2025-09-10,0
+120,2023,13.19,Patch 13.19 Notes,Karthus,https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/,bugfix,0,,2023-09-27,0

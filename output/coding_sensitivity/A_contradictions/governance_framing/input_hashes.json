@@ -1,0 +1,12 @@
+{
+  "output/coding_sensitivity/A_contradictions/team_patch_exposure.csv": "59a4dab79fc0e045816029e0f7f6342485f72f911c5cb5bf152d0dd42195e7cd",
+  "output/coding_sensitivity/A_contradictions/knockout_patch_exposure.csv": "de3f36e41b8076ecdced06a485f83b9e506d59ae273050819e7995d309002710",
+  "output/coding_sensitivity/A_contradictions/worlds_games_pred.parquet": "2f11590845cfe82002f8d014d6855585a6428b52a4660c8afa09d2076149b66b",
+  "data/manifests/worlds_events.csv": "ae483572c666eef8cc732f27ddfe46b5504992f10a33c0d28528b15ee3c4e4bd",
+  "data/patch_notes/coded_A.csv": "d5632c5c5583d89a81a8b89965b6cf580c9481a3928aa957f57f42854c326dc8",
+  "data/patch_notes/coded_B.csv": "00a4ef9c03dcaf7a1a0d350b3565a9d5f132e83cdb57ec522308525e0dd7adaf",
+  "data/patch_notes/coded_C.csv": "f9d8f82a0cc45bee486b1b3777b1924aad46c943345305ba7eca7cd9f1ab8b15",
+  "data/patch_notes/coded_D.csv": "cd1f506d6568ba308cdb79a8bb8f19818b42fd428455aebe6b11c98e8bcb5602",
+  "data/patch_notes/coded_E.csv": "1bf6e25d766d21bd18035debcd61a51a1525ce46019417e354e3aef140b77223",
+  "analysis/worlds/w23_governance_descriptives.py": "4283515af347d0336d7705cd8c1b856da7b852c1764e9f762fe5ffff9eb7aa4b"
+}

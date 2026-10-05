@@ -1,0 +1,13 @@
+{
+ "participant_games": 16531,
+ "flagged_team_games": 57,
+ "flagged": 54,
+ "flagged_team_years": 16,
+ "flagged_oe_games": 33,
+ "flagged_oe_team_games": 34,
+ "flagged_restored_games": 21,
+ "flagged_restored_team_games": 23,
+ "oe_leaguepedia_same_team": 34,
+ "oe_leaguepedia_other_team": 0,
+ "oe_not_in_leaguepedia": 0
+}

@@ -1,0 +1,19 @@
+{
+ "stats_rule_games_one_winner": 90458,
+ "stats_rule_conclusive": 85721,
+ "stats_rule_agree_pct": 99.71,
+ "actions": {
+  "OE and Leaguepedia winners differ | exclude": 13,
+  "duplicate | drop": 41,
+  "duplicate records naming different team pairs | drop": 49,
+  "duplicate records naming different team pairs | keep": 3,
+  "mixed | drop": 3,
+  "no winner recorded | exclude": 3,
+  "no winner recorded | set_winner": 39,
+  "statistics copied from another game | keep": 6,
+  "team label | keep": 16,
+  "team label | relabel": 5,
+  "team rows from another game | exclude": 1,
+  "team rows from another game | keep_ignore_team_bans": 4
+ }
+}

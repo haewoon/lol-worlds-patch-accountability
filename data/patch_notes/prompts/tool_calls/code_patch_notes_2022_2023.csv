@@ -1,0 +1,533 @@
+order,timestamp,tool,target
+1,2026-09-23T13:15:32.910Z,Bash,"cat ""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/champion_names.txt"" | tr '\n' '|'; echo; wc -l ""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/champion_names.txt"""
+2,2026-09-23T13:15:33.428Z,ToolSearch,"{""query"": ""select:WebFetch,WebSearch"", ""max_results"": 2}"
+3,2026-09-23T13:15:37.551Z,Bash,"cd <scratch> && curl -sL -A ""Mozilla/5.0"" ""https://leagueoflegends.fandom.com/wiki/V12.15?action=raw"" -o v12.15.txt; wc -c v12.15.txt; head -c 3000 v12.15.txt"
+4,2026-09-23T13:15:44.093Z,Bash,"cd <scratch> && curl -sL -A ""Mozilla/5.0"" ""https://wiki.leagueoflegends.com/en-us/V12.15?action=raw"" -o w12.15.txt; wc -c w12.15.txt; head -c 1500 w12.15.txt; echo; curl -sL -A ""Mozilla/5.0"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/"" -o r12.15.html; wc -c r12.15.html"
+5,2026-09-23T13:15:49.155Z,Bash,"cd <scratch> && sed -n '30,400p' w12.15.txt"
+6,2026-09-23T13:15:56.883Z,Bash,"cd <scratch> && for v in 12.15 12.16 12.17 12.18 13.14 13.15 13.16 13.17 13.18 13.19; do d=${v/./-}; curl -sL -A ""Mozilla/5.0"" ""https://wiki.leagueoflegends.com/en-us/V$v?action=raw"" -o w$v.txt; curl -sL -A ""Mozilla/5.0"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-$d-notes/"" -o r$v.html; echo ""$v $(wc -c < w$v.txt) $(wc -c < r$v.html)""; done; which python3; python3 -c ""import bs4; print('bs4 ok')"""
+7,2026-09-23T13:16:14.077Z,Bash,"cd <scratch> && cat > h2t.py <<'EOF'
+import sys, re, html
+from html.parser import HTMLParser
+class P(HTMLParser):
+    def __init__(s):
+        super().__init__(); s.out=[]; s.skip=0
+    def handle_starttag(s,t,a):
+        if t in('script','style','noscript'): s.skip+=1
+        if t in('p','div','li','h1','h2','h3','h4','h5','br','tr','blockquote'): s.out.append('\n')
+        if t=='li': s.out.append('- ')
+        if t in ('h2','h3','h4'): s.out.append('#'*int(t[1])+' ')
+    def handle_endtag(s,t):
+        if t in('script','style','noscript'): s.skip-=1
+    def handle_data(s,d):
+        if not s.skip: s.out.append(d)
+for f in sys.argv[1:]:
+    p=P(); p.feed(open(f,encoding='utf-8',errors='ignore').read())
+    txt=''.join(p.out)
+    txt=re.sub(r'[ \t]+',' ',txt); txt=re.sub(r'\n\s*\n+','\n',txt)
+    open(f.replace('.html','.txt'),'w').write(txt)
+EOF
+python3 h2t.py r*.html; wc -l r*.txt; grep -n ""Patch 12.15\|PATCH HIGHLIGHTS\|Champions"" r12.15.txt | head"
+8,2026-09-23T13:16:18.578Z,Bash,cd <scratch> && cat r12.15.txt
+9,2026-09-23T13:16:27.770Z,Bash,cd <scratch> && awk '/^## Upcoming Skins|^## Related Articles/{exit} {print}' r12.16.txt
+10,2026-09-23T13:16:43.504Z,Bash,"cd <scratch> && grep -n ""Release\|^==\|^;"" w12.16.txt | head -150"
+11,2026-09-23T13:16:47.576Z,Bash,"cd <scratch> && sed -n '123,175p;200,240p;286,342p;459,496p' w12.16.txt"
+12,2026-09-23T13:17:24.986Z,Bash,cd <scratch> && awk '/^## Upcoming Skins|^## Related Articles/{exit} {print}' r12.17.txt
+13,2026-09-23T13:17:42.776Z,Bash,"cd <scratch> && grep -n ""Release =\|^==\|^;"" w12.17.txt | sed -n '1,200p'; grep -n -i ""undocumented\|sbc|New Effect\|Removed"" w12.17.txt | head -40"
+14,2026-09-23T13:17:47.600Z,Bash,"cd <scratch> && sed -n '91,98p;117,129p;217,250p;283,328p;371,385p' w12.17.txt"
+15,2026-09-23T13:18:12.142Z,Bash,"cd <scratch> && awk '/^## Upcoming Skins|^## Related Articles/{exit} {print}' r12.18.txt; grep -n ""Release =\|^==\|^;"" w12.18.txt"
+16,2026-09-23T13:18:19.840Z,Bash,"cd <scratch> && sed -n '107,130p;142,158p;196,204p;231,243p' w12.18.txt"
+17,2026-09-23T13:18:33.655Z,Bash,cd <scratch> && awk '/^## Upcoming Skins|^## Related Articles/{exit} {print}' r13.14.txt
+18,2026-09-23T13:18:40.145Z,Bash,"cd <scratch> && awk '/^## Upcoming Skins|^## Related Articles/{exit} {print}' r13.14.txt > c13.14.txt; grep -n ""^## \|^### \|^#### "" c13.14.txt | head -150"
+19,2026-09-23T13:18:45.603Z,Bash,"cd <scratch> && sed -n '14,72p;153,364p;412,450p' c13.14.txt"
+20,2026-09-23T13:18:50.251Z,Read,<scratch>/c13.14.txt
+21,2026-09-23T13:18:53.327Z,Read,<scratch>/c13.14.txt
+22,2026-09-23T13:19:00.157Z,Read,<scratch>/c13.14.txt
+23,2026-09-23T13:19:03.578Z,Bash,"cd <scratch> && grep -n ""Release =\|^==\|^;"" w13.14.txt | head -120; grep -n -i ""undocumented"" w13.14.txt"
+24,2026-09-23T13:19:08.778Z,Bash,"cd <scratch> && sed -n '206,233p;252,264p;272,296p;329,346p;380,389p;411,423p;443,500p;516,520p;532,535p;554,557p;582,585p' w13.14.txt"
+25,2026-09-23T13:19:42.261Z,Bash,"cd <scratch> && for v in 13.15 13.16 13.17 13.18 13.19; do awk '/^## Upcoming Skins|^## Related Articles/{exit} {print}' r$v.txt > c$v.txt; done; grep -n ""^## \|^### \|^#### "" c13.15.txt | head -150"
+26,2026-09-23T13:19:47.644Z,Bash,"cd <scratch> && sed -n '1,172p' c13.15.txt"
+27,2026-09-23T13:19:52.792Z,Bash,"cd <scratch> && sed -n '336,430p' c13.15.txt; grep -n ""Release =\|^==\|^;"" w13.15.txt | head -120; grep -n -i ""undocumented"" w13.15.txt"
+28,2026-09-23T13:19:58.050Z,Bash,"cd <scratch> && sed -n '71,98p;110,114p;147,152p;160,183p;190,194p;207,235p;242,250p;258,272p;571,606p' w13.15.txt"
+29,2026-09-23T13:20:22.308Z,Bash,"cd <scratch> && grep -n ""^## \|^### \|^#### "" c13.16.txt | head -150"
+30,2026-09-23T13:20:27.531Z,Bash,"cd <scratch> && sed -n '1,174p;343,349p;376,420p' c13.16.txt"
+31,2026-09-23T13:20:32.731Z,Bash,"cd <scratch> && grep -n ""Release =\|^==\|^;"" w13.16.txt | head -120; grep -n -i ""undocumented"" w13.16.txt"
+32,2026-09-23T13:20:38.317Z,Bash,"cd <scratch> && sed -n '101,115p;135,139p;146,150p;159,171p;196,231p;243,259p;266,285p' w13.16.txt"
+33,2026-09-23T13:21:02.517Z,Bash,"cd <scratch> && sed -n '285,323p' w13.16.txt"
+34,2026-09-23T13:21:07.143Z,Bash,"cd <scratch> && grep -n ""^## \|^### \|^#### "" c13.17.txt | head -200"
+35,2026-09-23T13:21:11.967Z,Bash,"cd <scratch> && sed -n '1,243p' c13.17.txt"
+36,2026-09-23T13:21:17.630Z,Bash,"cd <scratch> && sed -n '264,330p' c13.17.txt; grep -n ""Release =\|^==\|^;"" w13.17.txt | head -120; grep -n -i ""undocumented"" w13.17.txt"
+37,2026-09-23T13:21:25.252Z,Bash,"cd <scratch> && sed -n '289,296p;328,341p;367,408p;433,438p;456,492p;523,528p;534,541p;566,578p;598,610p' w13.17.txt"
+38,2026-09-23T13:21:53.404Z,Bash,cd <scratch> && cat c13.18.txt | head -230
+39,2026-09-23T13:22:06.288Z,Bash,"cd <scratch> && grep -n ""Release =\|^==\|^;"" w13.18.txt | head -120; grep -n -i ""undocumented"" w13.18.txt"
+40,2026-09-23T13:22:11.637Z,Bash,"cd <scratch> && sed -n '125,144p;184,197p;208,232p;248,300p;311,343p;364,405p' w13.18.txt"
+41,2026-09-23T13:22:35.216Z,Bash,cd <scratch> && cat c13.19.txt | head -250
+42,2026-09-23T13:22:40.935Z,Bash,"cd <scratch> && grep -n ""Release =\|^==\|^;"" w13.19.txt | head -120; grep -n -i ""undocumented"" w13.19.txt; sed -n '/== Hotfixes/,$p' w13.19.txt"
+43,2026-09-23T13:22:44.814Z,WebSearch,League of Legends patch 13.19 hotfix October 2023 mid-patch update
+44,2026-09-23T13:22:45.063Z,WebSearch,League of Legends patch 12.18 hotfix September 2022 mid-patch
+45,2026-09-23T13:22:57.004Z,WebSearch,Hecarim hotfix patch 12.17 nerf September 2022
+46,2026-09-23T13:23:16.461Z,Bash,"cd <scratch> && sed -n '106,143p;180,220p;244,280p;299,367p' w13.19.txt"
+47,2026-09-23T13:27:07.554Z,Bash,"mkdir -p <scratch> && cat > <scratch>/champ_rows.py <<'EOF'
+# (patch, champion, direction, magnitude, pro, hotfix_date_or_None, summary, src) ; src 'R' riot, 'W' wiki
+ROWS = r""""""
+12.15|Akali|buff|1|0||W energy restore and max energy bonus increased 80 to 100.|R
+12.15|Bel'Veth|bugfix|0|0||E no longer fails to cancel when R cast on out-of-range Void Coral.|R
+12.15|Evelynn|bugfix|0|0||Stealth no longer breaks when killed target enters zombie form and dies again.|R
+12.15|Gwen|nerf|2|1||Q center true damage conversion 75% to 50%; trims late damage at highest levels of play.|R
+12.15|Kalista|nerf|1|1||Base AD 69 to 66 to curb early bot lane dominance in pro play.|R
+12.15|Kennen|buff|2|0||W cooldown down and base damage up; R AP ratio per bolt 20% to 22.5%.|R
+12.15|LeBlanc|bugfix|0|0||W Distortion rank 3 damage corrected up to intended value.|R
+12.15|Lee Sin|buff|2|0||Q2, W2 and E2 recast energy costs reduced 30 to 25.|R
+12.15|Leona|buff|2|0||Q mana cost reduced by 10; R stun/slow duration 1.5 to 1.75s.|R
+12.15|Lillia|buff|1|0||Passive monster damage cap 40-100 to 50-150 to help jungle clear.|R
+12.15|Master Yi|nerf|2|0||E Wuju Style cooldown now 18s at all ranks (was 18-14s).|R
+12.15|Nilah|bugfix|0|0||Passive no longer audible from fog or triggered by Ocean Drake buff.|R
+12.15|Qiyana|nerf|2|0||Passive ratio 45% to 30% bonus AD; removed First Strike double-proc bug.|R
+12.15|Rakan|bugfix|0|0||E no longer auto-recasts to an ally after Flash.|R
+12.15|Rammus|buff|2|0||R cooldown 90s flat, cast range 600 to 800, faster dash speed and range growth.|R
+12.15|Shen|buff|1|0||E energy refund 30/35/40 to 30/40/50.|R
+12.15|Singed|buff|2|0||Passive MS 20 to 25% and cooldown 10 to 8s; R bonus stats higher early.|R
+12.15|Sivir|nerf|2|0||AD growth 3.3 to 3; E and R cooldowns increased.|R
+12.15|Swain|bugfix|0|0||E recast can no longer pull targets in stasis.|R
+12.15|Taliyah|nerf|2|0||E cooldown +2s all ranks; R wall duration 5 to 4s; Q mana bug fixed.|R
+12.15|Thresh|buff|2|0||Q cooldown -1s and base damage +20 at all ranks.|R
+12.15|Viego|bugfix|0|0||No longer looks polymorphed after possessing a polymorphed champion.|R
+12.15|Yone|bugfix|0|0||Cannot cast abilities in spirit form while locked in Blast Cone knockback.|R
+12.15|Yuumi|bugfix|0|0||Unsealed Spellbook swapped summoners usable again after Teleport.|R
+12.15|Zed|buff|2|0||E energy cost 50 to 40; shadow ability mimic range now unlimited.|R
+12.15|Taliyah|bugfix|0|0|2022-08-10|Hotfix: W and E no longer grant Tear stacks without hitting an enemy.|R
+12.16|Aphelios|bugfix|0|0||Gravitum root now properly blocked by spell shields.|R
+12.16|Caitlyn|buff|2|0||Passive AD ratio up to 60/90/120%; R gains 0-25% damage from crit chance.|R
+12.16|Diana|adjust|0|0||Passive cleave base damage cut; E AP ratio 45 to 50%; shifts power from tank to AP builds.|R
+12.16|Draven|nerf|1|1||Q base damage -5 at all ranks after elite-bracket dominance.|R
+12.16|Gangplank|bugfix|0|0||Powder Keg expiration timers now display correctly.|R
+12.16|Irelia|buff|1|0||Base MR 28 to 30; armor growth 4.2 to 4.7.|R
+12.16|Jayce|buff|2|0||Hammer Q damage and hammer E max-health damage increased.|R
+12.16|Kai'Sa|buff|2|0||Passive plasma damage, Q AP ratio and R shield AP ratio increased.|R
+12.16|Malphite|buff|2|0||Passive cooldown lower early; W cooldown now scales 12 to 10s.|R
+12.16|Ornn|bugfix|0|0||Masterwork upgrades forged in shop can no longer be undone by allies.|R
+12.16|Poppy|nerf|1|1||Q minion/monster damage cap -20 at all ranks to slow pro jungle clear.|R
+12.16|Rell|bugfix|0|0||W buff icons fixed; E tether swapping no longer stacks Tear.|R
+12.16|Sion|bugfix|0|0||Fixed exploit allowing controlled turning/movement during R.|R
+12.16|Teemo|bugfix|0|0||Tooltip now reflects 12.15 R mana cost change.|R
+12.16|Tristana|buff|2|0||Q bonus attack speed +15% at all ranks.|R
+12.16|Trundle|bugfix|0|0||E pillar visuals now match hitbox duration.|R
+12.16|Udyr|rework|0|0||Full visual and gameplay update (VGU) released.|R
+12.16|Yorick|bugfix|0|0||Mist Walker leaps no longer shift minion aggro to Yorick.|R
+12.16|Yuumi|nerf|2|1||E MS AP ratio 6% to 2% per 100 AP; cooldown higher late; pro-play target.|R
+12.16|Zac|bugfix|0|0||Can no longer revive with Mountain Soul after all bloblets die.|R
+12.16|Zeri|nerf|2|1||Q AD ratio -5%; W AD ratio 130 to 100% and AP ratio 60 to 40%.|R
+12.16|Zoe|buff|2|0||E damage and AP ratio up; ally-killed minions drop spell shards; shard drop rate up.|R
+12.16|Zyra|buff|1|0||E post-cast lockout fixed at 0.15s (was up to 0.4s).|R
+12.16|Yuumi|buff|2|0|2022-08-24|Hotfix: Q base and empowered damage increased; R cooldown 130/110/90 to 110/100/90.|R
+12.16|Udyr|buff|2|0|2022-08-26|Hotfix: Q damage and on-hit up, E MS up and lockout lower; W shield/heal reduced.|R
+12.16|Zeri|bugfix|0|0|2022-08-30|Hotfix: R no longer grants MS stacks after ultimate ends.|R
+12.17|Ahri|nerf|1|1||E charm duration reduced at early ranks (1.4 to 1.2s at rank 1).|R
+12.17|Azir|nerf|2|1||W AP ratio 60 to 55% and early cooldown up; E cooldown increased.|R
+12.17|Camille|buff|2|0||Passive shield 17 to 20% max HP; E damage and bonus AD ratio increased.|R
+12.17|Draven|bugfix|0|0||R execute now properly blocked by spell shields.|R
+12.17|Ezreal|buff|1|1||E cooldown reduced 2s at all ranks.|R
+12.17|Fizz|bugfix|0|0||Passive/E range indicator restored after VFX update.|R
+12.17|Graves|buff|2|0||Q cooldown lower at higher ranks; R base damage +25.|R
+12.17|Hecarim|rework|0|1||Bruiser-focused mini-rework: Q stacking buffed, W grants resists; base stats, E and R fear cut.|R
+12.17|Kassadin|buff|2|0||Q cooldown -1s and mana cost -10 at all ranks.|R
+12.17|Maokai|buff|3|0||Larger update: passive, Q, E, R reworked to boost top/jungle; E scales with bonus HP.|R
+12.17|Miss Fortune|adjust|0|0||Q and W buffed for crit builds; E cooldown up, base damage down, AP scaling up.|R
+12.17|Nami|nerf|1|0||E hits no longer count separately toward Electrocute/Phase Rush.|R
+12.17|Nocturne|buff|2|0||Base attack speed ratio 0.668 to 0.721; passive cooldown 14 to 13s.|R
+12.17|Ornn|bugfix|0|0||Masterwork upgrade no longer lost if ally dies during channel.|R
+12.17|Pyke|bugfix|0|0||R no longer goes on cooldown when an ally kills the marked enemy.|R
+12.17|Rell|buff|1|0||W dismounted MS 250 to 280; E cooldown now flat 13s.|R
+12.17|Renekton|nerf|2|0||Q base damage reduced, bonus AD ratio increased.|R
+12.17|Sejuani|bugfix|0|0||Permafrost applied to allies no longer stacks Tear of the Goddess.|R
+12.17|Sett|buff|2|0||W bonus AD ratio up; E slow 50 to 70%; R Flash-disable bug fixed.|R
+12.17|Sivir|nerf|2|0||AD growth 3 to 2.8; W bounce AD ratio -5% at all ranks.|R
+12.17|Sylas|nerf|2|1||Base health 595 to 575; Q cooldown +1s at all ranks.|R
+12.17|Taric|nerf|2|0||Base MR 32 to 28; E cooldown +1s at all ranks.|R
+12.17|Trundle|nerf|2|0||W cooldown +3s at all ranks to slow jungle clear.|R
+12.17|Twisted Fate|buff|2|0||Q AP ratio 70 to 80%; W mana cost reduced.|R
+12.17|Wukong|nerf|2|1||Base attack speed 0.711 to 0.68; base MS 345 to 340.|R
+12.17|Zeri|bugfix|0|0||Q no longer leaves vision too long after killing minions.|R
+12.17|Miss Fortune|nerf|1|0|2022-09-08|Hotfix: W bonus attack speed -10% at all ranks; W mana cost 35 to 45.|R
+12.17|Gragas|bugfix|0|0|2022-09-12|Hotfix: E and R no longer keep targets airborne longer than intended.|R
+12.18|Akali|buff|1|0||E now applies True Sight to enemies hit (listed as post-patch notes correction).|R
+12.18|Akshan|bugfix|0|0||E no longer deals damage while channeling R.|R
+12.18|Ashe|buff|2|0||Q bonus attack speed 20-40% to 25-55%.|R
+12.18|Hecarim|nerf|2|0||Base HP 650 to 625; Q bonus AD ratios reduced; W healing reduced.|R
+12.18|Jinx|buff|1|0||Undocumented: W winddown time reduced from 1s to 0.|W
+12.18|Kalista|nerf|1|1||Base health 604 to 574 to punish early overcommits in pro play.|R
+12.18|Kayn|nerf|1|0||Rhaast Q max-health ratio per 100% bonus AD 5% to 3.5%.|R
+12.18|Kennen|bugfix|0|0||E VFX no longer overrides Exhaust VFX.|R
+12.18|Lee Sin|buff|2|1||Health growth 99 to 105; W lifesteal/spell vamp increased; high-skill skewed buffs.|R
+12.18|Lulu|nerf|2|1||W MS 30 to 25%, polymorph duration down, cooldown up; Pix reveal bug fixed.|R
+12.18|Maokai|adjust|0|0||Passive heal down, Q monster damage up, E AP ratios down; Q pull and R width bugs fixed.|R
+12.18|Miss Fortune|nerf|2|0||AD growth 2.7 to 2.4; health growth 107 to 103.|R
+12.18|Nocturne|nerf|2|0||AD growth 3.1 to 2.6.|R
+12.18|Tahm Kench|bugfix|0|0||W knock-up can no longer be removed by Cleanse.|R
+12.18|Taliyah|bugfix|0|0||Q empowered boulder works after flashing onto Worked Ground.|R
+12.18|Thresh|buff|2|0||Health growth 115 to 120; E base damage increased.|R
+12.18|Udyr|nerf|2|0||HP and armor growth cut; Q buffed; W heal/shield and R damage reduced.|R
+12.18|Xerath|bugfix|0|0||R cursor range indicator restored.|R
+12.18|Zeri|bugfix|0|0||W no longer fails to fire through terrain and towers.|R
+13.14|Aatrox|buff|2|1||Q first-cast AD ratios up at higher ranks; minion damage modifier scales with level.|R
+13.14|Aphelios|bugfix|0|0||Gravitum slow VFX rotation fixed.|R
+13.14|Bard|bugfix|0|0||Chimes now properly visible to enemies.|R
+13.14|Diana|buff|2|0||W shield and orb AP ratios up; E AP ratio 50 to 60%.|R
+13.14|Hecarim|nerf|2|0||W bonus armor/MR 15-35 to 5-25.|R
+13.14|Ivern|bugfix|0|0||W on-hit no longer procs on structures; VFX fixes.|R
+13.14|Jax|nerf|2|1||E cooldown +1s at all ranks; R mana cost 50 to 100.|R
+13.14|Jhin|bugfix|0|0||W root VFX fixed when target is displaced.|R
+13.14|Karthus|nerf|1|0||Q base damage slightly lower, monster modifier 95 to 100%; E mana restore -5.|R
+13.14|Kindred|nerf|2|1||Base HP/armor up but Q damage -10 and cooldown 8 to 9s; re-mark bug fixed.|R
+13.14|Lissandra|buff|2|0||Q slows all enemies hit; R heal and AP ratio up; thrall and R QoL.|R
+13.14|Milio|nerf|2|1||Passive burn damage and E bonus MS reduced; W Guardian range bug fixed.|R
+13.14|Ornn|bugfix|0|0||Brittle attacks no longer interrupt Irelia W.|R
+13.14|Rek'Sai|nerf|2|0||W unburrow and E base damage reduced; R Sheen bug fixed.|R
+13.14|Rell|nerf|2|1||Base armor 39 to 36; passive armor/MR steal reduced.|R
+13.14|Rengar|nerf|2|1||HP regen 7 to 6; Q crit damage conversion 95 to 75%.|R
+13.14|Samira|bugfix|0|0||Q recast-on-cooldown bug and taunt style stack fixed.|R
+13.14|Shaco|buff|2|0||Q bonus AD ratio 50 to 60%, backstab crit bonus 40 to 55%; clone/box bugs fixed.|R
+13.14|Shyvana|buff|2|0||Q AD ratio up with added attack speed but longer cooldown; E scales with bonus AD.|R
+13.14|Sona|bugfix|0|0||W no longer grants Accelerando stack with Moonstone Renewer.|R
+13.14|Sylas|bugfix|0|0||E2 no longer launches in unintended direction.|R
+13.14|Teemo|bugfix|0|0||Passive stealth activation VFX fixed.|R
+13.14|Udyr|bugfix|0|0||First empowered E attack now triggers Hail of Blades.|R
+13.14|Volibear|buff|2|0||Passive AP ratio 40 to 50%; W missing-health heal up; Q attack hitch fixed.|R
+13.14|Xerath|adjust|0|0||Base mana down, passive cooldown up but refunds on kills and procs on turrets; R more, weaker casts.|R
+13.14|Yasuo|bugfix|0|0||Rageknife no longer disables passive crit conversion.|R
+13.14|Yone|bugfix|0|0||Rageknife no longer disables passive crit conversion.|R
+13.14|Yorick|bugfix|0|0||Ghoul leap attacks and Maiden attacks no longer apply lifesteal.|R
+13.14|Zeri|bugfix|0|0||Q now deals correct damage to Shaco boxes.|R
+13.14|Zyra|buff|1|0||QoL: plant damage rules, jungle plant damage, 2 seeds at W rank 1, E-Flash and R fixes.|R
+13.14|Naafiri|nerf|3|0|2023-07-21|Hotfix: MS 340 to 335; Q bleed, E damage and R bonus AD reduced.|R
+13.15|Aatrox|nerf|1|0||Q AD ratio trimmed at higher ranks (100% to 90% at rank 5).|R
+13.15|Akshan|bugfix|0|0||Passive second shot now triggers against Voidlings and Mist Walkers.|R
+13.15|Annie|adjust|0|0||Tibbers durability rescaled by level (~5-10% lower) as Smite no longer shreds pets.|R
+13.15|Aurelion Sol|bugfix|0|0||R cooldown indicator updates after upgraded cast.|R
+13.15|Caitlyn|buff|2|0||Passive crit coefficient 1.2 to 1.3; R bonus damage per crit chance increased.|R
+13.15|Camille|buff|2|1||AD growth 3.5 to 3.8; R on-hit magic damage 5/10/15 to 20/30/40.|R
+13.15|Evelynn|bugfix|0|0||VFX issue after exiting stealth fixed.|R
+13.15|Gwen|buff|2|0||Health regen 8.5 to 9; W bonus armor/MR +5 at all ranks.|R
+13.15|Heimerdinger|adjust|0|0||R turret durability rescaled with less AP scaling, alongside Smite pet change.|R
+13.15|Ivern|nerf|2|0||MR cut; Daisy duration, durability and AP ratio down; W ally on-hit and E base shield up.|R
+13.15|Kai'Sa|nerf|2|0||Base HP 670 to 640; Q AP ratio 30 to 20%; evolved W refund 77 to 75%.|R
+13.15|Kassadin|buff|2|0||Undocumented: R AP ratio 40% to 60% (acknowledged as accidental in 13.18 notes).|W
+13.15|Katarina|bugfix|0|0||E now properly breaks Duskblade stealth.|R
+13.15|Maokai|nerf|1|1||Q bonus monster damage -20 at all ranks to slow pro jungle clear.|R
+13.15|Naafiri|bugfix|0|0||Several W, packmate and animation bugs fixed.|R
+13.15|Nami|buff|2|0||Passive MS 90 to 100 (+25% AP); Q base damage +15.|R
+13.15|Nocturne|bugfix|0|0||R nearsight no longer applies to Neeko disguised as a minion.|R
+13.15|Rell|buff|1|0||QoL: consistent passive order, Q-Flash direction, faster W2; W2 epic monster damage fixed.|R
+13.15|Rengar|bugfix|0|0||R on-screen warning effects for enemies restored.|R
+13.15|Ryze|bugfix|0|0||E and R VFX overlays display correctly.|R
+13.15|Sejuani|nerf|2|1||W first and second hit base damage -10 at all ranks.|R
+13.15|Shaco|bugfix|0|0||R clone no longer copies Q walking animation.|R
+13.15|Shyvana|nerf|2|0||AD growth 3.4 to 3; health growth 109 to 104.|R
+13.15|Singed|bugfix|0|0||Q poison trail now damages Baron.|R
+13.15|Taliyah|buff|2|0||Q base damage +5; E cooldown lower early; E monster damage 150 to 175%.|R
+13.15|Vayne|bugfix|0|0||Q during R grants invisibility immediately.|R
+13.15|Xerath|bugfix|0|0||R stacking damage buff applies correctly to final recast.|R
+13.15|Yasuo|buff|2|0||Passive shield now scales like base stats: 30-50% larger mid-game.|R
+13.15|Yone|buff|1|0||W shield base 45-65 to 60-80.|R
+13.15|Yorick|adjust|0|0||Maiden durability rescaled by level; gains armor/MR and regen; health ratio down.|R
+13.15|Bard|bugfix|0|0|2023-08-02|Hotfix: W shrine now heals allies (Arena-only changes excluded).|R
+13.15|Bard|bugfix|0|0|2023-08-03|Hotfix: W shrine no longer heals only the minimum or maximum amount.|R
+13.15|Bel'Veth|bugfix|0|0|2023-08-03|Hotfix: Q directional indicators restored.|R
+13.16|Akali|buff|2|0||Q energy cost reduced early; Q base damage +5.|R
+13.16|Brand|buff|2|0||Passive mana restore up; Q and E AP ratios +10%.|R
+13.16|Caitlyn|buff|2|0||Attacks per Headshot 7 to 6.|R
+13.16|Dr. Mundo|bugfix|0|0||Q missile visuals now match hitbox.|R
+13.16|Ekko|buff|2|0||Q damage and early slow up; W base shield +30.|R
+13.16|Karma|buff|2|0||Q and Mantra Q AP ratios +10%; R cooldown lower at higher ranks.|R
+13.16|Kindred|bugfix|0|0||E VFX renders above impassable terrain.|R
+13.16|Lucian|buff|1|0||Passive on-hit magic damage base 10 to 15.|R
+13.16|Lulu|buff|2|0||Health growth 88 to 92; Q and E AP ratios 40 to 50%; aimed at solo queue.|R
+13.16|Malzahar|adjust|0|0||E tick rate 0.5 to 0.25s; minion execute threshold lowered (last-hit QoL).|R
+13.16|Milio|buff|2|0||Q damage and AP ratio up; E shield up; less pro-skewed buffs.|R
+13.16|Naafiri|nerf|2|0||Base armor, AD and attack speed reduced; packmate bugs fixed.|R
+13.16|Nidalee|buff|1|0||Cougar E gains 40% bonus AD ratio.|R
+13.16|Nunu & Willump|bugfix|0|0||R snowball no longer checks collision at a stale location.|R
+13.16|Rek'Sai|nerf|2|1||Q bonus damage converted to 34-50% total AD: nerf until level 13.|R
+13.16|Ryze|bugfix|0|0||R now teleports minions to correct positions.|R
+13.16|Shaco|nerf|2|0||Base mana regen 7.15 to 6; W mana cost 70 at all ranks.|R
+13.16|Shyvana|nerf|2|0||W damage per second and on-hit damage and AD ratios reduced.|R
+13.16|Sylas|buff|1|0||Base mana 310 to 400.|R
+13.16|Syndra|bugfix|0|0||Orb VFX visible regardless of graphics settings.|R
+13.16|Taliyah|bugfix|0|0||Q Worked Ground VFX indicator restored.|R
+13.16|Tristana|adjust|1|1||Base armor/growth up; base HP and MR down to weaken mid lane vs mages.|R
+13.16|Wukong|buff|2|0||Mana regen growth up; Q and W mana costs reduced.|R
+13.17|Aatrox|adjust|0|0||Passive and W now deal magic damage to push durable builds.|R
+13.17|Akshan|adjust|0|0||Health and armor growth up; AD growth 3.5 to 3.|R
+13.17|Blitzcrank|adjust|0|0||Jungle changes reverted: more HP/MR and E damage; AS, W AS and non-champion E bonus cut.|R
+13.17|Camille|bugfix|0|0||Passive shield color no longer reveals disguised Neeko.|R
+13.17|Draven|bugfix|0|0||R sound effects corrected.|R
+13.17|Elise|buff|2|0||Passive damage and healing up; E stun duration longer at higher ranks.|R
+13.17|Gnar|buff|2|1||Mega Q and Mega W base damage +20.|R
+13.17|Hecarim|adjust|0|0||Mana stats and Q/W costs improved; W omnivamp 25%+AD scaling to 20% flat.|R
+13.17|Kayn|nerf|2|1||W damage and bonus AD ratio 130 to 110%; full heal on transform.|R
+13.17|Kha'Zix|nerf|1|0||Q bonus AD ratio 115 to 110%.|R
+13.17|Kindred|nerf|2|1||E slow 50 to 30%; missing-health damage 8 to 5%.|R
+13.17|Lissandra|bugfix|0|0||Q cast no longer cancelled by crowd control.|R
+13.17|Lucian|bugfix|0|0||Font of Life now triggers passive.|R
+13.17|Lux|buff|1|0||Passive damage up, Q cooldown scales with rank; mana regen and E base damage down.|R
+13.17|Naafiri|nerf|3|0||Base HP down, passive cooldown up, packmates take bonus melee damage; Q2 and E damage down.|R
+13.17|Orianna|buff|2|0||Health growth 105 to 110; W base damage +10 to +30.|R
+13.17|Quinn|adjust|0|0||Health growth 99 to 107; Q and E base damage reduced.|R
+13.17|Samira|buff|1|0||Base health 600 to 630.|R
+13.17|Sett|bugfix|0|0||R suppression removed if knock-up is blocked by spell shield.|R
+13.17|Sylas|bugfix|0|0||E Abduct crowd control duration corrected.|R
+13.17|Taliyah|bugfix|0|0||R animation no longer plays slower than intended.|R
+13.17|Tryndamere|buff|2|0||Attack range 125 to 175; base AD 72 to 68.|R
+13.17|Twisted Fate|buff|1|1||Q AP ratio 80 to 90%; R eye VFX duration fixed.|R
+13.17|Vex|buff|2|0||Q base damage +10; W cooldown lower at early ranks.|R
+13.17|Vi|adjust|0|1||Passive shield, W CDR and E cooldown buffed; R damage cut, aimed at pro play.|R
+13.17|Xerath|nerf|1|0||Base mana regen 8 to 6.85; W mana cost +10; passive refund 2 to 2.5s.|R
+13.17|Xin Zhao|adjust|0|0||Passive heal now scales with max health instead of AD.|R
+13.17|Zoe|buff|1|0||Base health regen 6.5 to 7.5; E MR shred 30% at all ranks.|R
+13.18|Bard|buff|2|0||Passive chime stacks/duration up; W stores 2 charges, faster full heal, MS scales with AP.|R
+13.18|Ezreal|bugfix|0|0||W mark now triggers correctly against dodging targets.|R
+13.18|Gwen|buff|2|0||Health growth 109 to 115; passive monster damage 6(+10% AP) to 10(+15% AP).|R
+13.18|Irelia|buff|1|1||R cooldown -15s at all ranks.|R
+13.18|Ivern|bugfix|0|0||Dragons no longer ignore Ivern damage (wiki: hotfixed during 13.17).|R
+13.18|Jarvan IV|nerf|2|0||Passive 8% to 6% current health; R terrain respects displacement immunity.|R
+13.18|K'Sante|bugfix|0|0||R now correctly converts percent bonus resists into AD.|R
+13.18|Kassadin|adjust|0|0||Notes formally confirm accidental 13.15 R AP ratio 40 to 60%; no new in-game change.|R
+13.18|Kayn|nerf|2|0||Darkin passive heal flattened to 25%; Darkin R bonus AD ratio 13 to 10%.|R
+13.18|Kennen|buff|2|0||E energy cost 80 at all ranks; R cooldown 120/100/80s.|R
+13.18|Kog'Maw|bugfix|0|0||Passive corpse no longer shows max attack speed.|R
+13.18|Lucian|bugfix|0|0||R now triggers W movement speed bonus.|R
+13.18|Neeko|bugfix|0|0||KDA no longer changes based on disguise.|R
+13.18|Orianna|bugfix|0|0||Basic attacks no longer cancel when ball returns.|R
+13.18|Rell|nerf|2|1||E bonus MS 15-25% to 12-20% (doubled toward enemies).|R
+13.18|Senna|buff|2|0||Passive crit damage penalty removed; W AoE snare applies Mist.|R
+13.18|Thresh|buff|1|0||W shield per soul 1.5 to 2.|R
+13.18|Tryndamere|nerf|2|0||Health growth 115 to 108; base AD 68 to 66.|R
+13.18|Udyr|bugfix|0|0||E on-target cooldown now applies when attack is spell-shielded.|R
+13.18|Xayah|nerf|2|1||Base HP 660 to 630 (growth up); E cooldown higher early.|R
+13.18|Zoe|bugfix|0|0||Goredrinker/Stridebreaker actives now drop spell shards.|R
+13.18|Bard|bugfix|0|0|2023-09-14|Hotfix: W no longer consumes a charge when cancelled out of range.|R
+13.18|Briar|buff|2|0|2023-09-14|Hotfix: base HP 590 to 610; E damage reduction 35 to 40%, cooldown 18 to 16s.|R
+13.19|Ahri|bugfix|0|0||Q return missile tracks correctly in fog of war.|R
+13.19|Azir|nerf|1|1||Q cooldown higher at early ranks (12 to 14s at rank 1).|R
+13.19|Bard|bugfix|0|0||R stasis now stops dragons moving.|R
+13.19|Briar|nerf|2|0||AS growth down; W healing and monster damage reduced; QoL and bug fixes.|R
+13.19|Evelynn|bugfix|0|0||Q SFX now plays when hitting at max range.|R
+13.19|Galio|buff|1|0||R cooldown -20s at all ranks.|R
+13.19|Gangplank|buff|2|0||R cooldown -10s; Death's Daughter slow and Raise Morale MS increased.|R
+13.19|Ivern|bugfix|0|0||E second shield works with Moonstone Renewer.|R
+13.19|Jax|bugfix|0|0||E and R VFX no longer visible from fog of war.|R
+13.19|Jhin|buff|2|1||R minimum damage 50/125/200 to 64/154/244.|R
+13.19|K'Sante|bugfix|0|0||R no longer locks camera when target becomes invalid.|R
+13.19|Karthus|bugfix|0|0||Passive no longer damages allies when killed by berserk Briar.|R
+13.19|LeBlanc|adjust|0|0||AD, mana growth and AS ratio cut vs AD builds; W and E AP ratios up.|R
+13.19|Lee Sin|buff|2|1||Base armor 34 to 36; W lifesteal higher early; E damage reduced.|R
+13.19|Lissandra|buff|1|1||W root duration +0.15s at all ranks.|R
+13.19|Malzahar|bugfix|0|0||E now spreads when cast on a dying minion.|R
+13.19|Naafiri|bugfix|0|0||Packmates respect crowd control; self-cast shield targeting fixed.|R
+13.19|Neeko|bugfix|0|0||R VFX no longer visible from fog of war.|R
+13.19|Nunu & Willump|buff|1|0||E AP ratio per snowball 10 to 15% (AP build).|R
+13.19|Orianna|bugfix|0|0||R no longer castable beyond intended range.|R
+13.19|Ornn|bugfix|0|0||Bonus stats granted correctly for extra Masterwork upgrades.|R
+13.19|Pyke|buff|2|0||Health growth 104 to 110; W cooldown lower at higher ranks.|R
+13.19|Rek'Sai|nerf|2|1||Passive heal, Q ratio and burrow MS reduced; unburrow damage increased.|R
+13.19|Renekton|nerf|1|1||Base MR 32 to 28.|R
+13.19|Syndra|buff|1|0||Q base damage +5 at all ranks.|R
+13.19|Twitch|buff|1|0||R missile speed 4000 to 5000.|R
+13.19|Viego|bugfix|0|0||Possession now works while berserked.|R
+13.19|Yone|bugfix|0|0||R displacement immunity now resists Bard R stasis.|R
+13.19|Zeri|nerf|1|1||Base MS 335 to 330.|R
+""""""
+EOF
+echo ok"
+48,2026-09-23T13:27:50.051Z,Bash,"cd <scratch> && sed -i '' 's/^13.16|Tristana|adjust|1|1|/13.16|Tristana|adjust|0|1|/' champ_rows.py && grep -n ""Tristana"" champ_rows.py && cat > sys_rows.py <<'EOF'
+SYS = r""""""
+12.15|item|Divine Sunderer|Spellblade heal 65% to 55% of pre-mitigation damage.|Divine Sunderer bruisers (Fiora, Camille, Jax)
+12.15|item|Mercurial Scimitar|MR 30 to 40; Quicksilver MS duration 1 to 1.5s.|crit marksmen
+12.15|item|Silvermere Dawn|MR 35 to 40; active tenacity and slow resist 40% to 50%.|fighters/bruisers
+12.15|item|Blade of the Ruined King|Bug fix: passive always deals full % current health damage regardless of buy order.|on-hit marksmen and fighters
+12.15|item|Liandry's Lament|Bug fix: burn effect works correctly.|AP burn mages and AP tanks
+12.15|item|Anathema's Chains|Bug fix: no longer castable while dead; scoreboard display fix.|tank supports
+12.15|rune|First Strike|Bonus true damage 10% to 9%.|burst mages/assassins (e.g. Qiyana)
+12.15|objective|Rift Herald|Bug fix: summoned Herald charge completes near turrets.|early objective teams
+12.15|system|Ranked duo restriction|Players with Master+ MMR can no longer duo in Solo/Duo.|high-elo solo queue
+12.15|system|Turrets (hotfix 2022-08-10)|Bug fix: turret damage ramps correctly on consecutive shots.|tower divers
+12.15|summoner_spell|Teleport (hotfix 2022-08-22)|Bug fix: Unleashed Teleport cooldown now uses summoner spell haste.|top laners/TP users
+12.15|mode|Ultimate Spellbook|Mode-only champion/spell tweaks and bug fixes (not coded as champion rows).|non-SR mode
+12.16|item|Evenshroud (and Equinox)|Coruscation duration 4 to 5s; damage amp 9% to 10%.|tank/engage supports
+12.16|item|Divine Sunderer|Undocumented: heal reverted to 65% at 12.16 launch, re-fixed to 55% in 2022-08-26 hotfix.|Divine Sunderer bruisers
+12.16|item|Blade of the Ruined King|Bug fix: no longer deals less damage when bought after other items.|on-hit users
+12.16|rune|Hextech Flashtraption|Bug fix: Flash no longer permanently disabled after hexgate timing.|Flashtraption users
+12.16|rune|Nimbus Cloak|Bug fix: triggers on Unleashed Teleport completion, not start.|TP users
+12.16|system|Behavioral/all chat|Enemy team muted post-game when all chat off; client all-chat toggle.|n/a
+12.16|mode|ARAM and Ultimate Spellbook|ARAM damage modifiers and Spellbook tweaks (not coded as champion rows).|non-SR modes
+12.17|item|Stopwatch|Cost 650 to 750 (strong in low-ping pro play).|stasis users; pro play
+12.17|item|Guardian Angel|Total cost 2800 to 3000; AD 40 to 45.|AD carries
+12.17|item|Seeker's Armguard|AP 20 to 30.|AP mages
+12.17|item|Zhonya's Hourglass|Cost 2600 to 3000; AP 65 to 80; AH 10 to 15.|AP mages/assassins
+12.17|rune|Treasure Hunter|Bug fix: no longer plays Draven SFX.|n/a
+12.17|summoner_spell|Flash|Bug fixes: no Flash while charmed after Heal/Ghost; no longer disabled by certain abilities.|all
+12.17|summoner_spell|Unleashed Teleport|Scoreboard cooldown display fix.|top laners
+12.17|objective|Dragon Slayer (Ancient Grudge)|Bug fix: damage reduction applies against Hextech Drakes.|dragon-control teams
+12.17|objective|Elder Dragon|SFX fix (own roar).|n/a
+12.17|objective|Rift Herald|Spawn animation no longer interrupts Poppy R knockback.|Poppy/early objective fights
+12.17|system|Ranked matchmaking|Matchmaking weights MMR more than visible rank.|solo queue
+12.17|system|Behavioral systems|Intentional feeding detection broadened (~2x detections).|solo queue
+12.17|mode|ARAM and Ultimate Spellbook|Mode-only modifiers/bug fixes (not coded).|non-SR modes
+12.18|item|Spirit Visage|Bug fix: no longer doubles omnivamp of items bought before it.|omnivamp fighters
+12.18|system|Autofill / priority roles|Priority role tags added; guaranteed support/fill autofill protection removed.|solo queue
+12.18|system|Fog of war|Bug fix: certain abilities no longer visible/audible from fog.|all
+13.14|item|Axiom Arc|Ultimate refund 20% to 5% (+40% of lethality).|lethality assassins
+13.14|item|Galeforce|Cooldown 90 to 120s (stronger at highest levels of play).|Galeforce marksmen (e.g. Nilah)
+13.14|item|Infinity Edge|AD 70 to 65; crit damage 35% to 45%.|crit marksmen
+13.14|item|Prowler's Claw|Lethality 15 to 18.|AD assassins
+13.14|item|Randuin's Omen|Crit damage reduction 20% to 25%.|tanks vs crit comps
+13.14|item|Spear of Shojin|Cost 3400 to 3300; HP 300 to 350.|fighters (Jax, Hecarim)
+13.14|item|Spirit Visage|MR 50 to 60.|fighters/tanks
+13.14|item|Statikk Shiv|AS 25% to 30%; minion damage 250-450 to 250-350.|marksmen/hybrid waveclear users
+13.14|item|Sterak's Gage|Cost 3100 to 3000; HP 400 to 450.|fighters
+13.14|item|Trinity Force|AS 35% to 33%; Threefold stacks max 3 at 6% each (18% max AD).|fighters; nerf for marksmen users
+13.14|item|Jak'Sho the Protean|Bug fix: no stacks while dead.|tanks
+13.14|item|Jungle companions|Bug fix: companions kill minions they should.|junglers
+13.14|item|Stealth Ward|Cooldown timer display fix.|all
+13.14|summoner_spell|Ghost|Duration 10 to 15s; takedown duration extension removed.|bot laners/ranged carries; all Ghost users
+13.14|objective|Crest of Cinders (red buff)|Burn and melee slow reduced early (level-scaled).|early-ganking junglers
+13.14|objective|Crest of Insight (blue buff)|Ability haste 10 to 5/10/15/20 by level.|early junglers/mids; late-game blue holders
+13.14|system|Ranked Split 2|Emerald tier added, promos removed, 5 placements; Master+ MMR duo restriction off until 13.15.|solo queue
+13.14|system|Pets|Undocumented fix: pets can attack inhibitors/nexus.|pet champions
+13.14|mode|Arena and ARAM|New Arena 2v2v2v2 mode; Arena-only hotfixes 2023-07-21/25 and ARAM modifiers (not coded).|non-SR modes
+13.15|summoner_spell|Smite|Damage to non-lane minions/pets 600-1200 to 20-160; slow unlocks at Primal Smite.|junglers vs pet champions (Annie, Ivern, Yorick, Heimerdinger)
+13.15|item|Night Harvester|Soulrend needs attack, ability or pet damage; items no longer proc it.|AP assassins (Statikk Shiv users)
+13.15|rune|Glacial Augment|Base slow 30% to 20% with higher AP/AD/heal-shield scaling.|tank supports (nerf); itemized users
+13.15|summoner_spell|Cleanse|Bug fix: tenacity buff duration corrected.|all
+13.15|item|Echoes of Helia|Bug fix: Font of Life no longer procs passive.|enchanters
+13.15|item|Trinity Force|Bug fix: mythic MS bonus corrected.|fighters
+13.15|item|Elixirs|Visual cooldown reset bug fixed.|n/a
+13.15|system|Ranked duo restriction|Apex MMR duo restriction re-enabled.|high-elo solo queue
+13.15|mode|Arena and ARAM|Arena balance and hotfixes 2023-08-02/03; ARAM modifiers (not coded).|non-SR modes
+13.16|item|Axiom Arc|Ultimate refund base 5% to 10% (+40% lethality).|lethality assassins
+13.16|item|Duskblade of Draktharr|Cooldown 10 to 30s; missing-health damage 20% to 18%.|AD assassins and fighters (e.g. Hecarim)
+13.16|item|Prowler's Claw|Cooldown 10 to 5s; bonus AD ratio increased.|AD assassins
+13.16|item|Serpent's Fang|Lethality 12 to 15.|AD assassins
+13.16|item|Umbral Glaive|Lethality 10 to 13.|lethality users (e.g. Pyke)
+13.16|item|Eye of the Herald|Bug fix: expiry screen flash restored.|n/a
+13.16|item|Mikael's Blessing|Shop tag fix (not MR item).|n/a
+13.16|item|Night Harvester|Bug fix: properly triggered/blocked by spell shields.|AP assassins
+13.16|item|Jungle pets|Bug fix: treats only for the team that slays the epic monster.|junglers
+13.16|objective|Dragon|Bug fix: AoE no longer deals extra damage to primary target.|dragon fights
+13.16|objective|Infernal Dragon Soul|Bug fix: works after holder revives.|Infernal soul teams
+13.16|system|Surrender|Anonymous votes; 6-min personal cooldown; auto-resolve.|n/a
+13.16|system|Ground crowd control|Bug fix: grounded champions no longer slide.|all
+13.16|mode|Arena and ARAM|Arena balance (44 changes) and ARAM modifiers (not coded).|non-SR modes
+13.17|item|Bloodthirster|Bonus AD shield requires >70% health (was 50%).|crit marksmen
+13.17|item|Duskblade of Draktharr|Passive now standard untargetability; damage immunity removed; destroys projectiles.|AD assassins
+13.17|item|Evenshroud|Damage amp 10% to 7%.|tank supports
+13.17|item|Goredrinker|Recipe uses Phage; HP 300 to 400.|fighters
+13.17|item|Immortal Shieldbow|Lifeline shield 215-500 to 290-500.|crit marksmen
+13.17|item|Spear of Shojin|HP 350 to 500, AD 65 to 60, Dragonforce haste up; Pickaxe recipe.|fighters (Jax, Hecarim, Jarvan IV)
+13.17|item|Statikk Shiv|Champion bonus damage AP ratio 30% to 15%.|AP hybrid users (LeBlanc)
+13.17|item|Stridebreaker|HP 300 to 375.|fighters
+13.17|rune|Future's Market|Debt limit 145+5/min to 100+8/min (buff after 18 min).|junglers
+13.17|rune|Summon Aery|Bug fix: no vision while recalling.|enchanters
+13.17|item|Oracle Lens|Bug fix: no longer reveals champions on detected ward spot.|junglers/supports
+13.17|summoner_spell|Heal|Bug fix: ally receives movement speed.|bot lane
+13.17|system|Jungle catch-up experience|Level difference rounds to nearest instead of up.|junglers
+13.17|objective|Dragons|Patience bar and leash indicator added; dragon AI rebuilt.|dragon-control teams
+13.17|system|Wards|Bug fix: pushed-aside wards visible to control wards.|all
+13.17|item|Navori Quickblades|Bug fix: mythic passive AD per legendary.|crit marksmen
+13.17|mode|ARAM|ARAM modifiers (not coded).|non-SR mode
+13.18|item|Crown of the Shattered Queen|AP 70 to 85; Safeguard 75% DR 1.5s to 40% DR 2.5s; Poise AP removed (pro-skewed).|control mages (e.g. Azir)
+13.18|item|Spear of Shojin|AD 60 to 55.|fighters
+13.18|item|Statikk Shiv|AD 45 to 50; minion damage 250-350 to 200.|marksmen
+13.18|item|Stormrazor|AD 50 to 55.|crit marksmen (e.g. Jhin)
+13.18|item|Catalyst of Aeons|Bug fix: mythic purchase restriction.|n/a
+13.18|objective|Dragons|Bug fix: knockback source is dragon (e.g. Fiora W parry).|all
+13.18|objective|Chemtech/Hextech Drakes and Hextech Soul|SFX no longer audible through fog.|n/a
+13.18|objective|Rift Herald|Bug fix: leash range no longer longer than intended.|early objective teams
+13.18|mode|ARAM (hotfix 2023-09-13)|ARAM modifiers for Hecarim, Naafiri, Sylas, Tryndamere (not coded).|non-SR mode
+13.19|item|Randuin's Omen|Total cost 3000 to 2700.|tanks vs crit comps
+13.19|item|Seeker's Armguard|Armor 15 to 20.|AP mages
+13.19|item|Statikk Shiv|Minion damage 200 to 150.|marksmen
+13.19|item|Duskblade of Draktharr|Bug fixes: cooldown reset on death; untargetability chaining.|AD assassins
+13.19|item|Heartsteel|Bug fix: on-target cooldown not reset on death.|tanks
+13.19|rune|First Strike|Bug fixes: gold granted on lethal and shield damage.|burst champions
+13.19|rune|Unsealed Spellbook|Bug fix: swapped Teleport removed after Unleashed upgrade.|Spellbook users
+13.19|objective|Hextech Drake|Bug fix: lightning chain triggers.|n/a
+13.19|objective|Rift Herald|Bug fix: cannot charge same tower twice.|early objective teams
+13.19|system|Pings|Allied-info pings shown only to pinger; ping restriction timer changed (undocumented).|solo queue
+13.19|system|Ranked restrictions|Disruptive behavior can trigger ranked restrictions.|solo queue
+13.19|system|Accessibility|Optional visual notifications for global ability sounds.|n/a
+13.19|system|Announcer|Executions in fog no longer announced to enemy.|n/a
+13.19|mode|ARAM|ARAM modifiers (not coded).|non-SR mode
+""""""
+EOF
+echo ok"
+49,2026-09-23T13:28:06.634Z,Bash,"cd <scratch> && cat > gen.py <<'EOF'
+import csv, sys
+sys.path.insert(0,'.')
+from champ_rows import ROWS
+from sys_rows import SYS
+OUT='~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/'
+names=set(l.strip() for l in open(OUT+'champion_names.txt') if l.strip())
+meta={
+ '12.15':('2022','Patch 12.15 Notes','2022-08-10'),
+ '12.16':('2022','Patch 12.16 Notes','2022-08-24'),
+ '12.17':('2022','Patch 12.17 notes','2022-09-08'),
+ '12.18':('2022','Patch 12.18 notes','2022-09-21'),
+ '13.14':('2023','Patch 13.14 notes','2023-07-19'),
+ '13.15':('2023','Patch 13.15 notes','2023-08-02'),
+ '13.16':('2023','Patch 13.16 notes','2023-08-16'),
+ '13.17':('2023','Patch 13.17 notes','2023-08-30'),
+ '13.18':('2023','Patch 13.18 notes','2023-09-13'),
+ '13.19':('2023','Patch 13.19 Notes','2023-09-27'),
+}
+def riot(p): return f""https://www.leagueoflegends.com/en-us/news/game-updates/patch-{p.replace('.','-')}-notes/""
+def wiki(p): return f""https://wiki.leagueoflegends.com/en-us/V{p}""
+errs=[]; rows=[]; seen=set()
+for line in ROWS.strip().splitlines():
+    p,ch,d,m,pro,hf,summ,src=line.split('|')
+    yg,title,rd=meta[p]
+    m=int(m); pro=int(pro)
+    if ch not in names: errs.append('name '+ch)
+    if d not in ('buff','nerf','adjust','rework','bugfix'): errs.append('dir '+line)
+    if d in ('buff','nerf') and m not in (1,2,3): errs.append('mag '+line)
+    if d not in ('buff','nerf') and m!=0: errs.append('mag0 '+line)
+    if len(summ.split())>20: errs.append(f'len {len(summ.split())} '+line)
+    key=(p,ch,hf)
+    if key in seen: errs.append('dup '+line)
+    seen.add(key)
+    rows.append([yg,p,title,hf if hf else rd,ch,d,m,pro,1 if hf else 0,summ,riot(p) if src=='R' else wiki(p)])
+with open(OUT+'coded_D.csv','w',newline='') as f:
+    w=csv.writer(f,quoting=csv.QUOTE_MINIMAL)
+    w.writerow('year_group,patch_oe,riot_patch_title,release_date,champion,direction,magnitude,pro_targeted,hotfix,summary,source_url'.split(','))
+    for r in rows:
+        # force-quote summary
+        pass
+    f.write('')
+# write with summary always quoted
+with open(OUT+'coded_D.csv','w',newline='') as f:
+    f.write('year_group,patch_oe,riot_patch_title,release_date,champion,direction,magnitude,pro_targeted,hotfix,summary,source_url\n')
+    for r in rows:
+        def q(s): 
+            s=str(s); return '""'+s.replace('""','""""')+'""' if (',' in s or '""' in s) else s
+        out=[q(x) for x in r[:9]]+['""'+r[9].replace('""','""""')+'""', q(r[10])]
+        f.write(','.join(out)+'\n')
+srows=[]
+for line in SYS.strip().splitlines():
+    p,cat,name,cs,la=line.split('|')
+    srows.append([meta[p][0],p,cat,name,cs,la])
+with open(OUT+'systems_D.csv','w',newline='') as f:
+    w=csv.writer(f,quoting=csv.QUOTE_MINIMAL)
+    w.writerow(['year_group','patch_oe','category','name','change_summary','likely_affected'])
+    w.writerows(srows)
+print('errors:',errs)
+from collections import Counter
+c=Counter((r[1],r[8]) for r in rows)
+for k in sorted(c): print(k,c[k])
+print('total',len(rows),'systems',len(srows))
+EOF
+python3 gen.py"
+50,2026-09-23T13:28:11.761Z,Bash,"cd ""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/"" && head -5 coded_D.csv && grep -c """" coded_D.csv systems_D.csv && python3 -c ""
+import csv
+for fn in ['coded_D.csv','systems_D.csv']:
+    r=list(csv.reader(open(fn)))
+    print(fn, set(len(x) for x in r))
+"" && head -3 systems_D.csv"

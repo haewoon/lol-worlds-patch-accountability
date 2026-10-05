@@ -1,0 +1,100 @@
+{
+  "analysis_status": "post-hoc descriptive extension; no causal loss ranking",
+  "eligible_team_years": 215,
+  "lowest_net_all_eligible_finishes": {
+    "Before quarterfinals": 5,
+    "QF": 4,
+    "Runner-up": 1
+  },
+  "lowest_net_quarterfinalists_finishes": {
+    "QF": 6,
+    "SF": 2,
+    "Champion": 1,
+    "Runner-up": 1
+  },
+  "lowest_net_equals_highest_nerf_years": [
+    2016,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "lead_days_min": 5,
+  "lead_days_max": 21,
+  "lead_days_median": 9.5,
+  "timing_scope": "coded baseline patch release dates; not first notice, private access, or hotfix timing",
+  "extreme_tie_counts": {
+    "lowest_net_all_eligible": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 1
+    },
+    "highest_nerf_all_eligible": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 1
+    },
+    "highest_buff_all_eligible": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 1
+    },
+    "lowest_net_quarterfinalists": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 1
+    },
+    "highest_nerf_quarterfinalists": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 1
+    },
+    "highest_buff_quarterfinalists": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 1
+    }
+  }
+}

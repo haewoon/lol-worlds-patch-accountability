@@ -1,0 +1,12 @@
+# Python 3.12. Versions used for the paper; requirements-lock.txt lists the full environment.
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+statsmodels==0.15.0
+pyfixest==0.60.0
+matplotlib==3.11.2
+pyarrow==25.0.1
+# downloading Oracle's Elixir files and the optional preparation scripts
+gdown==6.4.0
+requests==2.34.2
+beautifulsoup4==4.15.0

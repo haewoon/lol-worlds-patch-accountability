@@ -1,0 +1,8 @@
+stage,champ_mean_rank,null_mean,p_favoured,p_two_sided,champ_better_than_runner_up
+S1 buffs,3.3,4.497,0.05586,0.1127,5/10
+S1 nerfs (fewer = better),4.6,4.504683999999999,0.57914,0.9451,4/10
+S2 pick advantage,4.6,4.500406,0.57946,0.94594,3/10
+S2 buff denied by bans (less = better),4.9,4.49663,0.73186,0.58212,4/10
+S3 conversion of favourable drafts,4.8,4.449205999999999,0.70944,0.63146,2/10
+"S4 indirect meta, first 5 days",3.9,4.496636,0.2271,0.45276,5/10
+"S4 indirect meta, full event",3.5,4.49838,0.09584,0.18876,5/10

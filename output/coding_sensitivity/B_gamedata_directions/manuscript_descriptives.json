@@ -1,0 +1,40 @@
+{
+  "eligible_team_years": 215,
+  "champion_years": 1502,
+  "unseen_min": 0,
+  "unseen_max": 6,
+  "unseen_mean": 3.158139534883721,
+  "buff_share_mean_pct": 6.1428288034861245,
+  "buff_share_median_range_pp": 11.568763490595124,
+  "nerf_share_mean_pct": 28.322697862938682,
+  "nerf_share_median_range_pp": 22.332885505299295,
+  "top_decile_buff_pct": 1.935483870967742,
+  "top_decile_nerf_pct": 45.16129032258064,
+  "bottom_eight_buff_pct": 19.131161236424393,
+  "bottom_eight_nerf_pct": 5.680868838763575,
+  "most_buff_exposed_finals": 6,
+  "most_buff_exposed_titles": 4,
+  "highest_net_titles": 3,
+  "T1_qf_style_ranks": [
+    {
+      "year": 2022,
+      "breadth_rank": 1.0,
+      "meta_low_rank": 2.0
+    },
+    {
+      "year": 2023,
+      "breadth_rank": 1.0,
+      "meta_low_rank": 1.0
+    },
+    {
+      "year": 2024,
+      "breadth_rank": 1.0,
+      "meta_low_rank": 1.0
+    },
+    {
+      "year": 2025,
+      "breadth_rank": 1.0,
+      "meta_low_rank": 3.0
+    }
+  ]
+}

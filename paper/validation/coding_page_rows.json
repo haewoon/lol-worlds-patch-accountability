@@ -1,0 +1,3913 @@
+[
+ {
+  "id": 1,
+  "year": 2023,
+  "patch": "13.15",
+  "title": "Patch 13.15 notes",
+  "champ": "Rengar",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.15",
+  "released": "2023-08-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Hwei",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "WW - Pool of Reflection",
+       "label": "Ally Shield Strength",
+       "before": "Reduced by 50%",
+       "after": "reduced by 25%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 3,
+  "year": 2018,
+  "patch": "8.16",
+  "title": "Patch 8.16 Notes",
+  "champ": "Trundle",
+  "url": "https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.16",
+  "released": "2018-08-15",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - Chomp",
+       "label": "BASE DAMAGE",
+       "before": "20/40/60/80/100",
+       "after": "20/30/40/50/60",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Chomp",
+       "label": "DAMAGE RATIO",
+       "before": "1.0/1.05/1.1/1.15/1.2 total attack damage",
+       "after": "1.0/1.1/1.2/1.3/1.4 total attack damage",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Chomp",
+       "label": "STOLEN ATTACK DAMAGE DURATION",
+       "before": "8 seconds",
+       "after": "5 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 4,
+  "year": 2016,
+  "patch": "6.17",
+  "title": "Patch 6.17 notes",
+  "champ": "Tahm Kench",
+  "url": "https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.17",
+  "released": "2016-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "year": 2021,
+  "patch": "11.16",
+  "title": "Patch 11.16 notes",
+  "champ": "Sivir",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.16",
+  "released": "2021-08-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Ricochet",
+       "label": "DAMAGE RATIO",
+       "before": "30/40/50/60/70% AD",
+       "after": "30/45/60/75/90% AD",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 6,
+  "year": 2022,
+  "patch": "12.17",
+  "title": "Patch 12.17 notes",
+  "champ": "Rell",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.17",
+  "released": "2022-09-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Ferromancy: Crash Down",
+       "label": "Move Speed while Dismounted",
+       "before": "250",
+       "after": "280",
+       "tag": ""
+      },
+      {
+       "ability": "E - Attract and Repel",
+       "label": "Cooldown",
+       "before": "18/16.25/14.5/12.75/11 seconds",
+       "after": "13 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 7,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Kai'Sa",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 8,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Corki",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - Phosphorus Bomb",
+       "label": "Damage",
+       "before": "70 / 115 / 160 / 205 / 250 (+130% AD)",
+       "after": "60 / 105 / 150 / 195 / 240 (+ 125% AD)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 9,
+  "year": 2017,
+  "patch": "7.18",
+  "title": "Patch 7.18 notes",
+  "champ": "Fiora",
+  "url": "https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.18",
+  "released": "2017-09-13",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Duelist's Dance",
+       "label": "BONUS MOVEMENT SPEED",
+       "before": "15/25/35/45%",
+       "after": "20/30/40/50%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 1
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 10,
+  "year": 2018,
+  "patch": "8.16",
+  "title": "Patch 8.16 Notes",
+  "champ": "Rammus",
+  "url": "https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.16",
+  "released": "2018-08-15",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Tanks",
+     "lines": [
+      {
+       "ability": "W - Defensive Ball Curl",
+       "label": "BONUS ARMOR",
+       "before": "50/60/70/80/90%",
+       "after": "60/70/80/90/100%",
+       "tag": ""
+      },
+      {
+       "ability": "W - Defensive Ball Curl",
+       "label": "BONUS MAGIC RESIST",
+       "before": "25/30/35/40/45%",
+       "after": "30/35/40/45/50%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 11,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Zeri",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 12,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Shen",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Ki Barrier",
+       "label": "Shield Strength",
+       "before": "47-101 (based on level) (+12% bonus HP)",
+       "after": "47-120 (based on level) (+13% bonus HP)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 13,
+  "year": 2021,
+  "patch": "11.16",
+  "title": "Patch 11.16 notes",
+  "champ": "Jarvan IV",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.16",
+  "released": "2021-08-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Martial Cadence",
+       "label": "DAMAGE",
+       "before": "8% of target’s current health",
+       "after": "10% of target’s current health",
+       "tag": ""
+      },
+      {
+       "ability": "R - Cataclysm",
+       "label": "BONUS DAMAGE RATIO",
+       "before": "150% AD",
+       "after": "180% AD",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 14,
+  "year": 2016,
+  "patch": "6.13",
+  "title": "Patch 6.13 notes",
+  "champ": "Twitch",
+  "url": "https://web.archive.org/web/20160712/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-613-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.13",
+  "released": "2016-06-29",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 15,
+  "year": 2019,
+  "patch": "9.17",
+  "title": "Patch 9.17 notes",
+  "champ": "Viktor",
+  "url": "https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.17",
+  "released": "2019-08-28",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 16,
+  "year": 2017,
+  "patch": "7.16",
+  "title": "Patch 7.16 notes",
+  "champ": "Orianna",
+  "url": "https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.16",
+  "released": "2017-08-11",
+  "hotfix": 1,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Mid-Lane Worlds Balance",
+     "lines": [
+      {
+       "ability": "W - Command: Dissonance",
+       "label": "BASE DAMAGE",
+       "before": "70/115/160/205/250",
+       "after": "60/105/150/195/240",
+       "tag": ""
+      },
+      {
+       "ability": "W - Command: Dissonance",
+       "label": "BUFFERED CAST RANGE",
+       "before": "275",
+       "after": "75 units away from Q's target location.",
+       "tag": ""
+      },
+      {
+       "ability": "W - Command: Dissonance",
+       "label": "BUFFERED CAST RANGE",
+       "before": "275",
+       "after": "75 units away from Q's target location.",
+       "tag": ""
+      },
+      {
+       "ability": "E - Command: Protect",
+       "label": "BASE SHIELD",
+       "before": "80/120/160/200/240",
+       "after": "60/100/140/180/220",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    },
+    {
+     "section": "Mid-Patch Updates",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 17,
+  "year": 2022,
+  "patch": "12.16",
+  "title": "Patch 12.16 Notes",
+  "champ": "Aphelios",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.16",
+  "released": "2022-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Ultimate Spellbook",
+     "count": 1
+    },
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 18,
+  "year": 2017,
+  "patch": "7.18",
+  "title": "Patch 7.18 notes",
+  "champ": "Elise",
+  "url": "https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.18",
+  "released": "2017-09-13",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Volatile Spiderling",
+       "label": "BASE DAMAGE",
+       "before": "60/110/160/210/260",
+       "after": "55/95/135/175/215",
+       "tag": ""
+      },
+      {
+       "ability": "W - Volatile Spiderling",
+       "label": "RATIO",
+       "before": "0.8 ability power",
+       "after": "0.95 ability power",
+       "tag": ""
+      },
+      {
+       "ability": "E - Rappel",
+       "label": "COOLDOWN",
+       "before": "26/23/20/17/14 seconds",
+       "after": "26/24/22/20/18 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 19,
+  "year": 2021,
+  "patch": "11.17",
+  "title": "Patch 11.17 notes",
+  "champ": "Leona",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.17",
+  "released": "2021-08-25",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Eclipse",
+       "label": "Bonus Armor and Magic Resist",
+       "before": "20/25/30/35/40",
+       "after": "15/20/25/30/35",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 20,
+  "year": 2019,
+  "patch": "9.16",
+  "title": "Patch 9.16 notes",
+  "champ": "Orianna",
+  "url": "https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.16",
+  "released": "2019-08-14",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "year": 2019,
+  "patch": "9.16",
+  "title": "Patch 9.16 notes",
+  "champ": "Karma",
+  "url": "https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.16",
+  "released": "2019-08-14",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 22,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Zoe",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 23,
+  "year": 2023,
+  "patch": "13.15",
+  "title": "Patch 13.15 notes",
+  "champ": "Yorick",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.15",
+  "released": "2023-08-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Smite and Ultimate Summons",
+     "lines": [
+      {
+       "ability": "R - Eulogy of the Isles",
+       "label": "new Maiden’s Armor and Magic Resistance",
+       "before": "0",
+       "after": "10-50 (levels 6-18, nonlinear scaling)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 24,
+  "year": 2023,
+  "patch": "13.18",
+  "title": "Patch 13.18 notes",
+  "champ": "Rell",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.18",
+  "released": "2023-09-13",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "E - Full Tilt",
+       "label": "Bonus Movement Speed (Away from Enemies)",
+       "before": "15/17.5/20/22.5/25%",
+       "after": "12/14/16/18/20%",
+       "tag": ""
+      },
+      {
+       "ability": "E - Full Tilt",
+       "label": "Bonus Movement Speed (Towards Enemies)",
+       "before": "30/35/40/45/50%",
+       "after": "24/28/32/36/40%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 25,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Lillia",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Lilting Lullaby",
+       "label": "Bonus Damage",
+       "before": "100 / 150 / 200 (+ 40% AP)",
+       "after": "150 / 200 / 250 (+ 45% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Lilting Lullaby",
+       "label": "Cooldown",
+       "before": "150 / 130 / 110",
+       "after": "140 / 120 / 100",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 26,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Aurora",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Between Worlds",
+       "label": "Maximum Jump Distance",
+       "before": "400",
+       "after": "250",
+       "tag": ""
+      },
+      {
+       "ability": "R - Between Worlds",
+       "label": "Wall Jump Forgiveness",
+       "before": "700",
+       "after": "450",
+       "tag": ""
+      },
+      {
+       "ability": "R - Between Worlds",
+       "label": "Duration",
+       "before": "3/3.5/4",
+       "after": "2/2.5/3 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Arena",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 27,
+  "year": 2017,
+  "patch": "7.16",
+  "title": "Patch 7.16 notes",
+  "champ": "Riven",
+  "url": "https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.16",
+  "released": "2017-08-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 28,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Brand",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Blaze",
+       "label": "Monster Damage Modifier",
+       "before": "2.6x",
+       "after": "2.65x",
+       "tag": ""
+      },
+      {
+       "ability": "W - Pillar of Flame",
+       "label": "Damage",
+       "before": "75 / 120 / 165 / 210 / 255 (+ 60% AP)",
+       "after": "75 / 120 / 165 / 210 / 255 (+ 70% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Pyroclasm",
+       "label": "Damage per hit",
+       "before": "100 / 175 / 250 ( +25% AP)",
+       "after": "100 / 175 / 250 (+ 30% AP)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 29,
+  "year": 2018,
+  "patch": "8.19",
+  "title": "Patch 8.19 notes",
+  "champ": "Draven",
+  "url": "https://wiki.leagueoflegends.com/en-us/V8.19",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.19",
+  "released": "2018-09-26",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "League of Legends V8.19",
+     "count": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": 30,
+  "year": 2017,
+  "patch": "7.18",
+  "title": "Patch 7.18 notes",
+  "champ": "Kalista",
+  "url": "https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.18",
+  "released": "2017-09-13",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Fate's Call",
+       "label": "COOLDOWN",
+       "before": "120/90/60 seconds",
+       "after": "150/120/90 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 31,
+  "year": 2021,
+  "patch": "11.17",
+  "title": "Patch 11.17 notes",
+  "champ": "Mordekaiser",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.17",
+  "released": "2021-08-25",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 32,
+  "year": 2022,
+  "patch": "12.15",
+  "title": "Patch 12.15 Notes",
+  "champ": "Taliyah",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.15",
+  "released": "2022-08-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "E - Unraveled Earth",
+       "label": "Cooldown",
+       "before": "16/15/14/13/12 seconds",
+       "after": "18/17/16/15/14 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "R - Weaver’s Wall",
+       "label": "Wall Duration",
+       "before": "5 seconds",
+       "after": "4 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Mid-Patch Updates",
+     "count": 1
+    },
+    {
+     "section": "Ultimate Spellbook",
+     "count": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": 33,
+  "year": 2019,
+  "patch": "9.16",
+  "title": "Patch 9.16 notes",
+  "champ": "Jax",
+  "url": "https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.16",
+  "released": "2019-08-14",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - Leap Strike",
+       "label": "COOLDOWN",
+       "before": "10/9/8/7/6 seconds",
+       "after": "8/7.5/7/6.5/6 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 34,
+  "year": 2025,
+  "patch": "15.18",
+  "title": "Patch 25.18 Notes",
+  "champ": "Zac",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.18",
+  "released": "2025-09-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 35,
+  "year": 2023,
+  "patch": "13.19",
+  "title": "Patch 13.19 Notes",
+  "champ": "Pyke",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.19",
+  "released": "2023-09-27",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Health Growth",
+       "before": "104",
+       "after": "110",
+       "tag": ""
+      },
+      {
+       "ability": "W - Ghostwater Dive",
+       "label": "Cooldown",
+       "before": "12/11.5/11/10.5/10 seconds",
+       "after": "12/11/10/9/8 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 36,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Zac",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 1,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Mid-Patch Updates (9/2/2020)",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 37,
+  "year": 2018,
+  "patch": "8.16",
+  "title": "Patch 8.16 Notes",
+  "champ": "Rakan",
+  "url": "https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.16",
+  "released": "2018-08-15",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "HEALTH",
+       "before": "510",
+       "after": "480",
+       "tag": ""
+      },
+      {
+       "ability": "Base Stats",
+       "label": "ARMOR",
+       "before": "36",
+       "after": "33",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 38,
+  "year": 2022,
+  "patch": "12.16",
+  "title": "Patch 12.16 Notes",
+  "champ": "Yorick",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.16",
+  "released": "2022-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 39,
+  "year": 2016,
+  "patch": "6.15",
+  "title": "Patch 6.15 notes",
+  "champ": "Evelynn",
+  "url": "https://web.archive.org/web/20160809/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-615-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.15",
+  "released": "2016-07-26",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 40,
+  "year": 2023,
+  "patch": "13.14",
+  "title": "Patch 13.14 notes",
+  "champ": "Rengar",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.14",
+  "released": "2023-07-19",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Health Regeneration per 5 seconds",
+       "before": "7",
+       "after": "6",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Savagery",
+       "label": "Critical Strike Damage Conversion",
+       "before": "95%",
+       "after": "75%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 41,
+  "year": 2025,
+  "patch": "15.18",
+  "title": "Patch 25.18 Notes",
+  "champ": "Galio",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.18",
+  "released": "2025-09-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Colossal Smash",
+       "label": "AP Ratio",
+       "before": "45%",
+       "after": "40%",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Winds of War",
+       "label": "Percent Max Health Damage per Tick",
+       "before": "2.5%",
+       "after": "2%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 42,
+  "year": 2018,
+  "patch": "8.17",
+  "title": "Patch 8.17 Notes",
+  "champ": "Kassadin",
+  "url": "https://web.archive.org/web/20180911/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-817-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.17",
+  "released": "2018-08-29",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Riftwalk",
+       "label": "COOLDOWN",
+       "before": "6/4/2 seconds",
+       "after": "5/3.5/2 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 43,
+  "year": 2019,
+  "patch": "9.16",
+  "title": "Patch 9.16 notes",
+  "champ": "Nocturne",
+  "url": "https://web.archive.org/web/20190827/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-916-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.16",
+  "released": "2019-08-14",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "ARMOR",
+       "before": "36",
+       "after": "38",
+       "tag": ""
+      },
+      {
+       "ability": "Base Stats",
+       "label": "HEALTH",
+       "before": "582.8",
+       "after": "585",
+       "tag": ""
+      },
+      {
+       "ability": "Base Stats",
+       "label": "MANA",
+       "before": "273.8",
+       "after": "275",
+       "tag": ""
+      },
+      {
+       "ability": "Base Stats",
+       "label": "MANA REGEN",
+       "before": "6.756",
+       "after": "7",
+       "tag": ""
+      },
+      {
+       "ability": "W - Shroud of Darkness",
+       "label": "BONUS ATTACK SPEED",
+       "before": "20/25/30/35/40%",
+       "after": "30/35/40/45/50%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 44,
+  "year": 2024,
+  "patch": "14.17",
+  "title": "Patch 14.17 Notes",
+  "champ": "Seraphine",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.17",
+  "released": "2024-08-28",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Surround Sound",
+       "label": "Shield",
+       "before": "60/85/110/135/160 (+20% AP)",
+       "after": "60/80/100/120/140 (+20% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "W - Surround Sound",
+       "label": "Cooldown",
+       "before": "22/21/20/19/18",
+       "after": "22",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 45,
+  "year": 2020,
+  "patch": "10.19",
+  "title": "Patch 10.19 notes",
+  "champ": "Udyr",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.19",
+  "released": "2020-09-16",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Phoenix Stance",
+       "label": "CONE DAMAGE",
+       "before": "50/95/140/185/230/275 (+0.6 ability power)",
+       "after": "60/110/160/210/260/310 (+0.7 ability power)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 46,
+  "year": 2019,
+  "patch": "9.19",
+  "title": "Patch 9.19 notes",
+  "champ": "Vayne",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.19",
+  "released": "2019-09-25",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Final Hour",
+       "label": "BONUS ATTACK DAMAGE",
+       "before": "20/30/40",
+       "after": "25/40/55",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 47,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Ivern",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "E - Triggerseed",
+       "label": "Shield Strength",
+       "before": "85/125/165/205/245 (+50% AP)",
+       "after": "75/115/155/195/235 (+50% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "E - Triggerseed",
+       "label": "Slow",
+       "before": "45/50/55/60/65%",
+       "after": "40/45/50/55/60%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 48,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Nasus",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 49,
+  "year": 2016,
+  "patch": "6.17",
+  "title": "Patch 6.17 notes",
+  "champ": "Kha'Zix",
+  "url": "https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.17",
+  "released": "2016-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 50,
+  "year": 2022,
+  "patch": "12.17",
+  "title": "Patch 12.17 notes",
+  "champ": "Sett",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.17",
+  "released": "2022-09-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Haymaker",
+       "label": "AD ratio",
+       "before": "20% per 100 bonus AD",
+       "after": "25% per 100 bonus AD",
+       "tag": ""
+      },
+      {
+       "ability": "E - Facebreaker",
+       "label": "Slow",
+       "before": "50%",
+       "after": "70%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 51,
+  "year": 2016,
+  "patch": "6.15",
+  "title": "Patch 6.15 notes",
+  "champ": "Darius",
+  "url": "https://web.archive.org/web/20160809/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-615-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.15",
+  "released": "2016-07-26",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 52,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Graves",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes/QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 53,
+  "year": 2018,
+  "patch": "8.16",
+  "title": "Patch 8.16 Notes",
+  "champ": "Tahm Kench",
+  "url": "https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.16",
+  "released": "2018-08-15",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Tanks",
+     "lines": [
+      {
+       "ability": "Q - Tongue Lash",
+       "label": "SLOW DURATION",
+       "before": "2 seconds",
+       "after": "1.5 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Tongue Lash",
+       "label": "COOLDOWN",
+       "before": "6 seconds",
+       "after": "5 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Devour/Regurgitate",
+       "label": "DEVOUR DURATION",
+       "before": "4/4.5/5/5.5/6 seconds",
+       "after": "4 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Devour/Regurgitate",
+       "label": "COOLDOWN",
+       "before": "14/13/12/11/10 seconds",
+       "after": "28/25/22/19/16 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Devour/Regurgitate",
+       "label": "COST",
+       "before": "90 mana",
+       "after": "60 mana",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 54,
+  "year": 2019,
+  "patch": "9.17",
+  "title": "Patch 9.17 notes",
+  "champ": "Galio",
+  "url": "https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.17",
+  "released": "2019-08-28",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "MANA REGEN",
+       "before": "9.335",
+       "after": "9.5",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Winds of War",
+       "label": "COOLDOWN",
+       "before": "14/13/12/11/10 seconds",
+       "after": "12/11.5/11/10.5/10 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Shield of Durand",
+       "label": "MINIMUM DAMAGE",
+       "before": "10/20/30/40/50",
+       "after": "20/35/50/65/80",
+       "tag": ""
+      },
+      {
+       "ability": "W - Shield of Durand",
+       "label": "MAXIMUM DAMAGE",
+       "before": "30/60/90/120/150",
+       "after": "60/105/150/195/240",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 55,
+  "year": 2021,
+  "patch": "11.18",
+  "title": "Patch 11.18 notes",
+  "champ": "Fizz",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.18",
+  "released": "2021-09-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Nimble Fighter",
+       "label": "DAMAGE REDUCTION VS BASIC ATTACKS",
+       "before": "4 (+1% Ability Power)",
+       "after": "8 (+2% Ability Power), damage reduction vs other sources unchanged",
+       "tag": ""
+      },
+      {
+       "ability": "W - Seastone Trident",
+       "label": "ON-HIT DAMAGE",
+       "before": "10/15/20/25/30 (+35% Ability Power)",
+       "after": "20/25/30/35/40 (+35% Ability Power)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "GUPPY DAMAGE",
+       "before": "150/250/350 (+80% Ability Power)",
+       "after": "150/225/300 (+70% Ability Power)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "CHOMPER DAMAGE",
+       "before": "225/325/425 (+100% Ability Power)",
+       "after": "200/275/350 (+85% Ability Power)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "GIGALODON DAMAGE",
+       "before": "300/400/500 (+120% Ability Power)",
+       "after": "250/325/400 (+100% Ability Power)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 56,
+  "year": 2023,
+  "patch": "13.15",
+  "title": "Patch 13.15 notes",
+  "champ": "Aurelion Sol",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.15",
+  "released": "2023-08-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 57,
+  "year": 2016,
+  "patch": "6.17",
+  "title": "Patch 6.17 notes",
+  "champ": "Nasus",
+  "url": "https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.17",
+  "released": "2016-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 58,
+  "year": 2017,
+  "patch": "7.18",
+  "title": "Patch 7.18 notes",
+  "champ": "Kha'Zix",
+  "url": "https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.18",
+  "released": "2017-09-13",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 59,
+  "year": 2018,
+  "patch": "8.18",
+  "title": "Patch 8.18 Notes",
+  "champ": "Viktor",
+  "url": "https://web.archive.org/web/20180925/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-818-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.18",
+  "released": "2018-09-12",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Glorious Evolution",
+       "label": "HEX CORE MK-1 COST",
+       "before": "1250 gold",
+       "after": "1150 gold",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Glorious Evolution",
+       "label": "PERFECT HEX CORE COST",
+       "before": "750 gold",
+       "after": "850 gold",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 60,
+  "year": 2019,
+  "patch": "9.18",
+  "title": "Patch 9.18 notes",
+  "champ": "Miss Fortune",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.18",
+  "released": "2019-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "E - Make It Rain",
+       "label": "SLOW",
+       "before": "28/36/44/52/60%",
+       "after": "40/45/50/55/60%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 61,
+  "year": 2019,
+  "patch": "9.17",
+  "title": "Patch 9.17 notes",
+  "champ": "Aurelion Sol",
+  "url": "https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.17",
+  "released": "2019-08-28",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Center of the Universe",
+       "label": "DAMAGE",
+       "before": "20/23/26/29/32/35/40/45/50/55/ 60/70/80/90/100/110/120/130",
+       "after": "16/18/20/22/24/27/30/35/40/45/50/ 60/70/80/90/100/110/120",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Center of the Universe",
+       "label": "RATIO",
+       "before": "0.18-0.35 (levels 1-18) ability power",
+       "after": "0.25 ability power",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Center of the Universe",
+       "label": "removed NULLIFYING CC",
+       "before": "",
+       "after": "",
+       "tag": "removed"
+      },
+      {
+       "ability": "Q - Starsurge",
+       "label": "COOLDOWN",
+       "before": "10 seconds",
+       "after": "11/10/9/8/7 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Starsurge",
+       "label": "MOVEMENT SPEED",
+       "before": "10%",
+       "after": "20%",
+       "tag": ""
+      },
+      {
+       "ability": "W - Celestial Expansion",
+       "label": "COOLDOWN",
+       "before": "6/5.5/5/4.5/4 seconds",
+       "after": "8/6.5/5/3.5/2 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Celestial Expansion",
+       "label": "MANA",
+       "before": "40 mana + 22/24/26/28/30 mana per second it's activated",
+       "after": "70/80/90/100/110 mana on cast",
+       "tag": ""
+      },
+      {
+       "ability": "E - Comet of Legend",
+       "label": "removed PASSIVE",
+       "before": "",
+       "after": "",
+       "tag": "removed"
+      },
+      {
+       "ability": "E - Comet of Legend",
+       "label": "RANGE",
+       "before": "3000/4000/5000/6000/7000",
+       "after": "5500/6000/6500/7000/7500",
+       "tag": ""
+      },
+      {
+       "ability": "E - Comet of Legend",
+       "label": "COOLDOWN",
+       "before": "60/55/50/45/40 seconds",
+       "after": "80/75/70/65/60 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "E - Comet of Legend",
+       "label": "SPEED",
+       "before": "600",
+       "after": "600/650/700/750/800",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 62,
+  "year": 2017,
+  "patch": "7.17",
+  "title": "Patch 7.17 notes",
+  "champ": "Cassiopeia",
+  "url": "https://web.archive.org/web/20170912/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-717-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.17",
+  "released": "2017-08-23",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 63,
+  "year": 2024,
+  "patch": "14.17",
+  "title": "Patch 14.17 Notes",
+  "champ": "Kindred",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.17",
+  "released": "2024-08-28",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - Dance of Arrows",
+       "label": "Attack Speed",
+       "before": "30%",
+       "after": "35%",
+       "tag": ""
+      },
+      {
+       "ability": "E - Mounting Dread",
+       "label": "Damage",
+       "before": "80/100/120/140/160 (+80% Bonus AD)",
+       "after": "80/110/140/170/200 (+100% Bonus AD)",
+       "tag": ""
+      },
+      {
+       "ability": "E - Mounting Dread",
+       "label": "Cooldown",
+       "before": "14/13/12/11/10",
+       "after": "14/12.5/11/9.5/8",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 64,
+  "year": 2022,
+  "patch": "12.18",
+  "title": "Patch 12.18 notes",
+  "champ": "Kalista",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.18",
+  "released": "2022-09-21",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Base Health",
+       "before": "604",
+       "after": "574",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 65,
+  "year": 2025,
+  "patch": "15.20",
+  "title": "Patch 25.20 Notes",
+  "champ": "Anivia",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-20-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.20",
+  "released": "2025-10-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - Flash Frost",
+       "label": "Cooldown",
+       "before": "12/11/10/9/8",
+       "after": "11/10/9/8/7 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "E - Frostbite",
+       "label": "Base Damage",
+       "before": "50 / 75 / 100 / 125 / 150",
+       "after": "55 / 80 / 105 / 130 / 155",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 66,
+  "year": 2021,
+  "patch": "11.19",
+  "title": "Patch 11.19 notes",
+  "champ": "Sona",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.19",
+  "released": "2021-09-22",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Base Armor",
+       "before": "28",
+       "after": "26",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Power Chord",
+       "label": "BUGFIX",
+       "before": "20-245 (based on level)",
+       "after": "20-240 (based on level)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 67,
+  "year": 2023,
+  "patch": "13.14",
+  "title": "Patch 13.14 notes",
+  "champ": "Ornn",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.14",
+  "released": "2023-07-19",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 68,
+  "year": 2016,
+  "patch": "6.17",
+  "title": "Patch 6.17 notes",
+  "champ": "Gangplank",
+  "url": "https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.17",
+  "released": "2016-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "General",
+       "label": "BASE HEALTH",
+       "before": "580",
+       "after": "540",
+       "tag": ""
+      },
+      {
+       "ability": "W - Remove Scurvy",
+       "label": "COST",
+       "before": "60/70/80/90/100 mana",
+       "after": "80/90/100/110/120 mana",
+       "tag": ""
+      },
+      {
+       "ability": "R - Cannon Barrage",
+       "label": "COOLDOWN",
+       "before": "160/150/140 seconds",
+       "after": "180/160/140 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "R - Cannon Barrage",
+       "label": "DAMAGE",
+       "before": "600/840/1080",
+       "after": "420/720/1020",
+       "tag": ""
+      }
+     ],
+     "text_lines": 1
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 69,
+  "year": 2023,
+  "patch": "13.19",
+  "title": "Patch 13.19 Notes",
+  "champ": "Naafiri",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.19",
+  "released": "2023-09-27",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": 70,
+  "year": 2021,
+  "patch": "11.18",
+  "title": "Patch 11.18 notes",
+  "champ": "Singed",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.18",
+  "released": "2021-09-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 71,
+  "year": 2016,
+  "patch": "6.16",
+  "title": "Patch 6.16 notes",
+  "champ": "Shyvana",
+  "url": "https://web.archive.org/web/20160823/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-616-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.16",
+  "released": "2016-08-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 72,
+  "year": 2024,
+  "patch": "14.16",
+  "title": "Patch 14.16 Notes",
+  "champ": "Syndra",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.16",
+  "released": "2024-08-14",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Unleashed Power",
+       "label": "Damage per Orb",
+       "before": "90/130/170 (+17% AP)",
+       "after": "100/140/180 (+17% AP)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 73,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Lillia",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Dream-Laden Bough",
+       "label": "Monster Damage Cap",
+       "before": "70-100 (based on level)",
+       "after": "65 at all levels",
+       "tag": ""
+      },
+      {
+       "ability": "R - Lilting Lullaby",
+       "label": "Sleep Duration",
+       "before": "2/2.25/2.5 seconds",
+       "after": "2 seconds at all ranks",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 74,
+  "year": 2020,
+  "patch": "10.19",
+  "title": "Patch 10.19 notes",
+  "champ": "Nautilus",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.19",
+  "released": "2020-09-16",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes/QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 75,
+  "year": 2018,
+  "patch": "8.16",
+  "title": "Patch 8.16 Notes",
+  "champ": "Taliyah",
+  "url": "https://web.archive.org/web/20180828/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.16",
+  "released": "2018-08-15",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "MOVEMENT SPEED",
+       "before": "340",
+       "after": "335",
+       "tag": ""
+      },
+      {
+       "ability": "W - Seismic Shove",
+       "label": "COOLDOWN",
+       "before": "12 seconds",
+       "after": "16/15/14/13/12 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "R - Weaver's Wall",
+       "label": "removed VISION",
+       "before": "",
+       "after": "",
+       "tag": "removed"
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 76,
+  "year": 2023,
+  "patch": "13.15",
+  "title": "Patch 13.15 notes",
+  "champ": "Maokai",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.15",
+  "released": "2023-08-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - Bramble Smash",
+       "label": "Bonus Damage to Monsters",
+       "before": "100/120/140/160/180",
+       "after": "80/100/120/140/160",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Arena Balance Adjustments",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 77,
+  "year": 2017,
+  "patch": "7.18",
+  "title": "Patch 7.18 notes",
+  "champ": "Rumble",
+  "url": "https://web.archive.org/web/20170930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-718-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.18",
+  "released": "2017-09-13",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Junkyard Titan",
+       "label": "CLARITY",
+       "before": "",
+       "after": "Rumble’s Heat bar now turns orange when at or above 80 Heat",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 78,
+  "year": 2019,
+  "patch": "9.19",
+  "title": "Patch 9.19 notes",
+  "champ": "Sejuani",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.19",
+  "released": "2019-09-25",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Fury of the North",
+       "label": "ICEBREAKER DAMAGE RATIO",
+       "before": "10/15/20% of target's maximum health (levels 1, 7, 14)",
+       "after": "10% of target's maximum health",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 79,
+  "year": 2022,
+  "patch": "12.17",
+  "title": "Patch 12.17 notes",
+  "champ": "Graves",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.17",
+  "released": "2022-09-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Q - End of the Line",
+       "label": "Cooldown",
+       "before": "12/11/10/9/8 seconds",
+       "after": "13/11.5/10/8.5/7 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "R - Collateral Damage",
+       "label": "Damage",
+       "before": "250/400/550 (+150% bonus AD)",
+       "after": "275/425/575 (+150% bonus AD)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 80,
+  "year": 2017,
+  "patch": "7.16",
+  "title": "Patch 7.16 notes",
+  "champ": "Heimerdinger",
+  "url": "https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.16",
+  "released": "2017-08-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 81,
+  "year": 2020,
+  "patch": "10.17",
+  "title": "Patch 10.17 notes",
+  "champ": "Caitlyn",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-16b-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.17",
+  "released": "2020-08-19",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "MOVEMENT SPEED",
+       "before": "330",
+       "after": "325",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 82,
+  "year": 2021,
+  "patch": "11.17",
+  "title": "Patch 11.17 notes",
+  "champ": "Ekko",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.17",
+  "released": "2021-08-25",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Z-Drive Resonance",
+       "label": "Increased damage vs monsters",
+       "before": "150%",
+       "after": "200%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 83,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Tryndamere",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "VFX Updates (9/2/2020)",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes/QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 84,
+  "year": 2018,
+  "patch": "8.19",
+  "title": "Patch 8.19 notes",
+  "champ": "Janna",
+  "url": "https://web.archive.org/web/20180930/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-819-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.19",
+  "released": "2018-09-26",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Tailwind",
+       "label": "Bonus movespeed conversion to damage",
+       "before": "15/25/35% at levels 1/7/13",
+       "after": "25/35% at levels 1/10",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 85,
+  "year": 2021,
+  "patch": "11.18",
+  "title": "Patch 11.18 notes",
+  "champ": "Zed",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.18",
+  "released": "2021-09-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 86,
+  "year": 2021,
+  "patch": "11.16",
+  "title": "Patch 11.16 notes",
+  "champ": "Karma",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.16",
+  "released": "2021-08-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Gathering Fire",
+       "label": "removed ON-HIT COOLDOWN REDUCTION",
+       "before": "",
+       "after": "",
+       "tag": "removed"
+      },
+      {
+       "ability": "Passive - Gathering Fire",
+       "label": "COOLDOWN REDUCTION FROM ABILITIES",
+       "before": "2/3.5/5 seconds (level 1/6/11)",
+       "after": "5 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Inner Flame",
+       "label": "BASE DAMAGE",
+       "before": "90/135/180/225/270",
+       "after": "70/120/170/220/270",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Inner Flame",
+       "label": "COOLDOWN",
+       "before": "8/7.5/7/6.5/6 seconds",
+       "after": "9/8/7/6/5 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Inner Flame",
+       "label": "COST",
+       "before": "55 mana",
+       "after": "45 mana",
+       "tag": ""
+      },
+      {
+       "ability": "Q2 - Soulflare",
+       "label": "INITIAL DAMAGE",
+       "before": "25/75/125/175",
+       "after": "40/100/160/220",
+       "tag": ""
+      },
+      {
+       "ability": "E - Inspire",
+       "label": "BASE SHIELD",
+       "before": "80/120/160/200/240",
+       "after": "80/125/170/215/260",
+       "tag": ""
+      },
+      {
+       "ability": "E - Inspire",
+       "label": "BONUS MOVEMENT SPEED",
+       "before": "40/45/50/55/60%",
+       "after": "40%",
+       "tag": ""
+      },
+      {
+       "ability": "E - Inspire",
+       "label": "DEFIANCE BUFFS TO NEARBY ALLIED CHAMPIONS",
+       "before": "30% of the total shield’s amount, 100% bonus movement speed",
+       "after": "30% of the total shield’s amount, 30% bonus movement speed",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 87,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Lux",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes/QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 88,
+  "year": 2020,
+  "patch": "10.19",
+  "title": "Patch 10.19 notes",
+  "champ": "Samira",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.19",
+  "released": "2020-09-22",
+  "hotfix": 1,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 2
+    },
+    {
+     "section": "Mid-Patch Updates (9/22/2020)",
+     "lines": [
+      {
+       "ability": "",
+       "label": "BASE HEALTH",
+       "before": "600",
+       "after": "530",
+       "tag": ""
+      }
+     ],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 89,
+  "year": 2018,
+  "patch": "8.17",
+  "title": "Patch 8.17 Notes",
+  "champ": "Nunu & Willump",
+  "url": "https://web.archive.org/web/20180911/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-817-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.17",
+  "released": "2018-08-29",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [],
+     "text_lines": 3
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 90,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Anivia",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes/QoL Changes",
+     "count": 6
+    }
+   ]
+  }
+ },
+ {
+  "id": 91,
+  "year": 2025,
+  "patch": "15.20",
+  "title": "Patch 25.20 Notes",
+  "champ": "Fizz",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-20-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.20",
+  "released": "2025-10-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Seastone Trident",
+       "label": "Passive Damage over Time",
+       "before": "20 / 30 / 40 / 50 / 60 (+ 30% AP)",
+       "after": "30 / 45 / 60 / 75 / 90 (+ 25% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "W - Seastone Trident",
+       "label": "Active Burst Damage",
+       "before": "50 / 70 / 90 / 110 / 130",
+       "after": "50 / 75 / 100 / 125 / 150",
+       "tag": ""
+      },
+      {
+       "ability": "W - Seastone Trident",
+       "label": "On-Hit Damage",
+       "before": "10 / 15 / 20 / 25 / 30 (+ 35% AP)",
+       "after": "20 / 25 / 30 / 35 / 40 (+30% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "Guppy Damage",
+       "before": "150 / 250 / 350 (+ 80% AP)",
+       "after": "180 / 300 / 420 (+ 60% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "Chomper Damage",
+       "before": "225 / 325 / 425 (+ 100% AP)",
+       "after": "225 / 375 / 525 (+ 75% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "Gigalodon Damage",
+       "before": "300 / 400 / 500 (+ 120% AP)",
+       "after": "270 / 450 / 630 (+ 90% AP)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 92,
+  "year": 2022,
+  "patch": "12.16",
+  "title": "Patch 12.16 Notes",
+  "champ": "Malphite",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.16",
+  "released": "2022-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Granite Shield",
+       "label": "Cooldown (levels 1/7/13)",
+       "before": "10/8/6 seconds",
+       "after": "8/7/6 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Thunderclap",
+       "label": "Cooldown",
+       "before": "12 at all ranks",
+       "after": "12/11.5/11/10.5/10 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Mythic Content",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 93,
+  "year": 2023,
+  "patch": "13.14",
+  "title": "Patch 13.14 notes",
+  "champ": "Zyra",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-14-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.14",
+  "released": "2023-07-19",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Garden of Thorns",
+       "label": "Plant Damage from AoE Spells",
+       "before": "4",
+       "after": "3",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Garden of Thorns",
+       "label": "Plant Damage from Ranged Auto Attacks",
+       "before": "4",
+       "after": "5",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Garden of Thorns",
+       "label": "Plant Damage to Monsters",
+       "before": "150% damage to non-Epic monsters",
+       "after": "40-100 bonus magic damage to all monsters (scales with champion level)",
+       "tag": ""
+      },
+      {
+       "ability": "W - Rampant Growth",
+       "label": "Seeds on First Rank-Up",
+       "before": "1",
+       "after": "2",
+       "tag": ""
+      },
+      {
+       "ability": "R - Stranglethorns",
+       "label": "Damage Application Cadence",
+       "before": "4 times per second",
+       "after": "16 times per second",
+       "tag": ""
+      },
+      {
+       "ability": "R - Stranglethorns",
+       "label": "Casting Logic",
+       "before": "Zyra will walk to the position at which her R was cast",
+       "after": "Zyra will immediately cast her R at its maximum range",
+       "tag": ""
+      }
+     ],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 94,
+  "year": 2016,
+  "patch": "6.16",
+  "title": "Patch 6.16 notes",
+  "champ": "Viktor",
+  "url": "https://web.archive.org/web/20160823/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-616-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.16",
+  "released": "2016-08-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Chaos Storm",
+       "label": "MAXIMUM MOVEMENT SPEED",
+       "before": "450",
+       "after": "400",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chaos Storm",
+       "label": "MINIMUM MOVEMENT SPEED",
+       "before": "170",
+       "after": "200",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chaos Storm",
+       "label": "SPEED STARTS DECAYING AT",
+       "before": "350 range",
+       "after": "300 range",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chaos Storm",
+       "label": "MINIMUM SPEED CAPPED AT",
+       "before": "950 range",
+       "after": "900 range",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chaos Storm",
+       "label": "removed SNAPBACK",
+       "before": "",
+       "after": "",
+       "tag": "removed"
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 95,
+  "year": 2022,
+  "patch": "12.18",
+  "title": "Patch 12.18 notes",
+  "champ": "Lulu",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.18",
+  "released": "2022-09-21",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Whimsy",
+       "label": "Movement Speed",
+       "before": "30%",
+       "after": "25%",
+       "tag": ""
+      },
+      {
+       "ability": "W - Whimsy",
+       "label": "Disable duration",
+       "before": "1.25/1.5/1.75/2.0/2.25",
+       "after": "1.2/1.4/1.6/1.8/2.0 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "W - Whimsy",
+       "label": "Cooldown",
+       "before": "17/16/15/14/13",
+       "after": "17/16.5/16/15.5/15 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 96,
+  "year": 2022,
+  "patch": "12.15",
+  "title": "Patch 12.15 Notes",
+  "champ": "Kalista",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.15",
+  "released": "2022-08-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Base Attack Damage",
+       "before": "69",
+       "after": "66",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 97,
+  "year": 2016,
+  "patch": "6.17",
+  "title": "Patch 6.17 notes",
+  "champ": "Riven",
+  "url": "https://web.archive.org/web/20160907/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-617-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.17",
+  "released": "2016-08-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Blade of the Exile",
+       "label": "WIND SLASH MINIMUM DAMAGE",
+       "before": "80/120/160",
+       "after": "100/150/200",
+       "tag": ""
+      },
+      {
+       "ability": "R - Blade of the Exile",
+       "label": "WIND SLASH MAXIMUM DAMAGE",
+       "before": "240/360/480",
+       "after": "300/450/600",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 98,
+  "year": 2021,
+  "patch": "11.18",
+  "title": "Patch 11.18 notes",
+  "champ": "Ashe",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.18",
+  "released": "2021-09-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Volley",
+       "label": "Cooldown",
+       "before": "14/11.5/9/6.5/4 seconds",
+       "after": "18/14.5/11/7.5/4 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 99,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Swain",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 100,
+  "year": 2022,
+  "patch": "12.17",
+  "title": "Patch 12.17 notes",
+  "champ": "Nocturne",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-17-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.17",
+  "released": "2022-09-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Attack Speed Ratio",
+       "before": "0.668",
+       "after": "0.721",
+       "tag": ""
+      },
+      {
+       "ability": "Passive - Umbra Blades",
+       "label": "Cooldown",
+       "before": "14 seconds",
+       "after": "13 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 101,
+  "year": 2017,
+  "patch": "7.17",
+  "title": "Patch 7.17 notes",
+  "champ": "Cho'Gath",
+  "url": "https://web.archive.org/web/20170912/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-717-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.17",
+  "released": "2017-08-23",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 102,
+  "year": 2019,
+  "patch": "9.17",
+  "title": "Patch 9.17 notes",
+  "champ": "Zac",
+  "url": "https://web.archive.org/web/20190910/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-917-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.17",
+  "released": "2019-08-28",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 103,
+  "year": 2020,
+  "patch": "10.19",
+  "title": "Patch 10.19 notes",
+  "champ": "Vayne",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.19",
+  "released": "2020-09-16",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Final Hour",
+       "label": "BONUS ATTACK DAMAGE",
+       "before": "25/40/55",
+       "after": "35/50/65",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 104,
+  "year": 2023,
+  "patch": "13.19",
+  "title": "Patch 13.19 Notes",
+  "champ": "Twitch",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.19",
+  "released": "2023-09-27",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Spray And Pray",
+       "label": "Missile Speed",
+       "before": "4000",
+       "after": "5000",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 105,
+  "year": 2016,
+  "patch": "6.18",
+  "title": "Patch 6.18 notes",
+  "champ": "Miss Fortune",
+  "url": "https://web.archive.org/web/20161005/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-618-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.18",
+  "released": "2016-09-08",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Love Tap",
+       "label": "DAMAGE TO TURRETS",
+       "before": "50%",
+       "after": "100%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 106,
+  "year": 2024,
+  "patch": "14.18",
+  "title": "Patch 14.18 Notes",
+  "champ": "Rell",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.18",
+  "released": "2024-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "E - Full Tilt",
+       "label": "Maximum Bonus Movement Speed",
+       "before": "12/14/16/18/20%",
+       "after": "12/13/14/15/16%",
+       "tag": ""
+      },
+      {
+       "ability": "E - Full Tilt",
+       "label": "Maximum Bonus Movement Speed Toward Enemies or Targeted Ally",
+       "before": "24/28/32/36/40%",
+       "after": "24/26/28/30/32%",
+       "tag": ""
+      }
+     ],
+     "text_lines": 1
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 107,
+  "year": 2016,
+  "patch": "6.15",
+  "title": "Patch 6.15 notes",
+  "champ": "Graves",
+  "url": "https://web.archive.org/web/20160809/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-615-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V6.15",
+  "released": "2016-07-26",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 108,
+  "year": 2018,
+  "patch": "8.18",
+  "title": "Patch 8.18 Notes",
+  "champ": "Sejuani",
+  "url": "https://web.archive.org/web/20180925/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-818-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.18",
+  "released": "2018-09-12",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "E - Permafrost",
+       "label": "BASE DAMAGE",
+       "before": "30/45/60/75/90",
+       "after": "20/35/50/65/80",
+       "tag": ""
+      },
+      {
+       "ability": "R - Glacial Prison",
+       "label": "STORM EXPLOSION SLOW DURATION",
+       "before": "3 seconds",
+       "after": "1 second",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 109,
+  "year": 2017,
+  "patch": "7.16",
+  "title": "Patch 7.16 notes",
+  "champ": "Vi",
+  "url": "https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.16",
+  "released": "2017-08-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "R - Assault and Battery",
+       "label": "COOLDOWN",
+       "before": "150/115/80 seconds",
+       "after": "130/100/70 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 2
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 110,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Xin Zhao",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "W - Wind Becomes Lightning",
+       "label": "THRUST DAMAGE",
+       "before": "30/65/100/135/170 (+0.75 attack damage)",
+       "after": "40/75/110/145/180 (+0.80 attack damage)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 111,
+  "year": 2021,
+  "patch": "11.19",
+  "title": "Patch 11.19 notes",
+  "champ": "Fizz",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-11-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V11.19",
+  "released": "2021-09-22",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Nimble Fighter",
+       "label": "removed BACK TO THE BASICS",
+       "before": "",
+       "after": "",
+       "tag": "removed"
+      },
+      {
+       "ability": "W - Seastone Trident",
+       "label": "On-Hit Damage",
+       "before": "20/25/30/35/40 (+35% AP)",
+       "after": "10/15/20/25/30 (+35% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "E - Playful / Trickster",
+       "label": "Cooldown",
+       "before": "16/14.5/13/11.5/10 seconds",
+       "after": "16/14/12/10/8 seconds",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "Guppy Damage",
+       "before": "150/225/300 (+70% AP)",
+       "after": "150/250/350 (+80% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "Chomper Damage",
+       "before": "200/275/300 (+85% AP)",
+       "after": "225/325/425 (+100% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Chum the Waters",
+       "label": "Gigalodon Damage",
+       "before": "250/325/400 (+100% AP)",
+       "after": "300/400/500 (+120% AP)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 112,
+  "year": 2018,
+  "patch": "8.18",
+  "title": "Patch 8.18 Notes",
+  "champ": "Kai'Sa",
+  "url": "https://web.archive.org/web/20180925/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-818-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V8.18",
+  "released": "2018-09-12",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Passive - Caustic Wounds",
+       "label": "PROC DAMAGE",
+       "before": "15-20% target's missing health (at levels 1-18)",
+       "after": "15% target's missing health (at all levels)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 113,
+  "year": 2022,
+  "patch": "12.15",
+  "title": "Patch 12.15 Notes",
+  "champ": "Sivir",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-12-15-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V12.15",
+  "released": "2022-08-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Attack Damage Growth",
+       "before": "3.3",
+       "after": "3",
+       "tag": ""
+      },
+      {
+       "ability": "E - Spell Shield",
+       "label": "Cooldown",
+       "before": "22/20/18/16/14",
+       "after": "24/22.5/21/19.5/18",
+       "tag": ""
+      },
+      {
+       "ability": "R - On The Hunt",
+       "label": "Cooldown",
+       "before": "100/85/70",
+       "after": "120/100/80",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 114,
+  "year": 2020,
+  "patch": "10.18",
+  "title": "Patch 10.18 notes",
+  "champ": "Garen",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-10-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V10.18",
+  "released": "2020-09-02",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes/QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 115,
+  "year": 2017,
+  "patch": "7.16",
+  "title": "Patch 7.16 notes",
+  "champ": "Cassiopeia",
+  "url": "https://web.archive.org/web/20170822/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-716-notes",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V7.16",
+  "released": "2017-08-09",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Mid-Lane Worlds Balance",
+     "lines": [
+      {
+       "ability": "Base stats",
+       "label": "BASE MANA",
+       "before": "375",
+       "after": "334",
+       "tag": ""
+      },
+      {
+       "ability": "Base stats",
+       "label": "MANA GROWTH STAT",
+       "before": "60",
+       "after": "63",
+       "tag": ""
+      },
+      {
+       "ability": "E - Twin Fang",
+       "label": "DAMAGE VS POISONED TARGETS",
+       "before": "10/40/70/100/130 (+0.35 ability power)",
+       "after": "15/40/65/90/115 (+0.4 ability power)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 116,
+  "year": 2019,
+  "patch": "9.18",
+  "title": "Patch 9.18 notes",
+  "champ": "Xayah",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-9-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V9.18",
+  "released": "2019-09-11",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "ARMOR",
+       "before": "28",
+       "after": "25",
+       "tag": ""
+      },
+      {
+       "ability": "R - Featherstorm",
+       "label": "COOLDOWN",
+       "before": "140/125/110 seconds",
+       "after": "160/145/130 seconds",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": []
+  }
+ },
+ {
+  "id": 117,
+  "year": 2024,
+  "patch": "14.16",
+  "title": "Patch 14.16 Notes",
+  "champ": "Qiyana",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-16-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V14.16",
+  "released": "2024-08-14",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [
+    {
+     "section": "Champions",
+     "lines": [
+      {
+       "ability": "Base Stats",
+       "label": "Base Armor",
+       "before": "28",
+       "after": "31",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Edge of Ixtal / Elemental Wrath",
+       "label": "Damage",
+       "before": "50/85/120/155/190 (+75% bonus AD)",
+       "after": "60/90/120/150/180 (+90% bonus AD)",
+       "tag": ""
+      },
+      {
+       "ability": "Q - Edge of Ixtal / Elemental Wrath",
+       "label": "Bonus Damage to Monsters",
+       "before": "50%",
+       "after": "75%",
+       "tag": ""
+      },
+      {
+       "ability": "W - Terrashape",
+       "label": "Bonus On-Hit Damage",
+       "before": "8/22/36/50/64 (+10% bonus AD) (+45% AP)",
+       "after": "8/16/24/32/40 (+10% bonus AD) (+45% AP)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Supreme Display of Talent",
+       "label": "Damage",
+       "before": "100/200/300 (+170% bonus AD) (+10% of target's maximum health)",
+       "after": "100/200/300 (+125% bonus AD) (+10% of target's maximum health)",
+       "tag": ""
+      },
+      {
+       "ability": "R - Supreme Display of Talent",
+       "label": "Monster Damage Cap",
+       "before": "500/750/1000 (+150% bonus AD)",
+       "after": "500/750/1000 (+125% bonus AD)",
+       "tag": ""
+      }
+     ],
+     "text_lines": 0
+    }
+   ],
+   "mentions": [
+    {
+     "section": "Mythic Shop Rotation",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 118,
+  "year": 2025,
+  "patch": "15.19",
+  "title": "Patch 25.19 Notes",
+  "champ": "Soraka",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.19",
+  "released": "2025-09-24",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 119,
+  "year": 2025,
+  "patch": "15.18",
+  "title": "Patch 25.18 Notes",
+  "champ": "Syndra",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-25-18-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V25.18",
+  "released": "2025-09-10",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": 120,
+  "year": 2023,
+  "patch": "13.19",
+  "title": "Patch 13.19 Notes",
+  "champ": "Karthus",
+  "url": "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-19-notes/",
+  "wiki": "https://wiki.leagueoflegends.com/en-us/V13.19",
+  "released": "2023-09-27",
+  "hotfix": 0,
+  "shown": {
+   "blocks": [],
+   "mentions": [
+    {
+     "section": "Bugfixes & QoL Changes",
+     "count": 1
+    }
+   ]
+  }
+ }
+]

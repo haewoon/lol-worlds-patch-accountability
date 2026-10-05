@@ -1,0 +1,11 @@
+year,main_patch,start,end_exclusive,boundary_note
+2016,6.18,2016-09-29,2016-10-31,UTC date bounds of Worlds games
+2017,7.18,2017-09-23,2017-11-05,UTC date bounds of Worlds games
+2018,8.19,2018-10-01,2018-11-04,UTC date bounds of Worlds games
+2019,9.19,2019-10-02,2019-11-11,UTC date bounds of Worlds games
+2020,10.19,2020-09-25,2020-11-01,UTC date bounds of Worlds games
+2021,11.19,2021-10-05,2021-11-07,UTC date bounds of Worlds games
+2022,12.18,2022-09-29,2022-11-07,UTC date bounds of Worlds games
+2023,13.19,2023-10-10,2023-11-20,Exclude Oct 9 Worlds Qualifying Series; retain it as pre-event competitive experience
+2024,14.18,2024-09-25,2024-11-03,UTC date bounds of Worlds games
+2025,15.20,2025-10-14,2025-11-10,UTC date bounds of Worlds games

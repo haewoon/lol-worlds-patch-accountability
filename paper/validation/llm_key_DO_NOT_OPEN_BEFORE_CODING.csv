@@ -1,0 +1,121 @@
+id,direction,magnitude,summary
+1,bugfix,0,R on-screen warning effects for enemies restored.
+2,buff,1,WW ally shield effectiveness 50%->75% to help support Hwei
+3,nerf,2,"Q base damage down late (ratio up), Q stolen AD duration 8->5s; less dueling."
+4,bugfix,0,Bug fix: R description no longer blank in champion select.
+5,buff,2,W Ricochet AD ratio increased at later ranks (30-90%).
+6,buff,1,W dismounted MS 250 to 280; E cooldown now flat 13s.
+7,bugfix,0,Shadow no longer lingers at death position until respawn
+8,nerf,1,Q damage 70-250 (130% AD)->60-240 (125% AD); pro-skewed Worlds nerf
+9,buff,2,Passive MS 20-50% by rank; R zone again grants passive MS (reverting 7.14); bug fix.
+10,buff,2,Tank buff: W bonus armor and magic resist ratios increased.
+11,nerf,2,"Passive damage 90-200 (+1-15% max HP)->75-160 (+1-11%), now linear"
+12,buff,1,"Passive shield 47-101->47-120, ratio 12->13% bonus HP"
+13,buff,2,Passive 8% to 10% current health; R bonus AD ratio 150% to 180%.
+14,bugfix,0,Bug fix: Q stealth delay no longer completes instantly after a champion kill.
+15,bugfix,0,Cleanse now properly removes Augmented W Implosion stun.
+16,bugfix,0,Mid-patch revert: W/R cast rules while ball travels restored to pre-7.16 (unintended ult effects).
+17,bugfix,0,Gravitum root now properly blocked by spell shields.
+18,nerf,2,"W base damage 55-215 from 60-260, ratio 0.95; E cooldown 26-18s from 26-14s."
+19,nerf,1,W Eclipse bonus armor and magic resist reduced by 5.
+20,bugfix,0,Allies shielded by E now see an indicator centered on her.
+21,bugfix,0,W now properly lowers R Mantra cooldown when damaging champions.
+22,bugfix,0,Yoyo SFX restored in walking animations
+23,adjust,0,Maiden durability rescaled by level; gains armor/MR and regen; health ratio down.
+24,nerf,2,E bonus MS 15-25% to 12-20% (doubled toward enemies).
+25,buff,2,R damage 100-200 (40% AP)->150-250 (45% AP); R cooldown -10s
+26,nerf,3,"R jump distance 400->250, wall forgiveness 700->450, duration -1s; Worlds pick-off nerf"
+27,buff,1,Passive Runic Blade charges no longer consumed on wards.
+28,buff,2,"W AP ratio 60->70%, R AP ratio 25->30%, passive monster modifier 2.6->2.65x"
+29,bugfix,0,Q Spinning Axe no longer lost on cancelled attack (wiki; announced later in 8.21).
+30,nerf,2,R cooldown 150/120/90s from 120/90/60s.
+31,bugfix,0,Graves' Smoke Screen now stays in realm it was cast in during R.
+32,nerf,2,E cooldown +2s all ranks; R wall duration 5 to 4s; Q mana bug fixed.
+33,buff,1,Q cooldown 10-6 -> 8-6s.
+34,buff,1,R Let's Bounce now grants ghosting so he no longer gets stuck on units
+35,buff,2,Health growth 104 to 110; W cooldown lower at higher ranks.
+36,bugfix,0,Hotfix: W cooldown now reduced properly when picking up passive chunks.
+37,nerf,2,Base health 510->480 and base armor 36->33 to cut early durability.
+38,bugfix,0,Mist Walker leaps no longer shift minion aggro to Yorick.
+39,bugfix,0,Cosmetic: Safecracker Evelynn texture fix.
+40,nerf,2,HP regen 7 to 6; Q crit damage conversion 95 to 75%.
+41,nerf,2,Passive AP ratio 45->40%; Q tornado max-HP damage 2.5->2% per tick
+42,buff,1,R cooldown 6/4/2 -> 5/3.5/2s.
+43,buff,2,"Base armor 36->38, stat roundings, W attack speed +10%; cites competitive viability."
+44,nerf,2,W shield 60-160->60-140; W cooldown 22-18s->22s flat
+45,buff,2,R Phoenix Stance cone base damage and AP ratio increased.
+46,buff,2,R bonus attack damage 20/30/40 -> 25/40/55.
+47,nerf,2,E shield 85-245->75-235 and slow 45-65->40-60%; curbs Worlds jungle dominance
+48,bugfix,0,R aura VFX layering with terrain fixed
+49,bugfix,0,Bug fix: Youmuu's Ghostblade no longer breaks R stealth.
+50,buff,2,W bonus AD ratio up; E slow 50 to 70%; R Flash-disable bug fixed.
+51,bugfix,0,Cosmetic: Dunkmaster Darius health bar position fixed.
+52,bugfix,0,E Quickdraw after basic attack now properly triggers Sheen and Kleptomancy.
+53,adjust,0,"Q slow shorter/cooldown lower; W cooldown doubled, cheaper, halved on enemy devour; ally-save nerfed."
+54,buff,2,Q cooldown lower early; W min/max damage increased; mana regen rounded up.
+55,adjust,0,"Passive DR vs attacks up, W on-hit up; R damage cut. Shifts power from skilled-play-counterable R."
+56,bugfix,0,R cooldown indicator updates after upgraded cast.
+57,bugfix,0,Bug fix: Q stacks granted when last-hitting Gangplank barrels.
+58,bugfix,0,Cosmetic: Dark Star Kha'Zix evolved E VFX visibility.
+59,buff,1,Hex Core first upgrade 1250->1150 gold; Perfect Hex Core combine cost 750->850.
+60,buff,1,E slow increased at early ranks (28->40% at rank 1).
+61,rework,0,"Mini-rework: early passive/E nerfs, W becomes decaying burst active, Q/E scaling buffs."
+62,bugfix,0,Cosmetic: skin portrait no longer reverts while dead.
+63,buff,2,"Q attack speed 30->35%; E damage 80-160->80-200, ratio 80->100% bonus AD, lower cooldown"
+64,nerf,1,Base health 604 to 574 to punish early overcommits in pro play.
+65,buff,2,Q cooldown 12-8s->11-7s; E base damage +5 all ranks
+66,nerf,1,"Base armor 28 to 26; passive, Q vision and E slow bugs fixed. Cites Skilled play."
+67,bugfix,0,Brittle attacks no longer interrupt Irelia W.
+68,nerf,3,"Base health 580 to 540; W cost up; R cooldown up early, damage down; E lifesteal bug fix."
+69,bugfix,0,Packmates respect crowd control; self-cast shield targeting fixed.
+70,buff,1,Q Poison Trail applies Grievous Wounds while R is active.
+71,bugfix,0,Cosmetic: Super Galaxy Shyvana death animation fixed.
+72,buff,1,R damage per orb 90/130/170->100/140/180 to return her to pro play
+73,nerf,2,Passive monster damage cap 70-100->65; R sleep 2-2.5s->2s flat (pro-skewed)
+74,bugfix,0,R Depth Charge can no longer stun unstoppable targets.
+75,nerf,2,"Movement speed 340->335, W cooldown up early, R wall no longer grants vision."
+76,nerf,1,Q bonus monster damage -20 at all ranks to slow pro jungle clear.
+77,adjust,0,Heat bar turns orange at 80+ Heat (clarity only).
+78,nerf,2,Passive Icebreaker ratio flattened to 10% max health; cites pro play damage.
+79,buff,2,Q cooldown lower at higher ranks; R base damage +25.
+80,bugfix,0,Bug fix: upgraded Q turret beam no longer breaks when target leaves range.
+81,nerf,1,Base movement speed 330 to 325; notes cite pro and regular play dominance.
+82,buff,2,Passive damage vs monsters increased (150% to 200% per notes) for jungle clear.
+83,bugfix,0,E Spinning Slash can no longer hit same target twice; R end flash added.
+84,buff,1,Passive movement-speed-to-damage conversion 15/25/35% -> 25/35%.
+85,buff,2,"Passive now deals 100% bonus damage to monsters, enabling jungle."
+86,adjust,0,"Early Q and team R-E speed cut; Q cooldown/cost, RQ damage, E shield up. Cites pro strength."
+87,bugfix,0,W Prismatic Barrier now applies shield at most twice.
+88,nerf,3,Hotfix one day after release: base health 600 to 530; R per-shot damage and AD ratio cut.
+89,rework,0,"Full relaunch (VGU): new kit, stats, visuals and voice."
+90,bugfix,0,W Crystallize no longer applies Elder Dragon debuff to enemies; various SFX restored.
+91,buff,2,"Power-positive: W damage up, no tower DoT; R base damage up, AP ratios down"
+92,buff,2,Passive cooldown lower early; W cooldown now scales 12 to 10s.
+93,buff,1,"QoL: plant damage rules, jungle plant damage, 2 seeds at W rank 1, E-Flash and R fixes."
+94,nerf,1,"R max speed 450 to 400, min 170 to 200, decays sooner; self-target snapback removed."
+95,nerf,2,"W MS 30 to 25%, polymorph duration down, cooldown up; Pix reveal bug fixed."
+96,nerf,1,Base AD 69 to 66 to curb early bot lane dominance in pro play.
+97,buff,2,"R Wind Slash damage up 25% (min 100-200, max 300-600)."
+98,nerf,2,W Volley cooldown increased at early ranks (18/14.5/11/7.5/4).
+99,bugfix,0,R healing now properly reduced against Voidmites
+100,buff,2,Base attack speed ratio 0.668 to 0.721; passive cooldown 14 to 13s.
+101,bugfix,0,Recommended starting items no longer exceed starting gold.
+102,bugfix,0,E Elastic Slingshot now properly disabled by Grounded.
+103,buff,1,R Final Hour bonus AD increased by 10 at all ranks.
+104,buff,1,R missile speed 4000 to 5000.
+105,buff,1,Passive deals 100% damage to turrets (from 50%); Love Tap after Q bug fix.
+106,nerf,1,E max bonus movement speed 12-20->12-16%; pro E-max nerf
+107,bugfix,0,Bug fix: cancelling an attack no longer fails to reset attack timer.
+108,nerf,2,"E base damage -10; R storm slow 3->1s, targeting pro zoning utility."
+109,buff,1,R cooldown 130/100/70s from 150/115/80s; E attack uncancellable; R positioning bug fix.
+110,buff,2,W thrust base damage +10 and AD ratio 75% to 80%.
+111,buff,2,11.18 passive/W/R changes reverted; E cooldown reduced late (to 8s).
+112,nerf,1,Passive missing-health proc flattened to 15% (was 15-20% by level).
+113,nerf,2,AD growth 3.3 to 3; E and R cooldowns increased.
+114,bugfix,0,W Courage no longer wrongly increases base armor and magic resist.
+115,nerf,1,"Base mana 375 to 334, growth up; E base damage vs poisoned lower early, AP ratio up."
+116,nerf,2,Base armor 28->25; R cooldown +20s; cites safety at highest levels of play.
+117,adjust,0,"Laning buffs (armor, Q damage, monster damage) traded for late burst (W damage, R ratio 170->125%)"
+118,bugfix,0,R indicator no longer makes overlapping VFX flicker
+119,bugfix,0,Orb radial VFX no longer disappears after some time
+120,bugfix,0,Passive no longer damages allies when killed by berserk Briar.

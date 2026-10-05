@@ -1,0 +1,7 @@
+exposure,champ_mean_rank_among_8,null_mean,p_favoured_one_sided,p_disfavoured_one_sided,champ_gt_runner,champ_lt_runner,ties,mean_rank_Champion,mean_rank_Runner-up,mean_rank_SF,mean_rank_QF
+intended,3.4,4.497805,0.07543,0.94301,5,5,0,3.4,4.3,4.75,4.7
+nerfs,4.9,4.5038860000000005,0.72933,0.31886,4,6,0,4.9,4.3,4.4,4.5
+buffs,2.8,4.5014435,0.00989,0.99257,6,4,0,2.8,3.95,4.8,4.9125
+walkback,3.7,4.502761,0.14117,0.87278,7,3,0,3.7,4.85,4.1,4.8125
+walkback_all_reasons,3.9,4.499681,0.22061,0.80652,7,3,0,3.9,5.1,4.25,4.625
+touched,5.0,4.5000705000000005,0.76158,0.25752,4,6,0,5.0,5.2,4.15,4.375

@@ -1,0 +1,4 @@
+patch_oe,champion,summary,reason,source
+6.13,Mordekaiser,ARAM (Howling Abyss) only bug fix: W now targets the chosen ally.,ARAM (Howling Abyss) only,https://wiki.leagueoflegends.com/en-us/V6.13 (Howling Abyss section)
+6.13,Taliyah,ARAM (Howling Abyss) only: Q worked ground duration 140s to 100s.,ARAM (Howling Abyss) only,https://wiki.leagueoflegends.com/en-us/V6.13 (Howling Abyss section)
+7.18,Vi,Howling Abyss recommended items duplicate removed.,Howling Abyss recommended items only,https://wiki.leagueoflegends.com/en-us/V7.18 (Howling Abyss section)

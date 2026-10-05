@@ -1,0 +1,49 @@
+{
+ "case_team": "T1",
+ "years": [
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "pooled_pre_presence_below_5_pct": 9.640647847843795,
+ "pooled_pre_presence_20_plus_pct": 64.01003850454616,
+ "pre_presence_20_plus_pct_by_year": {
+  "2022": 79.06976744186046,
+  "2023": 68.08510638297871,
+  "2024": 40.0,
+  "2025": 17.39130434782609
+ },
+ "all_quarterfinalists_pre_presence_below_5_pct": 17.430868362039924,
+ "all_quarterfinalists_pre_presence_20_plus_pct": 57.34456683442918,
+ "top_decile_pct_max": 0.0,
+ "shared_pct_by_year": {
+  "2022": 93.02325581395348,
+  "2023": 93.61702127659574,
+  "2024": 70.0,
+  "2025": 65.21739130434783
+ },
+ "adjusted_rank_by_year": {
+  "2022": 1,
+  "2023": 3,
+  "2024": 4,
+  "2025": 1
+ },
+ "breadth_rank_by_year": {
+  "2022": 1,
+  "2023": 1,
+  "2024": 1,
+  "2025": 1
+ },
+ "meta_rank_from_least_by_year": {
+  "2022": 2,
+  "2023": 1,
+  "2024": 1,
+  "2025": 3
+ },
+ "y2022_top_champions": "Lee Sin",
+ "y2022_top_champion_pct": 65.11627906976744,
+ "y2022_top_champion_role": "jng",
+ "y2022_top_champion_role_share_pct": 27.659574468085108,
+ "y2022_top_champion_other_quarterfinalists": 6
+}

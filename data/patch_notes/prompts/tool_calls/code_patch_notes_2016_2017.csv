@@ -1,0 +1,78 @@
+order,timestamp,tool,target
+1,2026-09-23T13:14:56.732Z,ToolSearch,"{""query"": ""select:WebFetch,WebSearch"", ""max_results"": 2}"
+2,2026-09-23T13:14:59.199Z,Bash,"cat ""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/champion_names.txt"" | tr '\n' '|'; echo; wc -l ""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes/champion_names.txt"""
+3,2026-09-23T13:15:03.196Z,Bash,"cd <scratch> && curl -sL -A ""Mozilla/5.0"" ""https://leagueoflegends.fandom.com/wiki/V6.18?action=raw"" -o v618.txt; wc -c v618.txt; head -c 3000 v618.txt"
+4,2026-09-23T13:15:10.033Z,Bash,"cd <scratch> && for u in ""https://leagueoflegends.fandom.com/api.php?action=parse&page=V6.18&prop=wikitext&format=json"" ""https://wiki.leagueoflegends.com/en-us/V6.18?action=raw"" ""https://wiki.leagueoflegends.com/en-us/api.php?action=parse&page=V6.18&prop=wikitext&format=json""; do echo ""== $u""; curl -sL -A ""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"" ""$u"" | head -c 600; echo; done"
+5,2026-09-23T13:15:16.103Z,Bash,"cd <scratch> && for p in 6.13 6.14 6.15 6.16 6.17 6.18 7.16 7.17 7.18; do curl -sL -A ""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"" ""https://wiki.leagueoflegends.com/en-us/V$p?action=raw"" -o ""v$p.txt""; echo ""$p $(wc -c < v$p.txt) $(wc -l < v$p.txt)""; done"
+6,2026-09-23T13:15:23.255Z,Bash,cd <scratch> && cat v6.13.txt
+7,2026-09-23T13:15:35.988Z,Bash,"cd <scratch> && for p in 6.14 6.15 6.16 6.17 6.18 7.16 7.17 7.18; do echo ""=== $p""; grep -E ""^\|(Release|Related)|[Hh]otfix|Mid-patch|mid-patch|^== "" v$p.txt; done"
+8,2026-09-23T13:15:42.290Z,Bash,"cd <scratch> && curl -sL -A ""Mozilla/5.0"" ""https://web.archive.org/web/2016id_/http://na.leagueoflegends.com/en/news/game-updates/patch/patch-613-notes"" -o off613.html; wc -c off613.html; python3 -c ""
+import re,html
+t=open('off613.html',encoding='utf-8',errors='ignore').read()
+t=re.sub(r'<script.*?</script>','',t,flags=re.S)
+t=re.sub(r'<style.*?</style>','',t,flags=re.S)
+t=re.sub(r'<[^>]+>','\n',t)
+t=html.unescape(t)
+t=re.sub(r'\n\s*\n+','\n',t)
+open('off613.txt','w').write(t)
+print(len(t))
+""; grep -n -i -E ""hotfix|mid-patch|6\.13"" off613.txt | head -40"
+9,2026-09-23T13:15:49.728Z,Bash,"cd <scratch> && for p in 613 614 615 616 617 618 716 717 718; do echo ""== $p""; curl -s ""http://web.archive.org/cdx/search/cdx?url=na.leagueoflegends.com/en/news/game-updates/patch/patch-$p-notes&output=txt&filter=statuscode:200&fl=timestamp&collapse=timestamp:8"" | tr '\n' ' ' | head -c 600; echo; done"
+10,2026-09-23T13:17:54.391Z,Bash,"cd <scratch> && sed -n '/== League of Legends/,$p' v6.14.txt"
+11,2026-09-23T13:18:00.773Z,Bash,cat <scratch>/252dd266-99df-439b-89a0-1e0edd8f81fb/tasks/bohiys9c5.output
+12,2026-09-23T13:18:08.243Z,Bash,"cd <scratch> && for u in ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-7-16-notes/"" ""https://www.leagueoflegends.com/en-us/news/game-updates/patch-6-18-notes/""; do curl -sL -o /dev/null -w ""%{http_code} %{url_effective}\n"" -A ""Mozilla/5.0"" --max-time 30 ""$u""; done"
+13,2026-09-23T13:18:20.746Z,Bash,"cd <scratch> && cat > fetch.sh <<'EOF'
+#!/bin/bash
+p=$1; ts=$2; host=${3:-na}
+for i in 1 2 3 4; do
+  curl -sL -A ""Mozilla/5.0"" --max-time 90 ""https://web.archive.org/web/${ts}id_/http://${host}.leagueoflegends.com/en/news/game-updates/patch/patch-${p}-notes"" -o off$p.html
+  if [ $(wc -c < off$p.html) -gt 50000 ]; then break; fi
+  sleep 5
+done
+python3 - ""$p"" <<'PY'
+import re,html,sys
+p=sys.argv[1]
+t=open(f'off{p}.html',encoding='utf-8',errors='ignore').read()
+t=re.sub(r'<script.*?</script>','',t,flags=re.S)
+t=re.sub(r'<style.*?</style>','',t,flags=re.S)
+t=re.sub(r'<[^>]+>','\n',t)
+t=html.unescape(t)
+t=re.sub(r'[ \t]+',' ',t)
+t=re.sub(r'\n\s*\n+','\n',t)
+open(f'off{p}.txt','w').write(t)
+print(p,len(t))
+PY
+EOF
+chmod +x fetch.sh
+./fetch.sh 613 20160712 & ./fetch.sh 614 20160726 & ./fetch.sh 615 20160809 & ./fetch.sh 616 20160823 & ./fetch.sh 617 20160907 & ./fetch.sh 618 20161005 & ./fetch.sh 716 20170822 & ./fetch.sh 717 20170912 & ./fetch.sh 718 20170930 & wait"
+14,2026-09-23T13:19:36.139Z,Bash,"cd <scratch> && for p in 613 614 615 616 617 618 716 717 718; do echo ""== $p""; grep -n -i -E ""hotfix|mid-patch|pro play|competitive|high level|high-level|elite|organized play|professional"" off$p.txt | head -30; done"
+15,2026-09-23T13:19:43.798Z,Bash,"cd <scratch> && sed -n '1,400p' off613.txt | cut -c1-600"
+16,2026-09-23T13:19:50.018Z,Bash,"cd <scratch> && sed -n '400,700p' off613.txt | cut -c1-400 | grep -v -E ""^\s*$"" | head -300"
+17,2026-09-23T13:20:27.308Z,Bash,"cd <scratch> && sed -n '1,700p' off614.txt | cut -c1-700 | grep -v -E ""^\s*$"""
+18,2026-09-23T13:20:55.407Z,Bash,"cd <scratch> && sed -n '1,700p' off615.txt | cut -c1-900 | grep -v -E ""^\s*$"" | sed -n '8,600p'"
+19,2026-09-23T13:21:01.667Z,Bash,"cd <scratch> && grep -E ""^;\{\{ci|^=|^;"" v6.15.txt | head -80; echo; sed -n '/== Hotfixes ==/,$p' v6.15.txt"
+20,2026-09-23T13:21:11.494Z,Bash,"cd <scratch> && awk '/^;\{\{ci\|(Annie|Caitlyn|Darius|Evelynn|Graves|Miss Fortune|Mordekaiser|Nami|Rammus|Taric|Vel.Koz|Sona)\}\}/{p=1} /^;\{\{ci\|(Braum|Corki|Hecarim|Illaoi|Jarvan IV|Karma|Kassadin|Malzahar|Nidalee|Renekton|Shen|Shyvana|Taliyah|Vayne|Viktor|Vladimir|Zac|Zyra)\}\}/{p=0} /^===/{p=0} p' v6.15.txt; sed -n '/=== Masteries ===/,/== Hotfixes/p' v6.15.txt"
+21,2026-09-23T13:21:34.717Z,Bash,"cd <scratch> && grep -v -E ""^\s*$"" off616.txt | cut -c1-900 | sed -n '8,400p'"
+22,2026-09-23T13:21:41.464Z,Bash,"cd <scratch> && grep -E ""^;|^="" v6.16.txt; echo ----; sed -n '/== Hotfixes ==/,$p' v6.16.txt; grep -n -i -A6 ""Twisted Fate\|Kled"" v6.16.txt | head -60"
+23,2026-09-23T13:22:03.931Z,Bash,"cd <scratch> && grep -v -E ""^\s*$"" off617.txt | cut -c1-1200 | sed -n '8,700p'"
+24,2026-09-23T13:22:11.120Z,Bash,"cd <scratch> && grep -E ""^;|^="" v6.17.txt | tr '\n' ' '; echo; grep -n -i ""undocumented\|Cho'Gath\|Kalista\|Kha'Zix\|Nasus\|Sion\|Tahm\|Twitch\|Zilean\|Yasuo\|Elise\|Ekko\|Ahri\|Katarina"" v6.17.txt | head -40"
+25,2026-09-23T13:22:46.127Z,Bash,"cd <scratch> && grep -v -E ""^\s*$"" off618.txt | cut -c1-1500 | sed -n '8,700p'"
+26,2026-09-23T13:22:54.866Z,Bash,"cd <scratch> && grep -E ""^;|^="" v6.18.txt | tr '\n' ' '; echo; sed -n '/== Hotfixes ==/,$p' v6.18.txt; grep -n -A4 ""ci|Ekko"" v6.18.txt"
+27,2026-09-23T13:23:15.723Z,Bash,"cd <scratch> && grep -v -E ""^\s*$"" off716.txt | cut -c1-1500 | sed -n '8,700p'"
+28,2026-09-23T13:23:21.792Z,Bash,"cd <scratch> && grep -E ""^;|^="" v7.16.txt | tr '\n' ' '; echo; sed -n '/== Hotfixes ==/,$p' v7.16.txt; grep -n -i ""undocumented"" v7.16.txt"
+29,2026-09-23T13:24:03.058Z,Bash,"cd <scratch> && grep -v -E ""^\s*$"" off717.txt | cut -c1-1500 | sed -n '8,800p'"
+30,2026-09-23T13:24:09.084Z,Bash,"cd <scratch> && grep -E ""^;|^="" v7.17.txt | tr '\n' ' '; echo; sed -n '/== Hotfixes ==/,$p' v7.17.txt"
+31,2026-09-23T13:24:19.594Z,Bash,"cd <scratch> && awk '/^;\{\{ci\|(Sivir|Cho.Gath|Jinx|Poppy|Warwick|Hecarim|Zed|Ornn)\}\}/{p=1;print;next} /^;/{p=0} /^=/{p=0} p' v7.17.txt | head -120; sed -n '/=== Items ===/,/== Hotfixes/p' v7.17.txt | head -150"
+32,2026-09-23T13:24:47.703Z,Bash,"cd <scratch> && grep -v -E ""^\s*$"" off718.txt | cut -c1-1500 | sed -n '8,800p'"
+33,2026-09-23T13:24:55.153Z,Bash,"cd <scratch> && grep -E ""^;|^="" v7.18.txt | tr '\n' ' '; echo; sed -n '/== Hotfixes ==/,$p' v7.18.txt; grep -n -B2 -A8 ""ci|Azir\|ci|Lee Sin\|ci|Rumble\|ci|Zed"" v7.18.txt | head -80"
+34,2026-09-23T13:25:05.971Z,Bash,"cd <scratch> && sed -n '/=== General ===/,/=== Champions ===/p' v7.18.txt; grep -n -A3 ""ci|Karma}}\|ci|Lulu}}\|ci|Soraka\|ci|Talon\|ci|Quinn\|ci|Kha'Zix\|ci|Ahri\|ci|Syndra\|ci|Orianna\|ci|Sivir\|ci|Fizz\|ci|Xerath\|ci|Aatrox"" v7.18.txt | head -80"
+35,2026-09-23T13:29:49.061Z,Write,<scratch>/build.py
+36,2026-09-23T13:29:52.920Z,Bash,cd <scratch> && python3 build.py
+37,2026-09-23T13:30:41.426Z,Write,<scratch>/build_sys.py
+38,2026-09-23T13:30:48.039Z,Bash,"cd <scratch> && python3 build_sys.py && D=""~/Library/Application Support/Claude/scratch-workspaces/9e5f38de-79c0-4c3b-96b4-08fe73e88290/a71a968e-e25a-4c46-9035-328f9a76e2c5/scratch-2026-09-23-ab4173/data/patch_notes"" && python3 -c ""
+import csv,sys
+for fn,n in [('coded_A.csv',11),('systems_A.csv',6)]:
+    rows=list(csv.reader(open(sys.argv[1]+'/'+fn)))
+    bad=[r for r in rows if len(r)!=n]
+    print(fn,len(rows)-1,'bad',len(bad))
+"" ""$D""; head -5 ""$D/coded_A.csv""; head -3 ""$D/systems_A.csv"""

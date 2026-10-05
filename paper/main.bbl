@@ -1,0 +1,316 @@
+\begin{thebibliography}{43}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Albert et~al.(2018)Albert, Bartroff, Blandford, Brooks, Derenski,
+  Goldstein, Hosoi, Lorden, Nathan, and Smith]{albert2018}
+Jim Albert, Jay Bartroff, Roger Blandford, Dan Brooks, Josh Derenski, Larry
+  Goldstein, Anette Hosoi, Gary Lorden, Alan Nathan, and Lloyd Smith.
+\newblock Report of the committee studying home run rates in {Major League
+  Baseball}.
+\newblock Technical report, Major League Baseball, 2018.
+\newblock URL
+  \url{https://www.mlb.com/press-release/major-league-baseball-receives-report-on-increased-home-run-rate-278136100}.
+\newblock Commissioned by the Commissioner of Baseball.
+
+\bibitem[Bloom(1995)]{bloom1995}
+Howard~S. Bloom.
+\newblock Minimum detectable effects: A simple way to report the statistical
+  power of experimental designs.
+\newblock \emph{Evaluation Review}, 19\penalty0 (5):\penalty0 547--556, 1995.
+\newblock \doi{10.1177/0193841X9501900504}.
+
+\bibitem[Bradley and Terry(1952)]{bradley1952}
+Ralph~Allan Bradley and Milton~E. Terry.
+\newblock Rank analysis of incomplete block designs: {I. The} method of paired
+  comparisons.
+\newblock \emph{Biometrika}, 39\penalty0 (3/4):\penalty0 324--345, 1952.
+\newblock \doi{10.1093/biomet/39.3-4.324}.
+
+\bibitem[Cameron et~al.(2008)Cameron, Gelbach, and Miller]{cameron2008}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Bootstrap-based improvements for inference with clustered errors.
+\newblock \emph{The Review of Economics and Statistics}, 90\penalty0
+  (3):\penalty0 414--427, 2008.
+\newblock \doi{10.1162/rest.90.3.414}.
+
+\bibitem[Cameron et~al.(2011)Cameron, Gelbach, and Miller]{cameron2011}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Robust inference with multiway clustering.
+\newblock \emph{Journal of Business \& Economic Statistics}, 29\penalty0
+  (2):\penalty0 238--249, 2011.
+\newblock \doi{10.1198/jbes.2010.07136}.
+
+\bibitem[Chung and Romano(2013)]{chung2013}
+EunYi Chung and Joseph~P. Romano.
+\newblock Exact and asymptotically robust permutation tests.
+\newblock \emph{The Annals of Statistics}, 41\penalty0 (2):\penalty0 484--507,
+  2013.
+\newblock \doi{10.1214/13-AOS1090}.
+
+\bibitem[{CommunityDragon}(2026)]{cdragon}
+{CommunityDragon}.
+\newblock {CommunityDragon}: Extracted {League of Legends} game files.
+\newblock \url{https://raw.communitydragon.org}, 2026.
+\newblock Champion \texttt{.bin.json} files by patch; accessed September 2026.
+
+\bibitem[Efron and Tibshirani(1993)]{efron1993}
+Bradley Efron and Robert~J. Tibshirani.
+\newblock \emph{An Introduction to the Bootstrap}.
+\newblock Chapman \& Hall, New York, 1993.
+
+\bibitem[Fort and Quirk(1995)]{fort1995}
+Rodney Fort and James Quirk.
+\newblock Cross-subsidization, incentives, and outcomes in professional team
+  sports leagues.
+\newblock \emph{Journal of Economic Literature}, 33\penalty0 (3):\penalty0
+  1265--1299, 1995.
+
+\bibitem[{Games of Legends}(2026)]{golgg}
+{Games of Legends}.
+\newblock {Games of Legends}: {League of Legends} esports statistics.
+\newblock \url{https://gol.gg}, 2026.
+\newblock Game pages; accessed September 2026.
+
+\bibitem[Gardiner et~al.(2017)Gardiner, Parry, and Robinson]{gardiner2017}
+Simon Gardiner, Jim Parry, and Simon Robinson.
+\newblock Integrity and the corruption debate in sport: Where is the integrity?
+\newblock \emph{European Sport Management Quarterly}, 17\penalty0 (1):\penalty0
+  6--23, 2017.
+\newblock \doi{10.1080/16184742.2016.1259246}.
+
+\bibitem[Gilardi et~al.(2023)Gilardi, Alizadeh, and Kubli]{gilardi2023}
+Fabrizio Gilardi, Meysam Alizadeh, and Ma{\"e}l Kubli.
+\newblock {ChatGPT} outperforms crowd workers for text-annotation tasks.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 120\penalty0
+  (30):\penalty0 e2305016120, 2023.
+\newblock \doi{10.1073/pnas.2305016120}.
+
+\bibitem[Good(2005)]{good2005}
+Phillip Good.
+\newblock \emph{Permutation, Parametric, and Bootstrap Tests of Hypotheses}.
+\newblock Springer, New York, third edition, 2005.
+
+\bibitem[He et~al.(2021)He, Tran, Jiang, Burghardt, Ferrara, Zheleva, and
+  Lerman]{he2021}
+Yuzi He, Christopher Tran, Julie Jiang, Keith Burghardt, Emilio Ferrara, Elena
+  Zheleva, and Kristina Lerman.
+\newblock Heterogeneous effects of software patches in a multiplayer online
+  battle arena game.
+\newblock In \emph{Proceedings of the 16th International Conference on the
+  Foundations of Digital Games}, pages 1--9, 2021.
+\newblock \doi{10.1145/3472538.3472550}.
+
+\bibitem[Hill(1973)]{hill1973}
+M.~O. Hill.
+\newblock Diversity and evenness: A unifying notation and its consequences.
+\newblock \emph{Ecology}, 54\penalty0 (2):\penalty0 427--432, 1973.
+\newblock \doi{10.2307/1934352}.
+
+\bibitem[Holden et~al.(2017)Holden, Kaburakis, and Rodenberg]{holden2017}
+John~T. Holden, Anastasios Kaburakis, and Ryan~M. Rodenberg.
+\newblock The future is now: Esports policy considerations and potential
+  litigation.
+\newblock \emph{Journal of Legal Aspects of Sport}, 27\penalty0 (1):\penalty0
+  46--78, 2017.
+\newblock \doi{10.1123/jlas.2016-0018}.
+
+\bibitem[Jost(2006)]{jost2006}
+Lou Jost.
+\newblock Entropy and diversity.
+\newblock \emph{Oikos}, 113\penalty0 (2):\penalty0 363--375, 2006.
+\newblock \doi{10.1111/j.2006.0030-1299.14714.x}.
+
+\bibitem[Judde et~al.(2013)Judde, Booth, and Brooks]{judde2013}
+Chris Judde, Ross Booth, and Robert Brooks.
+\newblock Second place is first of the losers: An analysis of competitive
+  balance in {Formula One}.
+\newblock \emph{Journal of Sports Economics}, 14\penalty0 (4):\penalty0
+  411--439, 2013.
+\newblock \doi{10.1177/1527002513496009}.
+
+\bibitem[Karhulahti(2017)]{karhulahti2017}
+Veli-Matti Karhulahti.
+\newblock Reconsidering esport: Economics and executive ownership.
+\newblock \emph{Physical Culture and Sport. Studies and Research}, 74\penalty0
+  (1):\penalty0 43--53, 2017.
+\newblock \doi{10.1515/pcssr-2017-0010}.
+
+\bibitem[Kica et~al.(2016)Kica, La~Manna, O'Donnell, Paolillo, and
+  Claypool]{kica2016}
+Artian Kica, Andrew La~Manna, Lindsay O'Donnell, Tom Paolillo, and Mark
+  Claypool.
+\newblock Nerfs, buffs and bugs -- analysis of the impact of patching on
+  {League of Legends}.
+\newblock In \emph{Proceedings of the International Conference on Collaboration
+  Technologies and Systems (CTS)}, pages 128--135, 2016.
+\newblock \doi{10.1109/CTS.2016.0039}.
+
+\bibitem[{Leaguepedia contributors}(2026)]{leaguepedia}
+{Leaguepedia contributors}.
+\newblock Leaguepedia: {League of Legends} esports wiki.
+\newblock \url{https://lol.fandom.com}, 2026.
+\newblock ScoreboardGames and ScoreboardPlayers tables via Special:CargoExport,
+  accessed September 29, 2026; content licensed CC BY-SA 3.0.
+
+\bibitem[{Liquipedia contributors}(2026)]{liquipedia}
+{Liquipedia contributors}.
+\newblock {Liquipedia}: {League of Legends} wiki.
+\newblock \url{https://liquipedia.net/leagueoflegends/}, 2026.
+\newblock Series results; accessed September 30, 2026; content licensed CC
+  BY-SA 3.0.
+
+\bibitem[Moschini(2010)]{moschini2010}
+GianCarlo Moschini.
+\newblock Incentives and outcomes in a strategic setting: The
+  3-points-for-a-win system in soccer.
+\newblock \emph{Economic Inquiry}, 48\penalty0 (1):\penalty0 65--79, 2010.
+\newblock \doi{10.1111/j.1465-7295.2008.00177.x}.
+
+\bibitem[Neale(1964)]{neale1964}
+Walter~C. Neale.
+\newblock The peculiar economics of professional sports: A contribution to the
+  theory of the firm in sporting competition and in market competition.
+\newblock \emph{The Quarterly Journal of Economics}, 78\penalty0 (1):\penalty0
+  1--14, 1964.
+\newblock \doi{10.2307/1880543}.
+
+\bibitem[{Riot Games}(2020{\natexlab{a}})]{riot2020framework}
+{Riot Games}.
+\newblock /dev: Balance framework update.
+\newblock
+  \url{https://www.leagueoflegends.com/en-gb/news/dev/dev-balance-framework-update/},
+  2020{\natexlab{a}}.
+\newblock June 30, 2020; accessed September 29, 2026.
+
+\bibitem[{Riot Games}(2020{\natexlab{b}})]{riot2020proplay}
+{Riot Games}.
+\newblock /dev: Balancing for pro play.
+\newblock
+  \url{https://www.leagueoflegends.com/en-us/news/dev/dev-balancing-for-pro-play/},
+  2020{\natexlab{b}}.
+\newblock August 20, 2020; accessed September 29, 2026.
+
+\bibitem[{Riot Games}(2022)]{riot2022latency}
+{Riot Games}.
+\newblock {Riot Games Tech Blog}: Artificial latency for remote competitors.
+\newblock
+  \url{https://lolesports.com/en-GB/news/riot-games-tech-blog-artificial-latency-for-remote-competitors},
+  2022.
+\newblock LoL Esports; accessed September 29, 2026.
+
+\bibitem[{Riot Games}(2023{\natexlab{a}})]{riot1319}
+{Riot Games}.
+\newblock Patch 13.19 notes.
+\newblock
+  \url{https://www.leagueoflegends.com/en-gb/news/game-updates/patch-13-19-notes/},
+  2023{\natexlab{a}}.
+
+\bibitem[{Riot Games}(2023{\natexlab{b}})]{riot2023dates}
+{Riot Games}.
+\newblock Announcing {Worlds} 2023 venues, dates, and ticket sales.
+\newblock
+  \url{https://lolesports.com/en-US/news/announcing-worlds-2023-venues-dates-and-ticket-sales},
+  2023{\natexlab{b}}.
+
+\bibitem[{Riot Games}(2023{\natexlab{c}})]{riot2023wqs}
+{Riot Games}.
+\newblock 2023 {Worlds Qualifying Series}.
+\newblock
+  \url{https://lolesports.com/en-US/news/2023-worlds-qualifying-series},
+  2023{\natexlab{c}}.
+
+\bibitem[{Riot Games}(2024{\natexlab{a}})]{riot1418}
+{Riot Games}.
+\newblock Patch 14.18 notes.
+\newblock
+  \url{https://www.leagueoflegends.com/en-us/news/game-updates/patch-14-18-notes/},
+  2024{\natexlab{a}}.
+\newblock September 10, 2024; accessed September 24, 2026.
+
+\bibitem[{Riot Games}(2024{\natexlab{b}})]{riot2024disputes}
+{Riot Games}.
+\newblock Dispute resolution for {Riot Games}' esports ({EMEA}).
+\newblock
+  \url{https://competitiveops.riotgames.com/en-US/dispute-resolution-emea},
+  2024{\natexlab{b}}.
+\newblock November 7, 2024; accessed September 24, 2026.
+
+\bibitem[{Riot Games}(2025)]{riot2025fearless}
+{Riot Games}.
+\newblock Fearless draft takes over 2025.
+\newblock
+  \url{https://lolesports.com/en-PH/news/fearless-draft-takes-over-2025}, 2025.
+
+\bibitem[{Riot Games}(2026)]{ddragon}
+{Riot Games}.
+\newblock {Data Dragon}.
+\newblock \url{https://developer.riotgames.com/docs/lol}, 2026.
+\newblock Champion data files by patch version; accessed September 2026.
+
+\bibitem[Rottenberg(1956)]{rottenberg1956}
+Simon Rottenberg.
+\newblock The baseball players' labor market.
+\newblock \emph{Journal of Political Economy}, 64\penalty0 (3):\penalty0
+  242--258, 1956.
+\newblock \doi{10.1086/257790}.
+
+\bibitem[Scholz(2019)]{scholz2019}
+Tobias~M. Scholz.
+\newblock \emph{eSports is Business: Management in the World of Competitive
+  Gaming}.
+\newblock Palgrave Pivot, Cham, 2019.
+
+\bibitem[Sevenhuysen(2026)]{oracleselixir}
+Tim Sevenhuysen.
+\newblock {Oracle's Elixir}: {LoL} esports stats.
+\newblock \url{https://oracleselixir.com}, 2026.
+\newblock Accessed September 2026.
+
+\bibitem[Szymanski(2003)]{szymanski2003}
+Stefan Szymanski.
+\newblock The economic design of sporting contests.
+\newblock \emph{Journal of Economic Literature}, 41\penalty0 (4):\penalty0
+  1137--1187, 2003.
+\newblock \doi{10.1257/jel.41.4.1137}.
+
+\bibitem[Taylor(2012)]{taylor2012}
+T.~L. Taylor.
+\newblock \emph{Raising the Stakes: E-Sports and the Professionalization of
+  Computer Gaming}.
+\newblock MIT Press, Cambridge, MA, 2012.
+
+\bibitem[{The International Football Association
+  Board}(2025)]{ifab2025circular}
+{The International Football Association Board}.
+\newblock Circular {No}. 30: Decisions of the 139th {Annual General Meeting}.
+\newblock \url{https://downloads.theifab.com/downloads/circular-30?l=en}, 2025.
+\newblock March 26, 2025.
+
+\bibitem[{The International Football Association
+  Board}(n.d.)]{ifaborganisation}
+{The International Football Association Board}.
+\newblock The {IFAB} {Organisation}.
+\newblock \url{https://www.theifab.com/organisation/}, n.d.
+\newblock Accessed September 24, 2026.
+
+\bibitem[Webb(2023)]{webb2023}
+Matthew~D. Webb.
+\newblock Reworking wild bootstrap-based inference for clustered errors.
+\newblock \emph{Canadian Journal of Economics}, 56\penalty0 (3):\penalty0
+  839--858, 2023.
+\newblock \doi{10.1111/caje.12661}.
+
+\bibitem[Ziems et~al.(2024)Ziems, Held, Shaikh, Chen, Zhang, and
+  Yang]{ziems2024}
+Caleb Ziems, William Held, Omar Shaikh, Jiaao Chen, Zhehao Zhang, and Diyi
+  Yang.
+\newblock Can large language models transform computational social science?
+\newblock \emph{Computational Linguistics}, 50\penalty0 (1):\penalty0 237--291,
+  2024.
+\newblock \doi{10.1162/coli_a_00502}.
+
+\end{thebibliography}

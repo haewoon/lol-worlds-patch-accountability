@@ -1,0 +1,206 @@
+[
+  {
+    "check": "Independent observed logit reproduces net coefficient",
+    "passed": true
+  },
+  {
+    "check": "Main and power-summary p agree",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains 1{,}097",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains 215 team-years",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $+1.3$\\pp{}",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $-0.9$ to $+3.7$",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $p = 0.333$",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $+2.2$\\pp{}",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $p = 0.111$",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains 5.1\\%",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $+11.8$\\pp{}",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains $p = 0.055$",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains Leaguepedia",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains voided and replayed",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains 99.71\\%",
+    "passed": true
+  },
+  {
+    "check": "Current manuscript contains Wrong team label",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: \\todo{",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: Audits based on public match results are therefore unlikely",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 134 of 211",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: no route to contest",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: within reach",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 98.2\\% of 448",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: (448 changes)",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: $r = -0.52$",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: Human validation is pending",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: human validation remains pending",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: remains incomplete",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: POWERPARAGRAPH",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 1{,}100",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: too small to detect",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 211 team-years",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 1{,}076",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: None won.",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 256{,}222",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: $p = 0.565$",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: playoff records for that split are incomplete",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: Riot nerfs what pros contest",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 15{,}811",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 540 games",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: $p = 0.362$",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: $p = 0.317$",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: 258{,}714",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: cannot be audited afterward",
+    "passed": true
+  },
+  {
+    "check": "Superseded text absent: Esports do all three",
+    "passed": true
+  },
+  {
+    "check": "Author direction agreement 87.5%",
+    "passed": true
+  },
+  {
+    "check": "Author sign agreement 89.2%",
+    "passed": true
+  },
+  {
+    "check": "Game-data agreement reported on label-independent one-directional changes",
+    "passed": true
+  },
+  {
+    "check": "Game-data table rows",
+    "passed": true
+  },
+  {
+    "check": "Sensitivity recoded counts",
+    "passed": true
+  },
+  {
+    "check": "Sensitivity meta slopes",
+    "passed": true
+  },
+  {
+    "check": "Sensitivity outcome intervals include zero",
+    "passed": true
+  }
+]
