@@ -1,6 +1,6 @@
 # When the Rule-Maker Runs the World Championship
 
-Replication files for Haewoon Kwak, *When the Rule-Maker Runs the World Championship: Late Patches and Procedural Accountability in League of Legends* (preprint, 2026; arXiv link to be added).
+Replication files for Haewoon Kwak, *When the Rule-Maker Runs the World Championship: Late Patches and Procedural Accountability in League of Legends* (arXiv:2610.07427, 2026, https://arxiv.org/abs/2610.07427).
 
 The paper measures how the patches released shortly before each *League of Legends* World Championship (Worlds) from 2016 to 2025 fell on the participating teams. It combines Oracle's Elixir match data, games restored from Leaguepedia, and LLM coding of 1,090 champion changes across 40 patches. This repository contains the code, the coded patch notes, the validation data, every analysis output the paper cites, and the manuscript source.
 
@@ -89,6 +89,21 @@ Claude Opus 5.5 agents coded the official patch notes on September 23, 2026, wor
 The code is released under the MIT License (`LICENSE`). The coded patch notes, validation data, analysis outputs, and manuscript are released under CC BY 4.0. Files derived from Leaguepedia are under CC BY-SA 3.0. `DATA_LICENSE.md` lists each source and its terms.
 
 This project isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+
+## Citation
+
+```bibtex
+@misc{kwak2026rulemaker,
+  author        = {Kwak, Haewoon},
+  title         = {When the Rule-Maker Runs the World Championship: Late Patches and Procedural Accountability in {League of Legends}},
+  year          = {2026},
+  eprint        = {2610.07427},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CY},
+  doi           = {10.48550/arXiv.2610.07427},
+  url           = {https://arxiv.org/abs/2610.07427}
+}
+```
 
 ## Contact
 
